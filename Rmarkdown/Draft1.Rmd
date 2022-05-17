@@ -1,5 +1,5 @@
 ---
-title: "Why do legislators support electoral system change"
+title: "Why do legislators support electoral system changes?"
 subtitle: "Testing the model of risk-adjusted utility"
 author: "William Zhu"
 # date: "5/5/2022"
@@ -11,17 +11,53 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Proposal
 
-Causes for electoral system changes are too complex to chalk it up to the decision to a single group of people with similar incentive structures. Nevertheless, this article’s focus is on the legislators. Not only do their livelihoods depend on the electoral system, but they are simultaneously in the best position to change it as well.Understanding their attitude toward electoral system changes provides an excellent starting point for understanding why they are changed at all. 
+## Introduction
 
-Previous studies have paid more attention to the role of party leadership.In this study, the unit of analysis are the individual politicians, the legislators to be more specific, which provide an excellent insight into the microfoundation behind the electoral system changes. Many studies of electoral system changes treat the parties as the unit of analysis since in many legislatures, especially those with strong party systems, individual politicians are commonly whipped to support their party’s platform. However, whipping works so long as the individual legislators agree that toeing the party line is in their best interest. Assuming that each legislator’s interests rest on their prospect of reelection, it stands to reason that each legislator’s attitude toward electoral system change sets the baseline for the negotiation between the party leadership in determining whether they will support the electoral system changes.
+Causes for electoral system changes are too complex with many different actors involved. This article attempts to alleviate the complexity by focusing is on the legislators who are most affected by *and* most capable of pursuing changes in electoral systems. Therefore it is crucial to understand their attitudes toward electoral system changes.
 
-A lot could affect a legislator’s attitude toward electoral system change, personal commitment to democratic values, partisan loyalty, etc. Not to deny that these are important factors in determining a politician’s attitude toward changes of the electoral system, this article takes the view that an average politician values their personal gain far more than other considerations. In addition, such a theory does not preclude the involvement of other normative factors, which in a democratic society could very well decide where lie the politicians’ interests.
+In this study, the unit of analysis are the individual legislators, which provide an excellent insight into the microfoundation behind the electoral system changes. Many studies of electoral system changes treat the parties as the unit of analysis since in many legislatures, especially those with strong party systems, individual politicians are commonly whipped to support their party's platform. However, whipping works so long as the individual legislators agree that toeing the party line is in their best interest.
 
-This article seeks to formalize the interest of the individual legislator with an expected utility theory. It stands to reason that most legislators do not seek reelection for its own sake. They seek reelection to continue to wield the power conferred by their office. Naturally this power does not come for free as they need to wage campaigns in the run-up to the next election. Campaigns incur costs, and the prospect of winning is never guaranteed. Hence, the politician seeks to maximize their expected lifetime utility which can be expressed in the following equation:
+Furthermore, assuming that each legislator's interests rest on their prospect of reelection which vary widely even within a party, it stands to reason legislators may not share the same attitude toward electoral system change with each other and the party leadership as they face different levels of risk of losing elections. <!-- thus motivating our first hypothesis. -->
+
+<!-- ### *Hypothesis 1* -->
+
+<!-- Party affiliation alone does not explain a legislator's attitude toward electoral system changes. -->
+
+It goes without saying that a lot could affect a legislator's attitude toward electoral system change, personal commitment to democratic values, partisan loyalty, etc. Not to deny that these are important factors in determining a politician's attitude toward changes of the electoral system, this article takes the view that an average politician values their personal gain far more than other considerations. In addition, such a theory does not preclude the involvement of other normative factors, which in a democratic society could very well decide where lie the politicians' interests.
+
+## Proposed Model
+
+This article seeks to model the interest of the individual legislator more explicitly, starting with the assumption that they seek reelection to continue to wield the power conferred by their office. Naturally this power does not come for free as they need to wage campaign which incurs a positive costs. Furthermore, for individual legislators, there is always a risk of not getting into a position of power either when they lost the election and/or their parties don't get to form the government. Hence, we assume that legislator $i$ , seeks to maximize their lifetime risk-adjusted utility, which we denote $V_{i, 0}$ which can be expressed in the following equation: $$
+V_{i, 0} = (q_{i, 0} B_{i, 0} - s_{i, 0} C_{i, 0})
+$$ where for legislator $i$, $q_{i, 0}$ is the risk factor associated with vying for an of elected position of power, $B_{i, 0}$ the benefit of exercising the power, $s_{i,0}$ the risk factor associated with cost of campaigning and finally $C_0$ the cost of the campaign. Alternatively $V_{i, 0}$ may be interpreted as the risk-adjusted utility of the current electoral system for legislator $i$. Following our construction, if legislator $i$ is pressed with a choice between status quo and a new electoral system labeled $j$, then we may construct a metric
 
 $$
-E[U] = q\cdot B - s \cdot C
+\Delta V_{i, j} \equiv V_{i, j} - V_{i,0},
 $$
-where $E[U]$ represents the expected utility of waging campaigns, $q$ the risk factor associated with vying for an of elected position of power, $B$ the benefit of exercising the power, $s$ the risk factor associated with cost of campaigning and finally $C$ the cost of the campaign.
+
+where
+
+$$
+V_{i, 0} = (q_{i, j} B_{i, j} - s_{i, j} C_{i, j})
+$$
+
+and the probability that a legislator is positive toward switching to the electoral system to $j$ increases as $\Delta V_{i, j}$ increases. To simplify the model, we assume that $B_{i, 0} = B_{i, j} = B_i$ and $C_{i, 0} = C_{i, j} = C_i$ for any new electoral system $j$ , which means the lifetime benefit of exercising the power and cost of campaigning remains constant and the choice of electoral system only affects $\Delta V_{i, j}$ by changing the risk factors, yielding the following equation
+
+$$
+\Delta V_{i, j} = \Delta q_{i, j} B_i - \Delta s_{i, j} C_{i},
+$$
+
+where $\Delta q_{i,j} = q_{i, j} - q_{i, 0}, \Delta s_{i,j} = s_{i, j} - s_{i, 0}$. Finally do make our model tractable, we need to model $\Delta q_{i,j}$ and $\Delta s_{i, j}$ . We stipulate that, holding $j$ constant, $\Delta q_{i,j}$ and $\Delta s_{i, j}$ are themselves functions of variables other variables that vary for each legislator $i$.
+
+## Methodology
+
+This article proposes to operationalize the variables as follows
+
+1.  To estimate $B_i$, we calculate the amount of pork barrel delivered to the legislator's constituency over the past twenty/thirty/forty years. It is chosen precisely because it is a good indicator of the spending power wielded by the legislator.
+2.  To estimate $C_i$, we may need some creativity as the reported campaign cost may not reflect the actual campaign cost.
+3.  $\Delta q_{i,j}$ and $\Delta s_{i, j}$ are not estimated directly, instead, we include other variables that we consider are important for a legislator's risk perception of how changing the electoral systems would affect their electoral fortunes.
+
+## Potential Source of Evidence
+
+Finally, this article proposes the hypothesis that the higher the expected utility is, the less likely the legislator will support a change of the electoral system. This hypothesis can be estimated by examining the roll call record of a vote on an electoral reform bill or the positions of individual legislators in an electoral reform referendum campaign where the legislators are not obligated to toe the party line. Electoral reforms that took place in Japan in 1994 provides a good source of evidence since not every legislators affiliated with the dominant Liberal Democratic Party voted the same way. A logistic/probit regression on the previously mentioned variables in addition to other variables would be up to the task. However, I am not averse to other more complex statistical tests.
