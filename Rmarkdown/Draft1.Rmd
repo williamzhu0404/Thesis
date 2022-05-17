@@ -1,7 +1,8 @@
 ---
-title: "A New Typology of Electoral Systems"
+title: "Why do legislators support electoral system change"
+subtitle: "Testing the model of risk-adjusted utility"
 author: "William Zhu"
-date: "5/5/2022"
+# date: "5/5/2022"
 header-includes:
     - \usepackage{setspace}\doublespacing
 output: pdf_document
@@ -10,24 +11,17 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+## Proposal
 
-## Introduction
+Causes for electoral system changes are too complex to chalk it up to the decision to a single group of people with similar incentive structures. Nevertheless, this article’s focus is on the legislators. Not only do their livelihoods depend on the electoral system, but they are simultaneously in the best position to change it as well.Understanding their attitude toward electoral system changes provides an excellent starting point for understanding why they are changed at all. 
 
-<!-- Studies of electoral systems usually focus on the independent effect of one  -->
-<!-- parameter of an electoral system [Citation needed]. Such tendency is  -->
-<!-- understandable since it narrows our focus. However, the merits of this approach  -->
-<!-- may be outweighed by its deficiencies. Frequently, contradictory results can be  -->
-<!-- reached by tweaking the methodology.  -->
+Previous studies have paid more attention to the role of party leadership.In this study, the unit of analysis are the individual politicians, the legislators to be more specific, which provide an excellent insight into the microfoundation behind the electoral system changes. Many studies of electoral system changes treat the parties as the unit of analysis since in many legislatures, especially those with strong party systems, individual politicians are commonly whipped to support their party’s platform. However, whipping works so long as the individual legislators agree that toeing the party line is in their best interest. Assuming that each legislator’s interests rest on their prospect of reelection, it stands to reason that each legislator’s attitude toward electoral system change sets the baseline for the negotiation between the party leadership in determining whether they will support the electoral system changes.
 
-Institutionism assumes that change in institution may cause 
-the political behavior to change. Most if not all students of electoral systems 
-accept this assumption and undertake the task of uncovering the effect of tweaking
-institutional parameters wherever possible. 
-Usually, this is done by answering the simple question: *ceteris paribus*, does changing certain 
-institutional feature makes people more likely to do something? 
-This simple approach has advanced our 
-understanding of electoral systems by leaps and bounds thanks to increasing 
-availability of data and sophistication of technology. 
+A lot could affect a legislator’s attitude toward electoral system change, personal commitment to democratic values, partisan loyalty, etc. Not to deny that these are important factors in determining a politician’s attitude toward changes of the electoral system, this article takes the view that an average politician values their personal gain far more than other considerations. In addition, such a theory does not preclude the involvement of other normative factors, which in a democratic society could very well decide where lie the politicians’ interests.
 
-Nevertheless, too many important questions about electoral systems evades this 
-easy approach. Duverger's Law
+This article seeks to formalize the interest of the individual legislator with an expected utility theory. It stands to reason that most legislators do not seek reelection for its own sake. They seek reelection to continue to wield the power conferred by their office. Naturally this power does not come for free as they need to wage campaigns in the run-up to the next election. Campaigns incur costs, and the prospect of winning is never guaranteed. Hence, the politician seeks to maximize their expected lifetime utility which can be expressed in the following equation:
+
+$$
+E[U] = q\cdot B - s \cdot C
+$$
+where $E[U]$ represents the expected utility of waging campaigns, $q$ the risk factor associated with vying for an of elected position of power, $B$ the benefit of exercising the power, $s$ the risk factor associated with cost of campaigning and finally $C$ the cost of the campaign.
