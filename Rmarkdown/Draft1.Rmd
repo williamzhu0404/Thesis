@@ -56,7 +56,7 @@ This article proposes to operationalize the variables as follows
 
 1.  To estimate $B_i$, we calculate the amount of pork barrel delivered to the legislator's constituency over the past twenty/thirty/forty years. It is chosen precisely because it is a good indicator of the spending power wielded by the legislator.
 2.  To estimate $C_i$, we may need some creativity as the reported campaign cost may not reflect the actual campaign cost.
-3.  $\Delta q_{i,j}$ and $\Delta s_{i, j}$ are not estimated directly, instead, we include other variables that we consider are important for a legislator's risk perception of how changing the electoral systems would affect their electoral fortunes.
+3.  $\Delta q_{i,j}$ and $\Delta s_{i, j}$ are not estimated directly, instead, we will conduct regression on other variables in addition to $B_i$ and $C_i$. including the probability of reelection/competitiveness of the race in the district, that we consider are important for a legislator's risk perception of how changing the electoral systems would affect their electoral fortunes.
 
 ## Potential Source of Evidence
 
