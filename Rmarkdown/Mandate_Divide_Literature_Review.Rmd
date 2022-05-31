@@ -1,30 +1,32 @@
 ---
-title: "Mandate_Divide_Literature_Review"
+title: "Mandate Divide in Mixed-Member Electoral Systems"
 author: "William Zhu"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: references.bib
+csl: american-journal-of-political-science.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Actual Motivation
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+While studying electoral systems is a passion of mine, and this thesis could very well get into how electoral incentives shape legislators' behavior, I still feel obligated to be honest to you and to myself by disclosing another important consideration for choosing this thesis, which is the ease of applying a method that has been already used. Essentially, I am hoping to apply the methods employed by @schürmann2022, who test the hypothesis by scourging social media posts, and apply it to Taiwan to test the same hypothesis, hoping for a different result. It may reek of laziness and lack of originality, which is why I am keeping this research proposal as a back-up plan while looking for some more interesting and feasible thesis topics. In the meantime, I do hope my own modification of the existing theories would make this thesis a significant contribution to the field in the event that time and other constraint force me to go with this proposal.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Introduction
 
-```{r cars}
-summary(cars)
-```
+Mixed-Member Electoral Systems give each voter two votes, one for electing the legislator representing the local constituency, another for the party list. Consequently, it has been hypothesized that legislators owe their position to different electoral mechanisms, thus creating a *mandate divide* among the them which cause them to behave differently. Whether this mandate divide hypothesis holds true is a subject of lively debate where consensus remains elusive.
 
-## Including Plots
+In the following subsections, I shall present several factors that have confounded students of electoral systems on this subject and
 
-You can also embed plots, for example:
+### Party Discipline
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+One of the most im
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Structural Differences among Mixed-Member Systems
+
+### 
+
+## Methodology
