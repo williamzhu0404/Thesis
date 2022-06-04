@@ -1,0 +1,28 @@
+---
+title: "Snap Elections in Response to COVID-19"
+subtitle: "Are they worth it?"
+author: "William Zhu"
+date: "`r Sys.Date()`"
+output: pdf_document
+bibliography: references.bib
+csl: american-journal-of-political-science.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+In the parliamentary system of government, a prime minister (PM) gets to call snap elections way before the term of parliament expires, even when his or her premiership seems secure. Two questions immediately emerge: when does the PM call snap elections, and do voters reward the PM for doing so? The most common reasons for calling elections without losing a vote of non confidence.
+
+1. PM seeks to capitalize on certain exogenous shocks that buoyed PM's party's popularity;
+2. PM seeks to secure the mandate for key legislative programme;
+3. PM seeks to take advantage of endogenous economic upturn.
+
+### Overview of 
+
+### Overview of Empirical Approaches
+In addition,
+
+## Empirical Strategy
