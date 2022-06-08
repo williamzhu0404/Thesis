@@ -1,5 +1,5 @@
 ---
-title: "Snap Elections in Response to an Exogenous Shock"
+title: "Election Timing during an Ongoing Crisis"
 # subtitle: "Are they worth it?"
 author: "William Zhu"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
@@ -16,15 +16,18 @@ bibliography: references.bib
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+library(stargazer)
 ```
 
-## Motivation
+<!-- ## Motivation -->
 
-This is a section outlining how I arrived at this research proposal. While it is not part of the proposal proper, it provides a way for me to discuss some of the more mundane and practical reasons for pursuing this research.
+<!-- This is a section outlining how I arrived at this research proposal. While it is not part of the proposal proper, it provides a way for me to discuss some of the more mundane and practical reasons for pursuing this research. -->
 
-When I was an undergrad, I took an interest in election timing in parliamentary democracies. I thought about doing a paper detailing the effect of fixed-term parliament legislation at both federal and provincial level on the turnout rate, but I am not sure the time is ripe for this since it may take quite a while for any (de)mobilizational effect to materialize. Most research on election timing makes heavy use of formal model, which was too sophisticated for me and sort of still is. In addition, empirical methods studying observational data aren't done a lot due to the issue of endogeneity. As a result, existing empirical studies about the effect of flexible election timing requires surveying voters, which is why I put this research topic on the back-burner and save it for later.
+<!-- When I was an undergrad, I took an interest in election timing in parliamentary democracies. I thought about doing a paper detailing the effect of fixed-term parliament legislation at both federal and provincial level on the turnout rate, but I am not sure the time is ripe for this since it may take quite a while for any (de)mobilizational effect to materialize. Most research on election timing makes heavy use of formal model, which was too sophisticated for me and sort of still is. In addition, empirical methods studying observational data aren't done a lot due to the issue of endogeneity. As a result, existing empirical studies about the effect of flexible election timing requires surveying voters, which is why I put this research topic on the back-burner and save it for later. -->
 
-However, I just realized that COVID-19 may be a natural experiment that allows us to test some hypotheses about certain aspects of election timing empirically. Canada might offers an interesting motivating example. Both the provincial premiers of New Brunswick and British Columbia were leading minority governments before calling the snap election in the fall of 2020 to address pandemic needs, and their decision paid off as their parties won the majority of seats in their respective provincial legislatures. However, when Prime Minister Justin Trudeau called a snap election in the fall of 2021 for ostensibly the same reason, his Liberal Party's seat share dropped even further. This suggests that for the incumbents, the electoral benefit of calling snap elections in response to COVID-19 might taper off as we become further removed from the onset of the pandemic. Of course, this is a rough idea. My reason for pursuing this research comes from my interest in election timing, but I also hope to attract a broader audience by drawing on other relevant literature. Any feedback on the feasibility of the idea or suggestions to modify it are most appreciated.
+<!-- However, I just realized that COVID-19 may be a natural experiment that allows us to test some hypotheses about certain aspects of election timing empirically. Canada might offers an interesting motivating example. Both the provincial premiers of New Brunswick and British Columbia were leading minority governments before calling the snap election in the fall of 2020 to address pandemic needs, and their decision paid off as their parties won the majority of seats in their respective provincial legislatures. However, when Prime Minister Justin Trudeau called a snap election in the fall of 2021 for ostensibly the same reason, his Liberal Party's seat share dropped even further. This suggests that for the incumbents, the electoral benefit of calling snap elections in response to COVID-19 might taper off as we become further removed from the onset of the pandemic. Of course, this is a rough idea. My reason for pursuing this research comes from my interest in election timing, but I also hope to attract a broader audience by drawing on other relevant literature. Any feedback on the feasibility of the idea or suggestions to modify it are most appreciated. -->
 
 ## Introduction
 
@@ -78,3 +81,33 @@ I propose to use COVID-19 as a natural experiment since it is an exogenous shock
 \newpage
 
 ## Bibliography
+
+<div id="refs"></div>
+
+\newpage
+
+# Appendix 
+
+## Data Collection
+
+To begin with, we consider elections held between 2020 and now in countries which, at the time of the election, were graded as "liberal democracies" or "electoral democracies" by V-Dem.
+
+```{r vdemdata, echo=FALSE, results='asis'}
+library(vdemdata)
+
+vdem_2020_now <- filter(vdem, year > 2019)
+identifier_list <- c("country_name", "country_id", "country_text_id")
+vdem_high_level_indices_list <- c("v2x_polyarchy", "v2x_libdem", "v2x_partipdem", "v2x_delibdem", "v2x_egaldem")
+vdem_regime_of_the_world <- c("v2x_regime", "v2x_regime_amb")
+pt_est_dems <- filter(vdem_2020_now, v2x_regime > 1)
+pt_est_dems_names <- distinct(select(pt_est_dems, country_name))
+vdem_2020_now_essential <- select(pt_est_dems, one_of(c("year",identifier_list, vdem_high_level_indices_list, vdem_regime_of_the_world)  ) )
+
+# ci_est_dems <- filter(vdem_2020_now, v2x_regime_amb > 3)
+# ci_est_dems_names <- distinct(select(ci_est_dems, country_name))
+
+knitr::kable(pt_est_dems_names)
+```
+
+
+
