@@ -1,6 +1,10 @@
 library(dplyr)
 library(tidyr)
 
+# You don't need the following line. I created an Excel spreadsheet to enter 
+# data manually.
+library(writexl)
+
 # First, you need to have the devtools package installed
 install.packages("devtools")
 # now, install the vdemdata package directly from GitHub
@@ -37,9 +41,22 @@ vdem_2020_now_essential <-
 
 LEN <- 2
 
-test<-
+consol_dems<-
   vdem_2020_now_essential %>% 
   group_by(country_id) %>% 
   summarise(experience = n()) %>% 
   filter(experience >= LEN)
+
+
+consol_dems_detailed<-
+  vdem_2020_now_essential %>% 
+  filter(country_id %in% consol_dems$country_id)
+
+saveRDS(consol_dems_detailed, file = "consol_dems_detailed.RData")
+
+#If you want to save the list of consolidated democracies with detailed
+#scores provided by VDEM, uncomment the following line
+# save(consol_dems_detailed, file = "consol_dems_detailed.RData")
+
+write_xlsx()
 
