@@ -1,0 +1,84 @@
+---
+title: "Loosening the thread that hangs the Sword of Damocles"
+subtitle: "Do legislators change their behavior when it becomes easier to recall them?"
+author: "William Zhu"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output: pdf_document
+header-includes:
+    - \usepackage{setspace}
+    - \doublespacing
+    # - \usepackage{lineno}
+    # - \linenumbers
+csl: american-journal-of-political-science.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+library(stargazer)
+```
+
+## Introduction
+
+## Research Questions
+
+Do legislators change their behavior it becomes easier to recall them?
+
+## Hypotheses
+
+### Policy Preference
+
+### Position Taking
+
+## Empirical Strategy
+
+### Causal Identification
+
+### Measurement of Legislative Behavior
+
+1.  Roll Call (Deviation from Party Leadership)
+2.  Bill Co-sponsorship
+3.  Three-Minute Speeches
+4.  Ministers' Question Time
+
+\newpage
+
+## Bibliography
+
+::: {#refs}
+:::
+
+<!-- \newpage -->
+
+<!-- # Appendix -->
+
+<!-- ## Data Collection -->
+
+<!-- To begin with, we consider elections held between 2020 and now in countries which, at the time of the election, were graded as "liberal democracies" or "electoral democracies" by V-Dem. -->
+
+<!-- ```{r vdemdata, echo=FALSE, results='asis'} -->
+
+<!-- library(vdemdata) -->
+
+<!-- vdem_2020_now <- filter(vdem, year > 2019) -->
+
+<!-- identifier_list <- c("country_name", "country_id", "country_text_id") -->
+
+<!-- vdem_high_level_indices_list <- c("v2x_polyarchy", "v2x_libdem", "v2x_partipdem", "v2x_delibdem", "v2x_egaldem") -->
+
+<!-- vdem_regime_of_the_world <- c("v2x_regime", "v2x_regime_amb") -->
+
+<!-- pt_est_dems <- filter(vdem_2020_now, v2x_regime > 1) -->
+
+<!-- pt_est_dems_names <- distinct(select(pt_est_dems, country_name)) -->
+
+<!-- vdem_2020_now_essential <- select(pt_est_dems, one_of(c("year",identifier_list, vdem_high_level_indices_list, vdem_regime_of_the_world)  ) ) -->
+
+<!-- # ci_est_dems <- filter(vdem_2020_now, v2x_regime_amb > 3) -->
+
+<!-- # ci_est_dems_names <- distinct(select(ci_est_dems, country_name)) -->
+
+<!-- knitr::kable(pt_est_dems_names) -->
+
+<!-- ``` -->
