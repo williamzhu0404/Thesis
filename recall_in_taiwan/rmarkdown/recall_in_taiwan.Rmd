@@ -19,10 +19,10 @@ bibliography: references.bib
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(dplyr)
-library(tidyr)
-library(stargazer)
-library(did)
+# library(dplyr)
+# library(tidyr)
+# library(stargazer)
+# library(did)
 ```
 
 ## Introduction
