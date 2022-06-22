@@ -13,7 +13,7 @@ header-includes:
     
     # - \usepackage{lineno}
     # - \linenumbers
-csl: ../template/american-journal-of-political-science.csl
+csl: ../../template/american-journal-of-political-science.csl
 bibliography: references.bib
 ---
 
@@ -41,7 +41,13 @@ Fortunately, on the other side of the Pacific Ocean, Taiwan has just begun exper
 
 ## Background
 
+### Changing electoral system for legislative elections
+
 Do legislators change their behavior it becomes easier to recall them?
+
+### Changing rules for calling a recall election
+
+### What goes around comes around
 
 ## Related Research
 
@@ -52,6 +58,8 @@ Do legislators change their behavior it becomes easier to recall them?
 ## Data and Approach
 
 ### Causal Identification
+
+
 
 ### Measurement of Legislative Behavior
 
