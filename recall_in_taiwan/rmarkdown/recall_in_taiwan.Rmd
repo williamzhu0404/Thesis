@@ -19,8 +19,8 @@ bibliography: references.bib
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-# library(dplyr)
-# library(tidyr)
+library(dplyr)
+library(tidyr)
 # library(stargazer)
 # library(did)
 ```
@@ -59,13 +59,45 @@ Do legislators change their behavior it becomes easier to recall them?
 
 ### Causal Identification
 
+Our identification strategy is Multiple difference-in-difference. Since @gordon2021 discovered that the announcement of recall elections rather than the recall election itself has the most marked effect, we would like to consider when legislators change their behavior. It also informs our understanding of what constitutes a credible threat of recall.
 
+#### Theoretical Support
+
+The institutional setup of the mixed-member majoritarian electoral system from 2008 onward has not changed. It provides two votes to each citizen during each legislative election, one for electing the district legislator, another for electing a party list in the national at-large district. In addition, since dual candidacy in prohibited, there is no contamination effect in terms of institutional incentive structure.
+
+#### Empirical Support
+
+An unanswered question in the literature Mixed-member electoral system concerns the contamination effect. Two papers support contamination effect, one paper does not. However, the contamination effect does not arise from the institutional setup. It arises from the strong party discipline present in both tiers of legislators. These papers show that with the correct controls, the difference in the behavior between the two tiers of legislators are negligible or time-invariant.
 
 ### Measurement of Legislative Behavior
 
 1.  Roll Call (Deviation from Party Leadership)
+
+    Roll call is not necessarily a good measurement of partisan polarization, especially in a party system where strong party discipline is maintained.
+
 2.  Bill Co-sponsorship
+
+    Bill co-sponsorship is more promising.
+
+    ```{r, echo=FALSE}
+    bill <- readRDS("/Users/williamzhu/Thesis/recall_in_taiwan/data/bill_proposal.RData")
+
+    iso_for = "%Y-%m-%d"
+
+    leg_elect_8 <- as.Date("2008-01-12", iso_for)
+    cur <- as.Date("2022-12-31", iso_for)
+
+    print(leg_elect_8)
+
+    bill %>% 
+      filter(ce_date > leg_elect_8) %>% 
+      count()
+
+    bill %>% count()
+    ```
+
 3.  Three-Minute Speeches
+
 4.  Ministers' Question Time
 
 \newpage
