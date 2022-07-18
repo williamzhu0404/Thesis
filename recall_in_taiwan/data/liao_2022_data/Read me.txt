@@ -1,0 +1,29 @@
+To gain Taiwan’s original roll-call vote dataset, researchers interested in the dataset should contact the Center for Legislative Studies from the Department of Political Science, 
+Soochow University (http://cls.idc.scu.edu.tw/), or apply the dataset vis this form: https://reurl.cc/Ep3edv.
+
+In this file, I have four spreadsheets (excel) for identifying defection behavior and calculating the deviation (or defection) rate.
+Here are the rules for how I dealt with the data.
+
+First, I excluded unanimous roll calls (all MPs agree or disagree) from the analyses because they should be less important. 
+ 
+Second, I considered only those votes where at least one-third of party members cast votes and at least one-half of those voted either yea or nay. 
+When there is a low attendance rate among party members, such a roll-call vote should be less important—for instance, vote for an incidental motion.
+
+Third, there is a so-called “collective absence in some cases.” That means the party whip decided all party members should be absent from the meeting (for expressing dissatisfaction with the procedure or decision). 
+However, some party members still attended the meeting and voted. Some of them were representatives to present their party’s position. 
+Although the majority party members were “absent from the meeting,” it did not show a clear party position. “Absence is not a position but a signal.” 
+Even if some party members (e.g., some were party whips) presented and voted, they were not viewed as “defections” when majority party members were absent from voting.
+
+Fourth, some legislators quit their jobs due to many reasons (such as bribery, crime, death, or serving as a minister) during their tenure, and new members filled the vacancies through by-election or substitution on the party list. 
+But, I considered only party-affiliated legislators who cast more than ten votes during their tenure. This approach eliminates a few legislators who had a short voting record due to the reasons mentioned above. 
+Thus, I count the proportion of votes in which a legislator defected from the party line while in tenure to include these cases. 
+
+Finally, the Speaker and Vice Speaker are also excluded from this analysis because they only vote to break the tie and have a short voting record.
+
+I have three different versions of the defection rate. 
+1. Voting against only; Type I defection.
+2. Voting against and abstention (abstain); Type II defection rate.
+3. Voting against, abstention (abstain), and absence; Type III defection rate. However, as presented in the article, most cases of defection are “absence” after the electoral reform. 
+   There is also a low positive correlation between Type II and Type III defection. In the analysis of the regressional model, I analyzed the “absence rate,” not Type III defection. 
+
+
