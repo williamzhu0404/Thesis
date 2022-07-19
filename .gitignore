@@ -1,3 +1,7 @@
+# Ignore files ending in tilde:
+
+*~
+
 # macOS Files
 
 .DS_Store
