@@ -49,6 +49,10 @@ tier2_defect_diff <- bind_cols(
   "avg_defect_diff" = tier2_1_defect$avg_defect - tier2_2_defect$avg_defect
 )
 
+tier2_2_defect_diff_578 <- 
+  tier2_defect_diff %>% 
+  filter(order != 6)
+
 # diff_tier2_1 - diff_tier2_0
 
 
@@ -80,4 +84,10 @@ tier2_diff_trend <-
       y=avg_defect_diff 
       ) 
     )+ 
-  geom_point()
+  geom_point()+ 
+  geom_smooth(method='lm', 
+              data = tier2_2_defect_diff_578,
+              # Comment the above line to include 6th Legislative Yuan Data
+              formula = y ~ x
+                )
+
