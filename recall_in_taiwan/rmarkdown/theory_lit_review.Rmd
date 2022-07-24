@@ -1,7 +1,5 @@
 ---
-title: "Literature Review"
-#Alternative:
-#title: "Careful what you wish for"
+title: "Literature Review and Theory"
 subtitle: "Competing Principals in the Legislative Arena"
 author: "William Zhu"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
@@ -14,7 +12,6 @@ header-includes:
     # - \usepackage{lineno}
     # - \linenumbers
 csl: ../../template/american-journal-of-political-science.csl
-bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -25,90 +22,47 @@ library(tidyr)
 # library(did)
 ```
 
-## Introduction
+<!-- # Theory of Representation -->
 
-Incumbents seek re-election. To be reelected, it is usually beneficial, if not necessary, for them to seek their parties' nomination. As a result, they often, if not always, do the parties' bidding. Understandably, the public is none too pleased with the stranglehold of the parties on politics, which are deemed to be responsible for all sorts of ills of the body politic: corruption, polarization, unaccountability, etc.
+<!-- ## Individual Representation -->
 
-Consequently, popular demand for and subsequent implementation of electoral institutions aimed at curbing the power of parties have been always been around since the birth of mass democracy and the subsequent birth of modern political parties. Among those institutions, recalls are unique in that they target the core of the incumbents' incentive structure by threatening to shorten an elected official's term before the next election arrives and are thus most likely to force the official to rebel against their party leaders from time to time and thus be more responsive to the voters of the district, perhaps a median voter at that, thus reducing the level of polarization in general.
+<!-- ### Delegate -->
 
-However, aside from the trailblazing work of @gordon2021 on recall elections' effect on elected judges in California, systematic assessment of the effect of recall elections on incumbents' behavior is essentially non-existent. In addition to the methodological challenges mentioned by @gordon2021, perhaps another important reason lies in the lack of credible threat due to prevalent institutional obstacles of recalling an elected official. In the case of judicial recalls in California, the high number of signatures required to trigger one, combined with its rarity and the resultant norm against recalling judges, have historically made the threat of recall very much negligible. It is no wonder that Californian judges only just began to take the threat of recall seriously, even though this mechanism has been on the statute book for decades. In addition, due to the nonpartisan nature of judicial elections and recalls in California, @gordon2021 did not address the role of party of recall elections. Furthermore, unlike judges [@gordon2021, p. 7], most elected officials go out of their way to supply voters with verifiable information on which voters may evaluate their performance.
+<!-- ### Trustee -->
 
-Fortunately, on the other side of the Pacific Ocean, Taiwan has been experimenting with new legislation passed in 2016 that made it much easier for voters to trigger recall elections of the vast majority of elected officials on every level of government. Recall elections became a recurring event. I attempt to evaluate the extent to which incumbent legislators behave differently as a result of the new recall rules by using difference-in-difference (DiD) approach which leverages Taiwan's mixed-member electoral system. In Taiwan, each voter gets two votes at a legislative election: one vote goes toward electing the legislator representing the local constituency under the system of first-past-the-post (FPTP), and the other one goes toward selecting a party list in a single national at-large constituency under the system of proportional representation (PR). Since dual candidacy in both contests is not permitted, legislators face a distinct set electoral incentives unlike other mixed-member electoral system where legislators fail to win the hearts and minds of local constituents could still be returned to the legislature by the strength of their parties and their positions on the party lists in a larger constituency. Furthermore, perhaps due to the institutional setup where parties rather than the local constituents that choose the legislators in the PR tier, they can only be removed by the party itself and could never be recalled by the voters before and after the passage of the new recall election. This allows us to treat the legislators in the PR tier as the control group and those in the FPTP tier the treatment group. And the difference in behavior between these two groups of legislators could allow us to identify the causal effect of the legislation that made recall easier.
+<!-- ## Collective Representation -->
 
-<!-- ## Background -->
+<!-- ### Partisan -->
 
-<!-- ### Changing electoral system for legislative elections -->
+<!-- ### Descriptive -->
 
-<!-- Do legislators change their behavior it becomes easier to recall them? -->
+<!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
 
-<!-- ### Changing rules for calling a recall election -->
+# Thoery of Voting Behavior
 
-<!-- ### What goes around comes around -->
+# Theory of Legislative Behavior
 
-<!-- ## Related Research -->
+# Competing Principals
 
-<!-- ### Polarization -->
+## Party as Principal
 
-<!-- ### Legislative Behavior -->
+### Monitoring
 
-<!-- ## Data and Approach -->
+### Reward and Punishment
 
-<!-- ### Causal Identification -->
+## Voters as Principal
 
-<!-- Our identification strategy is Multiple difference-in-difference. Since @gordon2021 discovered that the announcement of recall elections rather than the recall election itself has the most marked effect, we would like to consider when legislators change their behavior. It also informs our understanding of what constitutes a credible threat of recall. -->
+### Monitoring
 
-<!-- #### Theoretical Support -->
+### Reward and Punishment
 
-<!-- The institutional setup of the mixed-member majoritarian electoral system from 2008 onward has not changed. It provides two votes to each citizen during each legislative election, one for electing the district legislator, another for electing a party list in the national at-large district. In addition, since dual candidacy in prohibited, there is no contamination effect in terms of institutional incentive structure. -->
+# Outcomes
 
-<!-- #### Empirical Support -->
+# Central Hypotheses
 
-<!-- An unanswered question in the literature Mixed-member electoral system concerns the contamination effect. Two papers support contamination effect, one paper does not. However, the contamination effect does not arise from the institutional setup. It arises from the strong party discipline present in both tiers of legislators. These papers show that with the correct controls, the difference in the behavior between the two tiers of legislators are negligible or time-invariant. -->
+Individualistic
 
-## Measurement of Legislative Behavior
-
-I have come up with these sources of data that allow us to measure legislative behavior which matter most to voters.
-
-1.  Roll Call (Deviation from Party Leadership)
-
-    Roll call is not necessarily a good measurement of legislative behavior, especially in a party system where strong party discipline is maintained. However, it could still be indicative of the extent to which legislators change their behavior
-
-<!-- 2.  Bill Co-sponsorship -->
-
-<!--     Bill co-sponsorship is more promising. It is indicative of the priorities of each legislator. There are 11163 proposals for new legislation between the first election held under the existing mixed-member system and the passage of the recall legislation and at least 9580 ones since the new rules for recalls was enacted. Taiwan's Legislative Yuan provided all the data of bill proposals since 1970's which is well before Taiwan's democratization and I have downloaded the CSV files which list the date, title, the names of the bill's proposers and co-sponsors. -->
-
-<!--     ```{r, include=FALSE} -->
-<!--     bill <- readRDS("/Users/williamzhu/Thesis/recall_in_taiwan/data/bill_proposal.RData") -->
-
-<!--     iso_for = "%Y-%m-%d" -->
-
-<!--     leg_elect_8 <- as.Date("2008-01-12", iso_for) -->
-<!--     cur <- as.Date("2022-12-31", iso_for) -->
-
-<!--     leg_elect_16 <- as.Date("2016-01-16", iso_for) -->
-
-<!--     recall_law <- as.Date("2016-11-29", iso_for) -->
-
-<!--     print(leg_elect_8) -->
-
-<!--     bill %>%  -->
-<!--       filter(ce_date > leg_elect_8) %>%  -->
-<!--       count() -->
-
-<!--     bill %>%  -->
-<!--       filter(ce_date > recall_law) %>%  -->
-<!--       count() -->
-<!--     ``` -->
-
-<!-- 3.  Three-Minute Speeches -->
-
-<!--     Like in the House of Representatives in the US where each representative gets one minute to make general speeches unrelated to legislation at the beginning of each day's session. Legislators in Taiwan gets three minutes to make general speeches usually on a Friday when the legislature is in session. It used to be a media circus and maybe still is and conceivably voters may evaluate their performance based on the speeches they make in the three-minute speeches. Although I am not sure if every legislator has actually capitalized on this opportunity, it seems like a good candidate -->
-
-<!-- 4.  Ministers' Question Time -->
-
-<!--     This is borrowed from the UK parliament where ministers sit in the parliament and takes questions from other member of parliament. In Taiwan, due to the separation of power, no legislators hold executive positions and all of them have made minimal efforts to pose questions to the secretaries of executive departments. It is a veritable political theater where voters get to see how legislators hold the government of the day accountable with live TV feed and reruns of notable questions on news programs and talk shows. -->
-
-<!-- My original plan is to measure the aggressiveness/affective polarization in the legislature by conducting a sentiment analysis of 3-minute speeches and records of question time with model pre-trained on the period where Taiwan was holding elections under old electoral systems. I am not exactly how it would work and whether this approach would impede causal inference. In the worst case scenarios where neither roll call nor analysis of legislative speech work, I could always try to analyze the topics on which legislators train their focus in the bill co-sponsorship data. -->
+Uncertainty and protection
 
 \newpage
 
@@ -116,37 +70,3 @@ I have come up with these sources of data that allow us to measure legislative b
 
 ::: {#refs}
 :::
-
-<!-- \newpage -->
-
-<!-- # Appendix -->
-
-<!-- ## Data Collection -->
-
-<!-- To begin with, we consider elections held between 2020 and now in countries which, at the time of the election, were graded as "liberal democracies" or "electoral democracies" by V-Dem. -->
-
-<!-- ```{r vdemdata, echo=FALSE, results='asis'} -->
-
-<!-- library(vdemdata) -->
-
-<!-- vdem_2020_now <- filter(vdem, year > 2019) -->
-
-<!-- identifier_list <- c("country_name", "country_id", "country_text_id") -->
-
-<!-- vdem_high_level_indices_list <- c("v2x_polyarchy", "v2x_libdem", "v2x_partipdem", "v2x_delibdem", "v2x_egaldem") -->
-
-<!-- vdem_regime_of_the_world <- c("v2x_regime", "v2x_regime_amb") -->
-
-<!-- pt_est_dems <- filter(vdem_2020_now, v2x_regime > 1) -->
-
-<!-- pt_est_dems_names <- distinct(select(pt_est_dems, country_name)) -->
-
-<!-- vdem_2020_now_essential <- select(pt_est_dems, one_of(c("year",identifier_list, vdem_high_level_indices_list, vdem_regime_of_the_world)  ) ) -->
-
-<!-- # ci_est_dems <- filter(vdem_2020_now, v2x_regime_amb > 3) -->
-
-<!-- # ci_est_dems_names <- distinct(select(ci_est_dems, country_name)) -->
-
-<!-- knitr::kable(pt_est_dems_names) -->
-
-<!-- ``` -->
