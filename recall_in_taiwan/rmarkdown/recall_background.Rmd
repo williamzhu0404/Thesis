@@ -24,45 +24,23 @@ library(tidyr)
 
 <!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
 
-# Principal-Agent Perspective
 
-## Voters as the Direct and Indirect Principal of Legislators
 
-### Direct Principal
+# Recall in Taiwan
 
-#### Theory
+## Nuclear Plant Recall
 
-#### Evidence
 
-### Indirect Principal
+## Appendictis Recall
 
-#### Theory
 
-#### Evidence
+## Stabilizing Force Recall
 
-### Summary
+## Recall of Daniel Han Kuo-yu
 
-## Who's the Principal in the Legislative Arena?
+## Revengence Recall
 
-### Legislators as Principal
 
-#### Theory
-
-#### Evidence
-
-### Legislative Party Leadership as Principal
-
-#### Theory
-
-#### Evidence
-
-### Summary
-
-## Working Assumption
-
-Models as a simplification of reality necessarily 
-
-## Hypotheses
 
 \newpage
 
