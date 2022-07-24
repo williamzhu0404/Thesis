@@ -24,9 +24,27 @@ library(tidyr)
 
 <!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
 
-# Principal-Agent Perspective
+# Principal-Agent Perspective: Who's the Principal?
 
-## Voters as the Direct and Indirect Principal of Legislators
+## Do Legislators follow the voters or vice versa?
+
+### Voters follow Legislators
+
+#### Theory
+
+#### Evidence
+
+### Legislators follow the voters.
+
+#### Theory
+
+#### Evidence
+
+### Summary
+
+### Working Assumption
+
+## In what ways do voters monitor and control their legislators?
 
 ### Direct Principal
 
