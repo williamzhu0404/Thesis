@@ -24,9 +24,19 @@ library(tidyr)
 
 <!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
 
-# Principal-Agent Perspective: Who's the Principal?
+# Behavioral Foundations: Who follows whom?
 
-## Do Legislators follow the voters or vice versa?
+Students of voting and legislative behavior have long observed the following stylized facts:
+
+1.  legislators' votes in the legislature are by and large congruent with their constituency's preference .
+
+2.  Co-partisan legislators by and large vote together in the legislature.
+
+Though the second stylized fact was challenged, especially by those who focus on the U.S. Congress where party unity apparently took a hit in the latter half of the twentieth century, it was no longer the case now as the U.S. is in the grips of partisan polarization and was rarely ever in doubt in other democracies where legislative parties are stronger than their counterparts in the U.S.. Nevertheless, it has remained relatively difficult for students of voting and legislative behavior to decisively determine the causal mechanism behind such behavioral regularity.
+
+## Relationship between voters and legislators
+
+It is usually assumed that legislators follow the 
 
 ### Voters follow Legislators
 
@@ -42,7 +52,27 @@ library(tidyr)
 
 ### Summary
 
-### Working Assumption
+## Relationship between voters and legislators
+
+It is usually assumed that legislators follow the 
+
+### Voters follow Legislators
+
+#### Theory
+
+#### Evidence
+
+### Legislators follow the voters.
+
+#### Theory
+
+#### Evidence
+
+### Summary
+
+## Working Assumption
+
+# Principal-Agent Perspective: Competing Principals
 
 ## In what ways do voters monitor and control their legislators?
 
@@ -78,7 +108,7 @@ library(tidyr)
 
 ## Working Assumption
 
-Models as a simplification of reality necessarily 
+Models as a simplification of reality necessarily
 
 ## Hypotheses
 
