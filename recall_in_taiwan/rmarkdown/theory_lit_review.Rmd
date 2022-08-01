@@ -24,53 +24,62 @@ library(tidyr)
 
 <!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
 
-# Behavioral Foundations: Who follows whom?
+<!-- # Behavioral Foundations: Party in Taiwan Legislative Yuan -->
 
-Students of voting and legislative behavior have long observed the following stylized facts:
+<!-- Students of voting and legislative behavior have long observed the following stylized facts: -->
 
-1.  legislators' votes in the legislature are by and large congruent with their constituency's preference .
+<!-- 1.  legislators' votes in the legislature are by and large congruent with their constituency's preference . -->
 
-2.  Co-partisan legislators by and large vote together in the legislature.
+<!-- 2.  Co-partisan legislators by and large vote together in the legislature. -->
 
-Though the second stylized fact was challenged, especially by those who focus on the U.S. Congress where party unity apparently took a hit in the latter half of the twentieth century, it was no longer the case now as the U.S. is in the grips of partisan polarization and was rarely ever in doubt in other democracies where legislative parties are stronger than their counterparts in the U.S.. Nevertheless, it has remained relatively difficult for students of voting and legislative behavior to decisively determine the causal mechanism behind such behavioral regularity.
+<!-- Though the second stylized fact was challenged, especially by those who focus on the U.S. Congress where party unity apparently took a hit in the latter half of the twentieth century, it was no longer the case now as the U.S. is in the grips of partisan polarization and was rarely ever in doubt in other democracies where legislative parties are stronger than their counterparts in the U.S.. Nevertheless, it has remained relatively difficult for students of voting and legislative behavior to decisively determine the causal mechanism behind such behavioral regularity. -->
 
-## Relationship between voters and legislators
+<!-- ## Relationship between voters and legislators -->
 
-It is usually assumed that legislators follow the 
+<!-- It is usually assumed that legislators follow the  -->
 
-### Voters follow Legislators
+<!-- ### Voters follow Legislators -->
 
-#### Theory
+<!-- #### Theory -->
 
-#### Evidence
+<!-- #### Evidence -->
 
-### Legislators follow the voters.
+<!-- ### Legislators follow the voters. -->
 
-#### Theory
+<!-- #### Theory -->
 
-#### Evidence
+<!-- #### Evidence -->
 
-### Summary
+<!-- ### Summary -->
 
-## Relationship between voters and legislators
+<!-- ## Relationship between voters and legislators -->
 
-It is usually assumed that legislators follow the 
+<!-- It is usually assumed that legislators follow the  -->
 
-### Voters follow Legislators
+<!-- ### Voters follow Legislators -->
 
-#### Theory
+<!-- #### Theory -->
 
-#### Evidence
+<!-- #### Evidence -->
 
-### Legislators follow the voters.
+<!-- ### Legislators follow the voters. -->
 
-#### Theory
+<!-- #### Theory -->
 
-#### Evidence
+<!-- #### Evidence -->
 
-### Summary
+<!-- ### Summary -->
 
-## Working Assumption
+<!-- ## Working Assumption -->
+
+
+Voters, seeking representation of their interests, may interact with various types of entities in the legislature. 
+Among those two entities stand out: legislative parties and individual legislators. 
+We can write them letters, protest at their offices, tag them on social media. 
+Most importantly we cast the ballots at elections to express our opinions, reward and punish their behavior. 
+To put it more succinctly, both *collective representation* and *dyadic representation*
+
+
 
 # Principal-Agent Perspective: Competing Principals
 
