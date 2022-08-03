@@ -12,6 +12,7 @@ header-includes:
     # - \usepackage{lineno}
     # - \linenumbers
 csl: ../../template/american-journal-of-political-science.csl
+bibliography: theory_references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -22,104 +23,29 @@ library(tidyr)
 # library(did)
 ```
 
-<!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
+## Introduction
 
-<!-- # Behavioral Foundations: Party in Taiwan Legislative Yuan -->
+How can voters make sure that elected officials are on their best behavior? We can monitor them, and credibly threaten to vote them out when we don't like them anymore. However, the threat isn't always credible. When the election day comes, forces of partisan identification, incumbent effect, among numerous factors, may save their skin after all. Perhaps more importantly, voters may want to punish the officials sooner than the next election. To what other remedies can they resort?
 
-<!-- Students of voting and legislative behavior have long observed the following stylized facts: -->
+The answer given by the Los Angeles voters is recall elections. To check the corruption in local government, a ballot measure was passed in the City of Angels to allow voters to hold recall municipal officials when the number of eligible voters who demand the recall passes a certain threshold. The same device was later on introduced to the entire California and spread to other states. However, systematic analysis of recall elections are rare because recall elections themselves are even rarer. Most of the extant literature on recall elections focused on just one recall elections: the 2003 California gubernatorial recall. Furthrmore, aside from the trailblazing work of @gordon2021 on recall elections' effect on elected judges in California, systematic assessment of the effect of recall elections on incumbents' behavior is essentially non-existent. Aside from the methodological challenges mentioned by @gordon2021, perhaps another important reason lies in the lack of credible threat due to prevalent institutional obstacles of recalling an elected official. In the case of judicial recalls in California, the high number of signatures required to trigger one, combined with its rarity and the resultant norm against recalling judges, have historically made the threat of recall very much negligible. It is small wonder that Californian judges only just began to take the threat of recall seriously, even though this mechanism has been on the statute book for nearly a century. In addition, unlike judges who are supposed to be fair and unswayed by public opnions as much as possible, most elected officials are supposed to represent and internalize the opinions of a number of political actors. Therefore, while it is reasonable to expect judicial recalls to cause judges to consider the opinions of their constituents who are in all likelihood the only group of political actors that matter to their decision process, it is far from certain whether other elected officials would consider constituents' opinions when they are under the pressure of a number of political actors, say parties, pressure groups, other than their constituents that push them in different directions.
 
-<!-- 1.  legislators' votes in the legislature are by and large congruent with their constituency's preference . -->
+<!-- Furthermore, unlike judges [@gordon2021, p. 7], most elected officials go out of their way to supply voters with verifiable information on which voters may evaluate their performance. -->
 
-<!-- 2.  Co-partisan legislators by and large vote together in the legislature. -->
+Fortunately, for students of direct democracy, a new experiment is under way on the other side of the Pacific Ocean, presenting us a better opportunity to probe the effect of recall elections where incumbents face pressure from a number of different directions. In 2016, Taiwan passed new legislation that made it much easier for voters to trigger recall elections of the vast majority of elected officials on every level of government. Recall elections has become a recurring event since then. I propose to evaluate the extent to which incumbent legislators behave differently as a result of the new recall rules by using difference-in-difference (DiD) approach which leverages Taiwan's mixed-member electoral system. In Taiwan, each voter gets two votes at a legislative election: one vote goes toward electing the legislator in the representing the local constituency under the system of first-past-the-post (FPTP), and the other one goes toward selecting a party list in a single national at-large constituency under the system of proportional representation (PR). Since dual candidacy in both contests is not permitted, legislators face a distinct set electoral incentives unlike other mixed-member electoral system where legislators fail to win the hearts and minds of local constituents could still be returned to the legislature by the strength of their parties and their positions on the party lists in a larger constituency. Furthermore, perhaps due to the institutional setup where parties rather than the local constituents that choose the legislators in the PR tier, they can only be removed by the party itself and could never be recalled by the voters before and after the passage of the new recall election. This allows us to treat the legislators in the PR tier as the control group and those in the FPTP tier the treatment group. And the difference in behavior between these two groups of legislators could allow us to identify the causal effect of the legislation that made recall easier.
 
-<!-- Though the second stylized fact was challenged, especially by those who focus on the U.S. Congress where party unity apparently took a hit in the latter half of the twentieth century, it was no longer the case now as the U.S. is in the grips of partisan polarization and was rarely ever in doubt in other democracies where legislative parties are stronger than their counterparts in the U.S.. Nevertheless, it has remained relatively difficult for students of voting and legislative behavior to decisively determine the causal mechanism behind such behavioral regularity. -->
+## Theory
 
-<!-- ## Relationship between voters and legislators -->
+Although this article seeks to understand how recall elections work in a
 
-<!-- It is usually assumed that legislators follow the  -->
+This article seeks to help
 
-<!-- ### Voters follow Legislators -->
+However, elections don't always clearly express voters' preferences.
 
-<!-- #### Theory -->
+As a result the literature both *partisan representation* and *dyadic representation* which respectively refer to voter's relationship between legisaltive parties and individual legislators matter.
 
-<!-- #### Evidence -->
+# Theory
 
-<!-- ### Legislators follow the voters. -->
-
-<!-- #### Theory -->
-
-<!-- #### Evidence -->
-
-<!-- ### Summary -->
-
-<!-- ## Relationship between voters and legislators -->
-
-<!-- It is usually assumed that legislators follow the  -->
-
-<!-- ### Voters follow Legislators -->
-
-<!-- #### Theory -->
-
-<!-- #### Evidence -->
-
-<!-- ### Legislators follow the voters. -->
-
-<!-- #### Theory -->
-
-<!-- #### Evidence -->
-
-<!-- ### Summary -->
-
-<!-- ## Working Assumption -->
-
-
-Voters, seeking representation of their interests, may interact with various types of entities in the legislature. 
-Among those two entities stand out: legislative parties and individual legislators. 
-We can write them letters, protest at their offices, tag them on social media. 
-Most importantly we cast the ballots at elections to express our opinions, reward and punish their behavior. 
-To put it more succinctly, both *collective representation* and *dyadic representation*
-
-
-
-# Principal-Agent Perspective: Competing Principals
-
-## In what ways do voters monitor and control their legislators?
-
-### Direct Principal
-
-#### Theory
-
-#### Evidence
-
-### Indirect Principal
-
-#### Theory
-
-#### Evidence
-
-### Summary
-
-## Who's the Principal in the Legislative Arena?
-
-### Legislators as Principal
-
-#### Theory
-
-#### Evidence
-
-### Legislative Party Leadership as Principal
-
-#### Theory
-
-#### Evidence
-
-### Summary
-
-## Working Assumption
-
-Models as a simplification of reality necessarily
-
-## Hypotheses
+Since there are very little systematic treatments of recall elections, and only one paper done by the
 
 \newpage
 
