@@ -1,2 +1,4 @@
 #Avoid uploading knitr output at this time.
 *.pdf
+
+texput.log
