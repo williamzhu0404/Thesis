@@ -1,6 +1,6 @@
 ---
-title: "Literature Review and Theory"
-subtitle: "Competing Principals in the Legislative Arena"
+title: "Democratic Institutions of Taiwan"
+subtitle: "An Overview"
 author: "William Zhu"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output: pdf_document
@@ -24,7 +24,15 @@ library(tidyr)
 
 <!-- Note to self, delegate/trustee stuff might be too sociological. Start with Survey of Behavior -->
 
+It is import
 
+## Constitutional Division
+
+
+
+## Electoral Institution
+
+## Legislative Organization
 
 # Recall in Taiwan
 

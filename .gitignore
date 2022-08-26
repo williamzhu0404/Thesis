@@ -13,3 +13,6 @@
 # .RData
 
 .RData
+
+# Ignore .obsdian files
+.obsidian
