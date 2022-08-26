@@ -1,0 +1,90 @@
+---
+title: "Literature Review and Theory"
+subtitle: "Demand for Personal Vote"
+author: "William Zhu"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output: pdf_document
+header-includes:
+    - \usepackage{setspace}
+    # - \linespread{2}
+    - \doublespacing
+    
+    # - \usepackage{lineno}
+    # - \linenumbers
+csl: ../../template/american-journal-of-political-science.csl
+bibliography: theory_references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+# library(stargazer)
+# library(did)
+```
+# Recall's Effect on Incumbents
+
+## Some stylized facts about recall device
+Following the tradition of *The American Voter*, I begin by identifying three categories of factors that affect a voter's decision in an election: partisan identification, policy orientation, and candidate evaluation. Though this decision has long been dominated by voters' partisan identification, the other factors remain important and may well predict a great proportion of electoral swings and fluctuations. Therefore, the message of each election is frequently far from clear, notwithstanding widespread claims otherwise.
+
+From the vantage point of this classical theory of voting behavior, it does not take many extra steps to view various institutions of direct democracy as means to allow the electorate to send a clear message by filtering only the pertinent factor from the rest when they are called to the polling stations. Referenda and initiatives allow voters to express and enact their policy preferences directly by a simple yes or no an each proposition, potentially overcoming partisan divides and incumbents' stranglehold on popular measures. <!-- start recall --> Similarly, recalls afford voters with a clean-cut fashion of evaluating their elected officials. 
+Although their institutional arrangements vary from one jurisdiction to another, all recalls share a number of common features. 
+<!-- describe recall -->
+Unlike most elections, recall elections are not supposed to be regularly held.
+To recall an elected official, a petition must first be signed by the eligible constituents numbering over a certain threshold.
+Only then will a recall election be triggered. 
+When the recall election is held, one archetypal question is put to the voters:
+do you want to remove the incumbent officeholder from the office immediately?
+In this question, there is neither partisan  cue nor policy questions, thus isolating voters from the influence of party identification and policy evaluation as much as possible.
+If the recall attempt fails, the incumbent gets to stay int the office.
+It is only when the recall is successful that voters might be given a chance to decide how to fill the vacancy.
+These institutional arrangements common to all recalls mean that voters may to still vote for their own party's candidate should the recall succeeds, 
+further removing a significant chunk of partisan identification from their decision calculus at the recall election.
+
+Nevertheless, theoretical potential afforded by the institution of direct democracy to express their preference for policies and incumbents may not materialize fully. Parties and popular elected officials have successfully mobilized the electorate to vote along party lines in referenda and initiatives. Recall elections certainly are not immune to partisan coordination either. Nevertheless, the potential is always there, and arguably voters have repeatedly recalled elected officials that would have been reelected had the forces of partisan identification been given a chance to prevail on the usual election day. Furthermore, relying on the forces of partisan identification to tide through a recall attempt is a particularly risky choice for elected officials fighting for their job in marginal constituencies where even a mild swing against them may give them the boot.
+It thus stands to reason that even when partisan coordination is taken into account or even assumed to be perfect, demographic shift, among other swing factors would reduce their job security, thus contributing the credible threat of recall, which, as the foregoing discussion suggests, causes voters to weigh their evaluation of the incumbent than they they would in a regular election.  
+
+## Definition of Personal Vote
+
+As a result of the threat of recall, incumbents, 
+<!-- Mayhew's assumption: single-minded seeker of reelections -->
+who are assumed to single-mindedly seek reelections, demand more electoral independence from their parties, which, especially in the context of the greater importance of candidate evaluation to which voters attach, is best achieved by cultivating personal votes for themselves. 
+<!-- Definition -->
+Cain et al. define the personal vote as .
+The significance of the personal vote has long been recognized, though the employment of this term is not so universal as it manifests itself through  a different name or an analogous concept (dyadic/personal representation, local vote, particularism).
+In contrast with the personal vote is the party vote, which, as its name suggests, refers to the proportion of the votes for a candidate that is driven by voters' partisan identification.
+It too is manifested through a different name or analogous concept (partisan/collective representation, normal vote) under many circumstances. 
+<!-- alterantive definition discussion -->
+Before I proceed to detail the theoretical prediction of recall's effect on an incumbent's demand for personal vote, it is imperative to justify these defintions as opposed to a number of related yet diverging definitions of these terms, which have created a slight issue as to the attendant theoretical prediction. 
+<!-- position taking issues -->
+If personal vote is the proportion of the vote that cannot affect the party vote, then the task for any given candidate is to maximize both the personal vote and the party vote. In some conceptualization where the party vote is always a constant, the candidate's job becomes even simpler as only one task remains: maximizing the personal vote under resource constraints.
+Such definitions and their associated predictions appear to conflict with common sense and political folklore, which, as Cain et al. have warned us, is a cause for pause. Were party vote completely unaffected by the incumbent's attempt to cultivate a personal vote, then a Republican officeholder may voter for and thus implement the entirety Democratic platform and still be reelected as a Republican simply because the incumbent is a registered Republican. 
+<!-- resource spent on personal vote is not spent on party affairs -->
+Even if the personal vote can be conceptualized in a non-ideological/non-policy fashion and focuses only the vote gained by delivering constituency services, pork barrels, and other non-ideologically-motivated activities, it is still improbable that devoting the maximal effort toward cultivating personal vote does not conflict with their pursuit of party vote.
+One penny and one second spent on heeding the needs of the constituents is one penny and one second not spent on party-building activities, say party strategy sessions, fundraising for the party's common war chest, and campaign activities endorsing copartisan candidates.
+Common sense and political folklore would predict that evading all calls on their time and purse to be a good team player in the party in order to 
+grow a personal following does not bode well for their reputation among the party leadership and local activists, which would undermine their chances of renomination and, if successfully renominated, reelection. 
+<!-- Tradeoff between two kinds of activities -->
+Therefore, I take the view that a candidate's personal vote and party vote are distinct yet related to each other. A candidate's time and resources are limited and devoting effort toward cultivating a personal vote, though not necessarily detracting the candidate's party vote, necessarily crowds out time and resources that could have been spent on cultivating a party vote, leading to a trade-off between activities geared toward cultivating the personal vote and those intended for building the party vote.
+<!-- hypothesis -->
+This discussion also provides a nice segue to my central hypothesis regarding the behavioral consequence of the threat of recall:
+**the time and resources a legislator expends toward cultivating personal vote,**
+***cetris paribus***<!-- comma issue -->**,**
+**increases in the legislator's vulnerability to recall attempts.**
+
+# Cultivating a personal vote as a legislator
+
+In the foregoing analysis, I have invoked the conventional assumption the legislators are single-minded seekers of reelection. Although an oversimplification fo the goals of legislators, this assumption has been deemed not only plausible in the American context but also across a wide varieties of democratic assemblies. To facilitate analysis, I shall continue to follow this assumption until there is sufficient ground to challenge it since reelection is not only an important goal for legislators but also instrumental in, if not essential to their attainment of other goals in the legisltive arena and beyond, such as policy demands and positions of power.
+
+As electoral swings and the resultant defeat is the ultimate threat to this goal, all legislators seek greater electoral security, and, toward that end, cultivating a personal vote can be an important strategy for all legsialtors. Of course, the extent to which this strategy is useful varies greatly depending on the broader institution in which legislators contend for survival. The pursuit of personal vote has long been documented and analyzed in the US where candidates belong to a party simply because they the candidates say so and gthe parties' ability to constrain their members' behavior is limited, providing more leeway for members of Congress to craft their own policies and positions. The relative penury of the parties and the laxity of campaign finance regulations also allow individual candidates to build their own potent campaign machine independent of the party's support and devoted mostly to cultivating the candidates' personal bases of support. These factors have helped the candidates to cultivate personal votes not ony in the US but also in other democracies where weak parties or loose campaign finance regulations persist.
+
+Moving beyond the aforementioned direct indicators of party strengths, institutionalists have identified constitutional distribution of power and electoral systems as a more fundamental cause of the greater utility of activities in aid of seeking personal vote. Again, the starting point of the query lies in the US Congress where those activities is extremely prevalent. 
+<!-- constitutional distribution of power -->
+The US Constitution provides for a presidential system of separation of power where members of Congress cannot serve in the executive branch; whereas in a parliamentary system, a prime minister must also be a member of parliament (MP), whose government, consisting also of MPs, retains the confidence of a majority of the MPs. Since the rewards at the disposal of party leadership in Congress is usually less attractive than that offered by their counterparts in other parliaments, it follows that congresspeople have less to gain from voting with their copartisans than parliamentarians in general. 
+
+\newpage
+
+# Bibliography
+
+::: {#refs}
+:::
