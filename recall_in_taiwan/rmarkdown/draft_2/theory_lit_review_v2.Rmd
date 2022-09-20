@@ -1,0 +1,105 @@
+---
+title: "Literature Review and Theory"
+subtitle: "Legislators as Entrepreneurs"
+author: "William Zhu"
+date: "`r format(Sys.Date(), '%d %B %Y')`"
+output: pdf_document
+header-includes:
+    - \usepackage{setspace}
+    # - \linespread{2}
+    - \doublespacing
+    
+    # - \usepackage{lineno}
+    # - \linenumbers
+csl: ../../template/american-journal-of-political-science.csl
+bibliography: theory_references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+# library(stargazer)
+# library(did)
+```
+
+To build a theory of legislative behavior, it is essential that the goal of the legislator be specified.
+Generally, legislators seek reelection, policy and position in government (Fenno). 
+Following Mayhew, it is further assumed that legislators are single-minded seekers of reelection.
+Toward this end, a legislator behave with a view to win as many votes as needed.
+Though a gross simplification, this assumption has been deemed defensible since reelection is the prerequisite for achieving the other goals.
+It is also consistent with a number of empirical findings.
+Furthermore, this viewpoint is especially relevant to how legislative behavior is affected by recalls, 
+which, just like any other elections, decide whether the incumbents get to keep their jobs.
+Neverhtless, it is entirely possible this simplification is unfit for the problem at hand, 
+and I shall consider the extent to which the findings of this article justifies a different set of assumption.
+
+Hence, it follows from this assumption that legislators must consider how the electorate behaves and then decide what they should do to win reelections and recalls. Along the same logic, I shall discuss how voters choose at the poll, how voter's choice affects legislative bheavior, and then finally the extent to which the same mechanism explains the effect of recall on legislators.
+
+## Voting behavior
+
+Students of voting behavior have long recognized a plethora of elements affecting voters' choice at the poll.
+The list is rather long: 
+partisan identification, 
+issue orientation, 
+candidate evaluation, 
+retrospective and prospective assessment of economy, 
+coattail effect of other elections, etc. 
+Naturally, legislators, seeking reelection, would draw insights from these findings.
+However, the direction and magnitude of their effect are hard to pin down and remain topics of heated debate both as an academic subject and a practical consideration for elected officials,
+diminishing these fingings' utility for incumbents waging a campaign .
+Therefore, it is wise not to assume that legislators act on any certain findings originating from studies of voting behavior unless they largely agree with accepted political wisdom and folklore.
+
+
+!
+
+Each of these elements could be further divided into the attribut
+
+As the focus of this article is legislative behavior, 
+voting behavior is of interest insofar as it influences legislative behavior.
+Therefore, 
+
+
+
+However, an incumbent's ability to alter the outcome
+
+
+
+
+
+
+### Basic Ingredients
+
+### Assessment
+
+### Persuasion
+
+### Mobilization
+
+### Voting Decision
+
+## Legislative Behavior
+
+
+
+## Legislative behavior
+
+# Theory of Legislative Behavior
+
+
+
+
+Following the tradition of Fenno, students of legislative behavior generally agree that legislators seek re-election, policy and office in governments. Mayhew suggests a more refined model where legislators are in a single-minded pursuit of reelection which is usually the prerequisite of the other two goals of the legislators. 
+Although Mayhew simply presents it as an assumption of his model, later studies of legislatures across the world frequently demonstrate that it is accurate enough. 
+Furthermore, this drastically simplified portrait of a legislator may be theoretically correct due in large part to the complex underlying driving forces of the electorate's voting behavior.
+Though it is correct that partisan identification of 
+
+
+
+
+\newpage
+
+## Bibliography
+
+::: {#refs}
+:::
