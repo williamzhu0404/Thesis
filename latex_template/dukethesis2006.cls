@@ -1,6 +1,6 @@
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{dukethesis2004}[2004/07/04 Duke Thesis Style]
+\ProvidesClass{dukethesis2006}[2004/07/04 Duke Thesis Style]
 
 % Duke thesis document style, based on report class. Designed
 % to conform with current (as of 1 July 2004) Graduate School
