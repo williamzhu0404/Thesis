@@ -5,12 +5,14 @@ author: "William Zhu"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output: pdf_document
 fontsize: 11pt
+indent: true
 geometry: "left=1.5in,right=1in,top=1in,bottom=1in"
 header-includes:
+    - \usepackage{indentfirst}
     - \usepackage{setspace}
     # - \linespread{2}
-    - \doublespacing
-    
+    - \singlespacing
+    # - \doublespacing
     # - \usepackage{lineno}
     # - \linenumbers
 # csl: ../../template/american-journal-of-political-science.csl
@@ -29,14 +31,19 @@ library(tidyr)
 
 # Recall's Effect on Incumbents
 
-## Examining Recalls of Individuals
+<!-- ## Examining Recalls of Individuals -->
 
-Institutional arrangements for recalls vary wildly from one jurisdiction to another. In addition to the recall of individual elected officials, the entire legislative or executive branch may be recalled by triggering a new general election [@welp2020]. Ideally, it would be great to develop a theory that applies to all mechanisms of recall in existence. However, such a theory may be called on to explain qualitatively different behavioral patterns and thus either become too vague to make a significant contribution to the extant literature or too complex for this exploratory work. Furthermore, the data required to satisfactorily identify the causal mechanism underlying such a theory would be immense and hard to come by. To facilitate discussion, recall elections will hereinafter only refer to those that meet the following criteria, which, to my knowledge, not only apply to all the recall devices operational in Taiwan, which serve as the test case, but also those in English-speaking jurisdictions around the world:
+<!-- Institutional arrangements for recalls vary wildly from one jurisdiction to another. In addition to the recall of individual elected officials, the entire legislative or executive branch may be recalled by triggering a new general election [@welp2020]. Ideally, it would be great to develop a theory that applies to all mechanisms of recall in existence. However, such a theory may be called on to explain qualitatively different behavioral patterns and thus either become too vague to make a significant contribution to the extant literature or too complex for this exploratory work. Furthermore, the data required to satisfactorily identify the causal mechanism underlying such a theory would be immense and hard to come by. To facilitate discussion, recall elections will hereinafter only refer to those that meet the following criteria, which, to my knowledge, not only apply to all the recall devices operational in Taiwan, which serve as the test case, but also those in English-speaking jurisdictions around the world: -->
 
-1.  Only individual politicians can be recalled.
-2.  A recall election can only be triggered when enough eligible voters sign a petition for it.
+<!-- 1.  Only individual politicians can be recalled. -->
+<!-- 2.  A recall election can only be triggered when enough eligible voters sign a petition for it. -->
 
-Restriction of the scope of recalls under examination also hint at the perspective of this article which seeks to understand the behavioral pattern from the standpoint of individual politicians instead of collectivities like parties.
+<!-- Restriction of the scope of recalls under examination also hint at the perspective of this article which seeks to understand the behavioral pattern from the standpoint of individual politicians instead of collectivities like parties. -->
+
+To formulate a theory about recall's effect on incumbents, it helps to recognize that unlike other institutions of direct democracy like referenda and initiatives where the electorate decide whether to adopt certain policies, recall is a mechanism through which voters decide whether to immediately fire their electoral officials before their terms expire.
+To paraphrase what @mayhew1974 [p. 45] said about primary election, recall is just another election to be survived from the standpoint of the politicians. Therefore, a theory of recall could be built on the vast literature on voting behavior.
+
+Unfortunately, the vastness of the literature isn't exactly an unmitigated blessing. In
 
 ## Sketch of Theory
 
@@ -46,11 +53,11 @@ Following the tradition of *The American Voter*, I begin by identifying three ca
 
 [^2]: @thepoli2020 provide a more historical and critical approach to understanding the rationale and practice of recall.
 
-Nevertheless, theoretical potential afforded by the institution of direct democracy to express their preference for policies and incumbents may not materialize fully. Parties and popular elected officials have successfully mobilized the electorate to vote along party lines in referenda and initiatives[@branton2003; @bowler2010]. Recall elections certainly are not immune to partisan coordination either [@masket2016]. Nevertheless, the potential is always there, and arguably voters have repeatedly recalled elected officials that would have been reelected had the forces of partisan identification been given a chance to prevail on the usual election day [@gerston2004]. Furthermore, relying on the forces of partisan identification to tide through a recall attempt is a particularly risky choice for elected officials fighting for their job in marginal constituencies where even a mild swing against them may give them the boot. It thus stands to reason that even when partisan coordination is taken into account or even assumed to be perfect, demographic shift, among other swing factors would reduce their job security, thus contributing the credible threat of recall, which, as the foregoing discussion suggests, causes voters to weigh their evaluation of the incumbent than they they would in a regular election. To put it succinctly, recalls should make politicians realize that the security of their positions hinge more on their personal labels than before.
-
+Nevertheless, theoretical potential afforded by the institution of direct democracy to express their preference for policies and incumbents may not materialize fully. Parties and popular elected officials have successfully mobilized the electorate to vote along party lines in referenda and initiatives[@branton2003; @bowler2010]. Recall elections certainly are not immune to partisan coordination either [@masket2016]. Nevertheless, the potential is always there, and arguably voters have repeatedly recalled elected officials that would have been reelected had the forces of partisan identification been given a chance to prevail on the usual election day [@gerston2004]. Furthermore, relying on the forces of partisan identification to tide through a recall attempt is a particularly risky choice for elected officials fighting for their job in marginal constituencies where even a mild swing against them may give them the boot. It thus stands to reason that even when partisan coordination is taken into account or even assumed to be perfect, demographic shift, among other swing factors would reduce their job security, thus contributing the credible threat of recall, which, as the foregoing discussion suggests, causes voters to weigh their evaluation of the incumbent more than they they would in a regular election. To put it succinctly, recalls should make politicians realize that the security of their positions hinge more on their personal labels than before.
+Consequently, incumbents, <!-- Mayhew's assumption: single-minded seeker of reelections --> who are assumed to seek reelections single-mindedly [@mayhew1974], demand more electoral independence from their parties [@cain1987], which is best achieved by cultivating personal votes for themselves.
 ## Definition of Personal Vote
 
-As a result of the threat of recall, incumbents, <!-- Mayhew's assumption: single-minded seeker of reelections --> who are assumed to seek reelections single-mindedly [@mayhew1974], demand more electoral independence from their parties [@cain1987], which, especially given the greater importance of candidate evaluation to which voters attach, is best achieved by cultivating personal votes for themselves. To paraphrase what @mayhew1974 [p. 45] said about primary election, recall is just another election to be survived from the standpoint of the politicians.<!-- Definition --> @cain1987 [p. 9] define the personal vote as the "portion of a candidate's electoral support which originates in his or her personal qualities, qualifications, activities, and record." The significance of the personal vote has long been recognized, though the employment of this term is not so universal as it manifests itself throughf a different name or an analogous concept [electoral connection @mayhew1974; home style, @fenno1978; personal reputation @carey1995; dyadic representation, @miller1963; @weissberg1978; @ansolabehere2011; personal representation, @colomer2011; local vote, @pattie1995]. To clarify their defintion of the personal vote, @cain1987 [p. 9] further emphasizes the personal vote does not include
+<!-- Definition --> @cain1987 [p. 9] define the personal vote as the "portion of a candidate's electoral support which originates in his or her personal qualities, qualifications, activities, and record." The significance of the personal vote has long been recognized, though the employment of this term is not so universal as it manifests itself throughf a different name or an analogous concept [electoral connection @mayhew1974; home style, @fenno1978; personal reputation @carey1995; dyadic representation, @miller1963; @weissberg1978; @ansolabehere2011; personal representation, @colomer2011; local vote, @pattie1995]. To clarify their defintion of the personal vote, @cain1987 [p. 9] further emphasizes the personal vote does not include
 
 > "support for the candidate based on his or her partisan affiliation, fixed voter charactersistics such as class, religion, and ethnicity, reactions to national conditions such as the state of the economy and performance evaluations centered on the head of the governing party"
 
