@@ -3,12 +3,13 @@ title: "Introduction"
 # subtitle: "Competing Principals in the Legislative Arena"
 author: "William Zhu"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
-output: pdf_document
+output: 
+  pdf_document:
+    keep_tex: yes
 header-includes:
     - \usepackage{setspace}
     # - \linespread{2}
     - \doublespacing
-    
     # - \usepackage{lineno}
     # - \linenumbers
 csl: ../../template/american-journal-of-political-science.csl
