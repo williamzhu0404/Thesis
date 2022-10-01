@@ -3,21 +3,21 @@
 *~
 
 
-#.synctex.gz 
+#*.synctex*.gz 
 
-.synctex.gz 
+*.synctex*.gz 
 
 
-# .aux
+# *.aux
 
-.aux
+*.aux
 
-# .log
+# *.log
 
-.log
+*.log
 
-# .pdf
-.pdf
+# *.pdf
+*.pdf
 
-# .dvi
-.dvi
+# *.dvi
+*.dvi
