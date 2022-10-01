@@ -1,23 +1,23 @@
 \standalonepreambles
-\subpreamble{sections/introduction.tex}
+\subpreamble{../sections/introduction/introduction.tex}
 
 \endsubpreamble
-\subpreamble{sections/lit_review.tex}
+\subpreamble{../sections/lit_review/lit_review.tex}
 \usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
 \endsubpreamble
-\subpreamble{sections/context.tex}
+\subpreamble{../sections/context/context.tex}
 \usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
 \endsubpreamble
-\subpreamble{sections/method.tex}
+\subpreamble{../sections/method/method.tex}
 \usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
 \endsubpreamble
-\subpreamble{sections/analysis.tex}
+\subpreamble{../sections/analysis/analysis.tex}
 \usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
 \endsubpreamble
-\subpreamble{sections/discussion.tex}
+\subpreamble{../sections/discussion/discussion.tex}
 \usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
 \endsubpreamble
-\subpreamble{sections/conclusion.tex}
+\subpreamble{../sections/conclusion/conclusion.tex}
 \usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
 \endsubpreamble
 \endstandalonepreambles
