@@ -1,0 +1,23 @@
+# Ignore files ending in tilde:
+
+*~
+
+
+#.synctex.gz 
+
+.synctex.gz 
+
+
+# .aux
+
+.aux
+
+# .log
+
+.log
+
+# .pdf
+.pdf
+
+# .dvi
+.dvi
