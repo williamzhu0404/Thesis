@@ -1,0 +1,3191 @@
+@STRING{ucp = "University of Chicago Press"}
+
+@Book{chicago2017,
+  options = {emph:shorthand},
+  author = {{University of Chicago Press}},
+  title = {The Chicago Manual of Style},
+  shorthand = {CMOS},
+  shorthandintro = {\addperiod\space Hereafter, \printfield[emph]{shorthand}},
+  edition = {17},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2017}
+}
+
+% Examples not in CMOS
+
+@Book{doe2010a,
+  keywords = {notinbib,notinref},
+  author = {Doe, Jane},
+  title = {A Book's Title},
+  editor = {Smith, John},
+  translator = {Doe, Jane},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2010}
+}
+@Book{doe2010b,
+  keywords = {notinbib,notinref},
+  options = {swaptrans},
+  author = {Doe, Jane},
+  title = {A Book's Title},
+  editor = {Smith, John},
+  translator = {Doe, Jane},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2010}
+}
+@Book{smith2002a,
+  keywords = {notinbib,notinref},
+  title = {A Book's Title},
+  editor = {Smith, John},
+  translator = {Doe, Jane},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2002}
+}
+@Book{smith2002b,
+  keywords = {notinbib,notinref},
+  options = {swaptrans},
+  title = {A Book's Title},
+  editor = {Smith, John},
+  translator = {Doe, Jane},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2002}
+}
+@InCollection{doe2017a,
+  options = {swaptrans:title},
+  title = {An Essay},
+  editor = {Smith, John},
+  translator = {Smith, John},
+  pages = {18–35},
+  crossref = {jones2017}
+}
+@InCollection{doe2017b,
+  options = {swaptrans:booktitle},
+  title = {An Essay},
+  editor = {Smith, John},
+  translator = {Smith, John},
+  pages = {18–35},
+  crossref = {jones2017}
+}
+@InCollection{doe2017c,
+  options = {swaptrans:bookbooktitle},
+  title = {An Essay},
+  editor = {Smith, John},
+  translator = {Smith, John},
+  pages = {18–35},
+  crossref = {jones2017}
+}
+@InBook{jones2017,
+  title = {A Volume of Essays},
+  editor = {Smith, John},
+  translator = {Smith, John},
+  volume = {1},
+  crossref = {white2017}
+}
+@Collection{white2017,
+  title = {A Collection of Essays},
+  editor = {Smith, John},
+  translator = {Smith, John},
+  volumes = {3},
+  address = {Chicago},
+  publisher = {University of Chicago Press},
+  year = {2017}
+}
+@InCollection{thoreau2007.7,
+  title = {Walking},
+  pages = {185–222},
+  crossref = {thoreau2007}
+}
+@Collection{thoreau2007,
+  author = {Thoreau, Henry David},
+  title = {Excursions},
+  editor = {Moldenhauer, Joseph J.},
+  series = {The Writings of Henry D. Thoreau},
+  publisher = {Princeton University Press},
+  address = {Princeton, NJ},
+  year = {2009}
+}
+@InCollection{petrarca1948,
+  author = {Petrarca, Francesco},
+  title = {The Ascent of Mont Ventoux},
+  translator = {Nachod, Hans},
+  pages = {36–46},
+  crossref = {cassirer1948}
+}
+@Collection{cassirer1948,
+  editor = {Cassirer, Ernst and Kristeller, Paul Oskar and Randall, Jr., John Herman},
+  title = {The Renaissance Philosophy of Man},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1948}
+}
+@InCollection{myers2012,
+  author = {Myers, Herbert},
+  title = {Pitch and Transposition},
+  pages = {375–393},
+  crossref = {carter2012}
+}
+@Collection{carter2012,
+  title = {A Performer's Guide to Seventeenth-Century Music},
+  edition = {2},
+  editor = {Carter, Stewart},
+  editora = {Kite-Powell, Jeffery},
+  editoratype = {revex},
+  address = {Bloomington},
+  publisher = {Indiana University Press},
+  year = {2012}
+}
+@InCollection{doe2018,
+  keywords = {notinbib,notinref},
+  author = {Doe, Jane},
+  title = {A Poem},
+  translator = {Smith, John},
+  pages = {56–57},
+  crossref = {jones2018}
+}
+@InBook{jones2018,
+  keywords = {notinbib,notinref},
+  editor = {Jones, David},
+  title = {A Volume of Poems},
+  volume = {2},
+  year = {2018},
+  crossref = {white2016}
+}
+@Collection{white2016,
+  keywords = {notinbib,notinref},
+  editor = {White, Amy},
+  title = {A Collection of Poems},
+  volumes = {4},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2016–18}
+}
+@InCollection{doe2018.alt,
+  keywords = {notinbib,notinref},
+  author = {Doe, Jane},
+  title = {A Poem},
+  translator = {Smith, John},
+  pages = {56–57},
+  booktitle = {A Volume of Poems},
+  editor = {Jones, David},
+  editortype = {booktitle},
+  bookvolume = {2},
+  year = {2018},
+  bookbooktitle = {A Collection of Poems},
+  editora = {White, Amy},
+  editoratype = {bookbooktitle},
+  volumes = {4},
+  address = {Chicago},
+  publisher = ucp,
+  bookyear = {2016–18}
+}
+@InBook{spinoza1900.1.1,
+  title = {A Theological-Political Treatise},
+  crossref = {spinoza1900.1}
+}
+@Collection{spinoza1900.1,
+  author = {Spinoza, Benedict de},
+  title = {The Chief Works of Benedict de Spinoza},
+%  edition = {rev. ed.},% alternative to below:
+  edition = {revised},
+  translator = {Elwes, R. H. M.},
+  volume = {1},
+  address = {London},
+  publisher = {George Bell {and} Sons},
+  year = {1900}
+}
+@InCollection{adams2018,
+  keywords = {notinbib,notinref},
+  author = {Adams, Mary},
+  title = {Another Poem},
+  pages = {128–32},
+  crossref = {jones2018}
+}
+
+% 13.65 Full in-text citation
+
+@Book{hawking1988,
+  author = {Hawking, Stephen W.},
+  title = {A Brief History of Time},
+  subtitle = {From the Big Bang to Black Holes},
+  address = {New York},
+  publisher = {Bantam Books},
+  year = {1988}
+}
+@Book{tocqueville1999,
+  options = {skipbib},
+  author = {Tocqueville, Alexis de},
+  title = {Democracy in America},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1999}
+}
+
+% 14.23 Notes and bibliography — examples and variations
+% 15.9 Author-date references — examples and variations
+
+@Book{strayed2012,
+  author = {Strayed, Cheryl},
+  title = {Wild},
+  subtitle = {From Lost to Found on the Pacific Crest Trail},
+  address = {New York},
+  publisher = {Alfred A. Knopf},
+  year = {2012}
+}
+@Book{daum2015,
+  editor = {Daum, Meghan},
+  title = {Selfish, Shallow, and Self-Absorbed},
+  subtitle = {Sixteen Writers on the Decision Not to Have Kids},
+  address = {New York},
+  publisher = {Picador},
+  year = {2015}
+}
+@Book{grazer2015,
+  author = {Grazer, Brian and Fishman, Charles},
+  title = {A Curious Mind},
+  subtitle = {The Secret to a Bigger Life},
+  address = {New York},
+  publisher = {Simon \& Schuster},
+  year = {2015}
+}
+@InCollection{gould1984a,
+  title = {Streisand as Schwarzkopf},
+  pages = {308–11},
+  crossref = {gould1984}
+}
+@Collection{gould1984,
+  author = {Gould, Glenn},
+  title = {The Glenn Gould Reader},
+  editor = {Page, Tim},
+  address = {New York},
+  publisher = {Vintage Books},
+  year = {1984}
+}
+@Book{garcia1988,
+  author = {García Márquez, Gabriel},
+  title = {Love in the Time of Cholera},
+  translator = {Grossman, Edith},
+  address = {London},
+  publisher = {Cape},
+  year = {1988}
+}
+@Article{bagley2015,
+  author = {Bagley, Benjamin},
+  title = {Loving Someone in Particular},
+  journal = {Ethics},
+  volume = {125},
+  number = {2},
+  date = {2015-01},
+  pages = {477–507}
+}
+@Article{liu2015,
+  author = {Liu, Jui-Ch'i},
+  title = {Beholding the Feminine Sublime},
+  subtitle = {Lee Miller's War Photography},
+  journal = {Signs},
+  volume = {40},
+  number = {2},
+  date = {2015-24},
+  pages = {308–19},
+  doi = {https://doi.org/10.1086/678242}
+}
+
+% 14.30: Basic structure of the short form
+
+@Book{morley1995,
+  author = {Morley, Samuel A.},
+  title = {Poverty and Inequality in Latin America},
+  shorttitle = {Poverty and Inequality},
+  subtitle = {The Impact of Adjustment and Recovery},
+  address = {Baltimore},
+  publisher = {Johns Hopkins University Press},
+  year = {1995}
+}
+@Article{schwartz1992,
+  author = {Schwartz, Regina M.},
+  title = {Nationals and Nationalism},
+  subtitle = {Adultery in the House of David},
+  journal = {Critical Inquiry},
+  volume = {19},
+  number = {1},
+  year = {1992},
+  pages = {131–32}
+}
+@InCollection{kaiser1964,
+  author = {Kaiser, Ernest},
+  title = {The Literature of Harlem},
+  shorttitle = {Literature of Harlem},
+  crossref = {clarke1964}
+}
+@Collection{clarke1964,
+  editor = {Clarke, J. H.},
+  title = {Harlem},
+  subtitle = {A Community in Transition},
+  address = {New York},
+  publisher = {Citadel Press},
+  year = {1964}
+}
+
+% 14.34: Shortened citations versus “ibid”
+
+@Book{morrison2004a,% see also 14.110
+  author = {Morrison, Toni},
+  title = {Beloved},
+  address = {New York},
+  publisher = {Vintage International},
+  year = {2004}
+}
+@Book{diaz2007,
+  author = {Díaz, Junot},
+  title = {The Brief Wondrous Life of Oscar Wao},
+  shorttitle = {Oscar Wao},
+  address = {New York},
+  publisher = {Riverhead Books},
+  year = {2007}
+}
+
+% 14.54 Source notes for previously published material
+
+@Book{shapin1996,
+  author = {Shapin, Steven},
+  title = {The Scientific Revolution},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1996}
+}
+@Article{manet1992,
+  author = {Fried, Michael},
+  title = {Manet in His Generation},
+  subtitle = {The Face of Painting in the 1860s},
+  journal = {Critical Inquiry},
+  volume = {19},
+  number = {1},
+  year = {1992},
+  pages = {22–69}
+}
+
+% 14.57 Several citations in one note
+
+@Article{sutton1959,
+  author = {Sutton, Walter},
+  title = {The Analysis of Free Verse Form, Illustrated by a Reading of Whitman},
+  journal = {Journal of Aesthetics and Art Criticism},
+  volume = {18},
+  number = {2},
+  date = {1959-12},
+  pages = {241-54}
+}
+@InCollection{fussell1962,
+  author = {Fussell, Paul},
+  title = {Whitman's Curious Warble},
+  subtitle = {Reminiscence and Reconciliation},
+  pages = {28-51},
+  crossref = {lewis1962}
+}
+@Collection{lewis1962,
+  title = {The Presence of Walt Whitman},
+  editor = {Lewis, R. W. B.},
+  address = {New York},
+  publisher = {Columbia University Press},
+  year = {1962},
+}
+@Article{coffman1954,
+  author = {Coffman, S. K.},
+  title = {`Crossing Brooklyn Ferry'},
+  subtitle = {A Note on the Catalog Technique in Whitman's Poetry},
+  journal = {Modern Philology},
+  volume = {51},
+  number = {4},
+  date = {1954-05},
+  pages = {225-32}
+}
+@Article{coffman1955,
+  author = {Coffman, S. K.},
+  title = {Form and Meaning in Whitman's `Passage to India'},
+  journal = {PMLA},
+  volume = {70},
+  number = {3},
+  date = {1955-06},
+  pages = {337-49}
+}
+@Article{rountree1958,
+  author = {Rountree, Thomas I.},
+  title = {Whitman's Indirect Expression and Its Application to `Song of Myself'},
+  journal = {PMLA},
+  volume = {73},
+  number = {5},
+  date = {1958-12},
+  pages = {549-55}
+}
+@Article{lovell1960,
+  author = {Lovell, John},
+  title = {Appreciating Whitman},
+  subtitle = {`Passage to India'},
+  journal = {Modern Language Quarterly},
+  volume = {21},
+  number = {2},
+  date = {1960-06},
+  pages = {131-41}
+}
+
+% 14.59 Abbreviations for frequently cited works
+
+@Collection{shurtleff1853,
+  options = {emph:shorthand,listvols},
+  editor = {Shurtleff, Nathaniel B.},
+  title = {Records of the Governor and Company of the Massachusetts Bay in New England (1628–86)},
+  shorthand = {Mass. Records},
+  volumes = {5},
+  address = {Boston},
+  year = {1853–54}
+}
+
+% 14.68 The 3-em dash for one repeated name
+
+@Book{judt1996,
+  author = {Judt, Tony},
+  title = {A Grand Illusion?},
+  subtitle = {An Essay on Europe},
+  address = {New York},
+  publisher = {Hill {and} Wang},
+  year = {1996}
+}
+@Book{judt2008,
+  author = {Judt, Tony},
+  title = {Reappraisals},
+  subtitle = {Reflections on the Forgotten Twentieth Century},
+  address = {New York},
+  publisher = {Penguin Press},
+  year = {2008}
+}
+@Book{judt1989,
+  editor = {Judt, Tony},
+  title = {Resistance and Revolution in Mediterranean Europe, 1939–1948},
+  address = {New York},
+  publisher = {Routledge},
+  year = {1989}
+}
+@InCollection{squire1983,
+  author = {Squire, Larry R.},
+  title = {The Hippocampus and the Neuropsychology of Memory},
+  sorttitle = {Hippocampus and the Neuropsychology of Memory},
+  pages = {491–511},
+  crossref = {seifert1983}
+}
+@Collection{seifert1983,
+  editor = {Seifert, W.},
+  title = {Neurobiolog of the Hippocampus},
+  address = {New York},
+  publisher = {Oxford University Press},
+  year = {1983}
+}
+@Book{squire1987,
+  author = {Squire, Larry R.},
+  title = {Memory and Brain},
+  address = {New York},
+  publisher = {Oxford University Press},
+  year = {1987}
+}
+
+% 14.75 One author
+
+@Book{shields2013,
+  author = {Shields, David},
+  title = {How Literature Saved My Life},
+  shorttitle = {Literature},
+  address = {New York},
+  publisher = {Alfred A. Knopf},
+  year = {2013}
+}
+@Article{chun2015,
+  author = {Chun, Wendy Hui Kyong},
+  title = {On Hypo-real Models or Global Climate Change},
+  subtitle = {A Challenge for the Humanities},
+  shorttitle = {Hypo-real Models},
+  journal = {Critical Inquiry},
+  volume = {41},
+  number = {3},
+  date = {2015-21},
+  pages = {675–703}
+}
+@Book{mccune2014,
+  author = {McCune, Jr., Jeffrey Q.},
+  title = {Sexual Discretion},
+  subtitle = {Black Masculinity and the Politics of Passing},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2014}
+}
+
+% 14.76 Two or more authors (or editors)
+
+@Book{sorrells2015,
+  editor = {Sorrells, Kathryn and Sekimoto, Sachi},
+  title = {Globalizing Intercultural Communication},
+  subtitle = {A Reader},
+  address = {Thousand Oaks, CA},
+  publisher = {SAGE},
+  year = {2015}
+}
+@Book{levitt2005,
+  author = {Levitt, Steven D. and Dubner, Stephen J.},
+  title = {Freakonomics},
+  subtitle = {A Rogue Economist Explores the Hidden Side of Everything},
+  address = {New York},
+  publisher = {William Morrow},
+  year = {2005}
+}
+@Article{umbers2015,
+  author = {Umbers, Kate D. L. and Symonds, Matthew R. E. and Kokko, Hanna},
+  title = {The Mothematics of Female Pheromone Signaling},
+  subtitle = {Strategies for Aging Virgins},
+  journal = {American Naturalist},
+  volume = {185},
+  number = {3},
+  date = {2015-03},
+  pages = {417–32}
+}
+@Article{gmuca2015,
+  author = {Gmuca, Natalia V. and Pearson, Linnea E. and Burns, Jennifer M. and Liwanag, Heather E. M.},
+  title = {The Fat and the Furriest},
+  subtitle = {Morphological Changes in Harp Seal Fur with Ontogeny},
+  shorttitle = {Harp Seal Fur},
+  journal = {Physiological and Biochemical Zoology},
+  volume = {88},
+  number = {2},
+  date = {2015-03/2015-04},
+  pages = {158–66}
+}
+
+% 14.77 Two or more authors (or editors) with same family name
+
+@Book{kendris2010,
+  author = {Kendris, Christopher and Kendris, Theodore},
+  title = {501 Spanish Verbs},
+  edition = {7},
+  address = {Hauppauge, NY},
+  publisher = {Barron's Educational Series},
+  year = {2010}
+}
+
+% 14.78 Author's name in title
+
+@Book{franklin1868,
+  author = {Franklin, Benjamin},
+  title = {Autobiography of Benjamin Franklin},
+  editor = {Big\-e\-low, John},
+  address = {Philadelphia},
+  publisher = {J. B. Lippincott},
+  year = {1868}
+}
+
+% 14.79 No listed author (anonymous works)
+% 15.34 Author-date format for anonymous works (no listed author)
+
+@Book{anon1610,
+  title = {A True and Sincere Declaration of the Purpose and Ends of the Plantation Begun in Virginia, of the Degrees Which It Hath Received, and Means by Which It Hath Been Advanced},
+  shorttitle = {True and Sincere Declaration},
+  sorttitle = {True and Sincere Declaration},
+  address = {London},
+  year = {1610}
+}
+@Book{anon1547,
+  title = {Stanze in lode della donna brutta},
+  shorttitle = {Stanze},
+  address = {Florence},
+  year = {1547}
+}
+@Book{horsley1796,
+  author = {Horsley, Samuel},
+  authortype = {anon},
+  title = {On the Prosodies of the Greek and Latin Languages},
+  address = {London},
+  year = {1796}
+}
+@Book{hawkes1834,
+  author = {Hawkes, James},
+  authortype = {anon?},
+  title = {A Retrospect of the Boston Tea-Party, with a Memoir of George R. T. Hewes},
+  note = {by a Citizen of New-York},
+  address = {New-York},
+  year = {1834}
+}
+
+% 14.80 Pseudonyms
+% 15.35 Pseudonyms in author-date references
+
+@Online{akmuckraker2008,
+  author = {{AK Muckraker}},
+%  authortype = {pseudo},% alternative to below:
+  nameaddon = {pseud.},
+  title = {Palin Is Back at Work},
+  blogtitle = {Mudflats},
+  blogsubtitle = {Tiptoeing through the Muck of Alaskan Politics},
+  blogtitleaddon = {blog},
+  date = {2008-12-05},
+  url = {https://mudflats.wordpress.com/2008/12/05/palin-is-back-at-work/}
+}
+@Book{carre1982,
+  author = {Le Carr\'e, John},
+  nameaddon = {David John Moore Cornwell},
+  title = {The Quest for Karla},
+  address = {New York},
+  publisher = {Knopf},
+  year = {1982}
+}
+@Book{stendhal1925,
+  author = {Stendhal},
+  nameaddon = {Marie-Henri Beyle},
+  title = {The Charterhouse of Parma},
+  translator = {Scott-Moncrieff, C. K.},
+  address = {New York},
+  publisher = {Boni {and} Liveright},
+  year = {1925}
+}
+
+% 14.81 Cross-references for pseudonyms
+
+@Misc{ashe,
+  options = {skipdate},
+  author = {Ashe, Gordon},
+  userb = {\emph{See} Creasey, John}
+}
+@Misc{morton,
+  options = {skipdate},
+  author = {Morton, Anthony},
+  userb = {\emph{See} Creasey, John}
+}
+@Misc{york,
+  options = {skipdate},
+  author = {York, Jeremy},
+  userb = {\emph{See} Creasey, John}
+}
+@Book{creasey1976,
+  sortname = {Creasey, Ashe},
+  author = {Creasey, John},
+  nameaddon = {Gordon Ashe, pseud.},
+  title = {A Blast of Trumpets},
+  address = {New York},
+  publisher = {Rinehart {and} Winston},
+  year = {1976}
+}
+@Book{creasey1978,
+  sortname = {Creasey, Morton},
+  author = {Creasey, John},
+  nameaddon = {Anthony Morton, pseud.},
+  title = {Hide the Baron},
+  address = {New York},
+  publisher = {Walker},
+  year = {1978}
+}
+@Book{creasey1966,
+  sortname = {Creasey, York},
+  author = {Creasey, John},
+  nameaddon = {Jeremy York, pseud.},
+  title = {Death to My Killer},
+  address = {New York},
+  publisher = {Macmillan},
+  year = {1966}
+}
+
+% 14.82 Alternative real names
+
+@Book{doniger2000,
+  author = {Doniger, Wendy},
+  title = {The Bedtrick},
+  sorttitle = {Bedtrick},
+  subtitle = {Tales of Sex and Masquerade},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2000}
+}
+@Misc{oflaherty,
+  keywords = {notinbib,notinref},
+  author = {Doniger, Wendy},
+  sorttitle = {See also},
+  userb = {\emph{See also} O'Flaherty, Wendy Doniger}
+}
+
+% 14.83 Authors known by a given name
+
+@Book{elizabeth2000,
+  author = {{Elizabeth I}},
+  title = {Collected Works},
+  editor = {Marcus, Leah S. and Mueller, Janel and Rose, Mary Beth},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2000}
+}
+
+% 14.84 Organization as author
+
+@Book{iso1997,% see also 15.37
+  keywords = {notinref},
+  author = {{International Organization for Standardization}},
+%  shortauthor = {ISO},
+  title = {Information and Documentation\,—\,Rules for the Abbreviation of Title Words and Titles of Publications},
+  shorttitle = {Information and Documentation},
+  series = {ISO},
+  number = {4},
+  address = {Paris},
+  publisher = {ISO},
+  year = {1997}
+}
+
+% 14.89 Subtitles in cited works and the use of the colon
+
+@Book{gladwell2013,
+  author = {Gladwell, Malcolm},
+  title = {David and Goliath},
+  subtitle = {Underdogs, Misfits, and the Art of Battling Giants},
+  address = {New York},
+  publisher = {Little, Brown},
+  year = {2013}
+}
+
+% 14.90 Two subtitles in a cited work
+
+@Book{sereny1999,
+  author = {Sereny, Gitta},
+  title = {Cries Unheard},
+  subtitle = {Why Children Kill; The Story of Mary Bell},
+  address = {New York},
+  publisher = {Metropolitan Books / Henry Holt},
+  year = {1999}
+}
+
+% 14.92 “And other stories” and such
+
+@Book{maclean1976,
+  author = {Maclean, Norman},
+  title = {A River Runs through It, and Other Stories},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1976}
+}
+
+% 14.93 Dates in titles of cited works
+
+@Book{beiser2014,
+  author = {Beiser, Frederick C.},
+  title = {After Hegel},
+  subtitle = {German Philosophy, 1840–1900},
+  address = {Princeton, NJ},
+  publisher = {Princeton University Press},
+  year = {2014}
+}
+
+% 14.94 Quoted titles and other terms within cited titles of works
+
+@Book{levitt2014,
+  author = {Levitt, Steven D. and Dubner, Stephen J.},
+  title = {Think Like a Freak},
+  subtitle = {The Authors of \mkbibquote{Freak\-o\-nom\-ics} Offer to Retrain Your Brain},
+  address = {New York},
+  publisher = {William Morrow},
+  year = {2014}
+}
+@Book{mchugh1980,
+  author = {McHugh, Roland},
+  title = {Annotations to \mkbibquote{Finnegan's Wake}},
+  address = {Baltimore},
+  publisher = {Johns Hopkins University Press},
+  year = {1980}
+}
+
+% 14.95 Italicized titles and other terms within cited titles of works
+
+@Book{vanwagenen1973,
+  author = {Van Wagenen, Gertrude and Simpson, Miriam E.},
+  title = {Postnatal Development of the Ovary in \emph{Homo sapiens} and \emph{Macaca mulatta} and Induction of Ovulation in the Ma\-caque},
+  address = {New Haven, CT},
+  publisher = {Yale University Press},
+  year = {1973}
+}
+
+% 14.96 Question marks or exclamation points in titles of cited works
+
+@Book{berra2002,
+  author = {Berra, Yogi},
+  title = {What Time Is It? You Mean Now? Advice for Life from the Zennest Master of Them All},
+  shorttitle = {What Time Is It?},
+  note = {with Dave Kaplan},
+  address = {New York},
+  publisher = {Simon \& Schuster},
+  year = {2002}
+}
+@Book{oram2007,
+  author = {Oram, Alison},
+  title = {Her Husband Was a Woman!},
+  subtitle = {Women's Gender-Crossing and British Popular Culture},
+  address = {London},
+  publisher = {Routledge},
+  year = {2007}
+}
+@Article{tessler2014,
+  author = {Tessler, Michael and Truhn, Kam M. and Bliss-Moreau, Meghan and Wehr, John D.},
+  title = {Diversity and Distribution of Stream Bryophytes},
+  subtitle = {Does pH Matter?},
+  journal = {Freshwater Science},
+  volume = {33},
+  number = {3},
+  date = {2014-09},
+  pages = {778–87}
+}
+@Article{batson1990,
+  author = {Batson, C. Daniel},
+  title = {How Social Is the Animal?},
+  subtitle = {The Human Capacity for Caring},
+  journal = {American Psychologist},
+  volume = {45},
+  date = {1990-03},
+  pages = {336–46}
+}
+
+% 14.99 Translated titles of cited works
+
+@Book{wereszycki1977,
+  author = {Wereszycki, Henryk},
+  title = {Koniec sojuszu trzech cesarzy},
+  titleaddon = {The end of the Three Emperors' League},
+  address = {Warsaw},
+  publisher = {PWN},
+  year = {1977}
+}
+@Article{kern1938,
+  author = {Kern, W.},
+  title = {Waar verzamelde Pigafetta zijn Maleise woorden?},
+  titleaddon = {Where did Pigafetta collect his Malaysian words?},
+  journal = {Tijdschrift voor Indische taal-, land- en vol\-ken\-kun\-de},
+  volume = {78},
+  year = {1938},
+  pages = {271–73}
+}
+@Book{pirumova1977a,
+  author = {Pirumova, Natalia Mikhailovna},
+  title = {Zemskoe liberal'noe dvizhenie},
+  subtitle = {Sotsial'nye korni i evoliutsiia do nachala XX veka},
+  titleaddon = {The zemstvo liberal movement: Its social roots and evolution to the beginning of the twentieth century},
+  address = {Moscow},
+  publisher = {Izdatel'stvo \mkbibquote{Nau\-ka}},
+  year = {1977}
+}
+@Book{pirumova1977b,
+  author = {Pirumova, N. M.},
+  title = {The Zemstvo Liberal Movement},
+  subtitle = {Its Social Roots and Evolution to the Beginning of the Twentieth Century},
+  titleaddon = {in Russian},
+  address = {Moscow},
+  publisher = {Izdatel'stvo \mkbibquote{Nau\-ka}},
+  year = {1977}
+}
+@Book{furet1999,% see also 14.59
+  options = {emph:shorthand},
+  author = {Furet, François},
+  title = {The Passing of an Illusion},
+%  shorthand = {PI},
+  shorthandintro = {\mkbibparens{hereafter cited in text as \printfield[emph]{shorthand}}},
+  translator = {Furet, Deborah},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1999},
+  origtitle = {Le passé d'une illusion},
+  origlocation = {Paris},
+  origpublisher = {Éditions Robert Laffont},
+  origdate = {1995}
+}
+
+% 14.101 Form of author's name and title of book in source citations
+
+@Book{gawande2014,
+  author = {Gawande, Atul},
+  title = {Being Mortal},
+  subtitle = {Medicine and What Matters in the End},
+  address = {London},
+  publisher = {Profile Books},
+  year = {2014}
+}
+
+% 14.103 Editor in place of author
+
+@Book{egan2014,
+  editor = {Egan, Jennifer},
+  title = {The Best American Short Stories, 2014},
+  shorttitle = {Best American Short Stories},
+  address = {Boston},
+  publisher = {Houghton Mifflin Harcourt},
+  year = {2014}
+}
+@Book{schechter2011,
+  editor = {Schechter, Harold, and Kurt Brown},
+  editortype = {compiler},
+  title = {Killer Verse},
+  subtitle = {Poems of Murder and Mayhem},
+  address = {London},
+  publisher = {Everyman Paperback Classics},
+  year = {2011}
+}
+@Book{silverstein1974,
+  translator = {Silverstein, Theodore},
+  title = {Sir Gawain and the Green Knight},
+  shorttitle = {Sir Gawain},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1974}
+}
+
+% 14.104 Editor or translator in addition to author
+
+@Collection{bonnefoy1995,
+  author = {Bonnefoy, Yves},
+  title = {New and Selected Poems},
+  editor = {Naughton, John and Ru\-dolf, Anthony},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1995}
+}
+@Book{menchu1999,
+  options = {swaptrans},
+  author = {Menchú, Rigoberta},
+  title = {Crossing Borders},
+  editor = {Wright, Ann},
+  translator = {Wright, Ann},
+  address = {New York},
+  publisher = {Verso},
+  year = {1999}
+}
+@Collection{adorno1999,
+  author = {Adorno, Theodor W. and Benjamin, Walter},
+  title = {The Complete Correspondence, 1928–1940},
+  editor = {Lonitz, Henri},
+  translator = {Walker, Nicholas},
+  address = {Cambridge, MA},
+  publisher = {Harvard University Press},
+  year = {1999}
+}
+@Book{pound1953,
+  options = {swapauth},
+  sortname = {Eliot, T. S.},
+  author = {Pound, Ezra},
+  title = {Literary Essays},
+  editor = {Eliot, T. S.},
+  address = {New York},
+  publisher = {New Directions},
+  year = {1953}
+}
+
+% 14.105 Other contributors listed on the title page
+
+@Book{chaucer1966,
+  options = {noauth},
+  author = {Chaucer},
+  title = {Chaucer Life-Records},
+  editor = {Crow, Martin M. and Olson, Clair C.},
+  editoraddon = {from materials compiled by John M. Manly and Edith Richert, with the assistance of Lilian J. Redstone et al.},
+  address = {London},
+  publisher = {Oxford University Press},
+  year = {1966}
+}
+@Book{cullen1961,
+  author = {Cullen, John B.},
+  title = {Old Times in the Faulkner Country},
+  note = {in collaboration with Floyd C. Watkins},
+  address = {Chapel Hill},
+  publisher = {University of North Carolina Press},
+  year = {1961}
+}
+@Book{hayek1994,
+  author = {Hayek, F. A.},
+  title = {The Road to Serfdom},
+  note = {with a new introduction by Milton Friedman},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1994}
+}
+@Book{prather1998,
+  author = {Prather, Marla},
+  title = {Alexander Calder, 1898–1976},
+  note = {with contributions by Arnauld Pierre and Alexander S. C. Rower},
+  address = {New Haven, CT},
+  publisher = {Yale University Press},
+  year = {1998}
+}
+@Collection{williams1990,
+  author = {Williams, Joseph M.},
+  title = {Style},
+  subtitle = {Toward Clarity and Grace},
+  note = {with two chapters coauthored by Gregory G. Colomb},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1995}
+}
+
+% 14.106 Chapter in a single-author book
+
+@InCollection{brower2015.8,
+  author = {Brower, Kate Andersen},
+  title = {Backstairs Gossip and Mischief},
+  pages = {207–22},
+  crossref = {brower2015}
+}
+@Collection{brower2015,
+  author = {Brower, Kate Andersen},
+  title = {The Residence},
+  subtitle = {Inside the Private World of the White House},
+  address = {New York},
+  publisher = {Harper},
+  year = {2015}
+}
+@InCollection{samples2006.7,
+  title = {The Origins of Modern Campaign Finance Law},
+  shorttitle = {Campaign Finance Law},
+  chapter = {7},
+  crossref = {samples2006}
+}
+@Book{samples2006,
+  author = {Samples, John},
+  title = {The Fallacy of Campaign Finance Reform},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2006}
+}
+
+% 14.107 Contribution to a multiauthor book
+
+@InCollection{miller2014,
+  author = {Miller, Ruth A.},
+  title = {Posthuman},
+  crossref = {stimpson2014}
+}
+@Collection{stimpson2014,
+  editor = {Stimpson, Cath\-ar\-ine R. and Herdt, Gilbert},
+  title = {Critical Terms for the Study of Gender},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2014}
+}
+@InCollection{ellet1968,
+  author = {Ellet, Elizabeth F. L.},
+  title = {By Rail and Stage to Galena},
+  pages = {271–79},
+  crossref = {angle1968}
+}
+
+% 14.108 Several contributions to the same multiauthor book
+% 15.42 Cross-references to multiauthor books in reference lists
+
+@InCollection{keating1968,
+  author = {Keating, William H.},
+  title = {Fort Dearborn and Chicago},
+  pages = {84–87},
+  crossref = {angle1968}
+}
+@InCollection{lippincott1968,
+  author = {Lippincott, Sara Clarke},
+  title = {Chicago},
+  pages = {362–70},
+  crossref = {angle1968}
+}
+@Collection{angle1968,
+  editor = {Angle, Paul M.},
+  title = {Prairie State},
+  subtitle = {Impressions of Illinois, 1673–1967, by Travelers and Other Observers},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1968}
+}
+@InCollection{draper1987,
+  author = {Draper, Joan E.},
+  title = {Paris by the Lake},
+  subtitle = {Sources of Burnham's Plan of Chicago},
+  pages = {107–19},
+  crossref = {zukowsky1987}
+}
+@InCollection{harrington1987,
+  author = {Harrington, Elaine},
+  title = {International Influences on Henry Hobson Richardson's Glessner House},
+  pages = {189–207},
+  crossref = {zukowsky1987}
+}
+@Collection{zukowsky1987,
+  editor = {Zu\-kow\-sky, John},
+  title = {Chicago Architecture, 1872–1922},
+  subtitle = {Birth of a Metropolis},
+  shorttitle = {Chicago Architecture},
+  address = {Chicago},
+  publisher = {Prestel-Verlag in association with the Art Institute of Chicago},
+  year = {1987}
+}
+
+% 14.109 Book-length work within a book
+
+@InBook{bernard1990a,
+  title = {A Party for Boris},
+  crossref = {bernard1990}
+}
+@Collection{bernard1990,
+  author = {Bernard, Thomas},
+  title = {Histrionics},
+  subtitle = {Three Plays},
+  translator = {Jansen, Peter K. and Northcott, Kenneth},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1990}
+}
+@InBook{updike1995a,
+  title = {Rabbit, Run},
+  crossref = {updike1995b}
+}
+@Collection{updike1995b,
+  author = {Updike, John},
+  title = {Rabbit Angstrom},
+  subtitle = {A Tetralogy},
+  address = {New York},
+  publisher = {Everyman's Library},
+  year = {1995}
+}
+
+% 14.110 Introductions, prefaces, afterwords, and the like
+
+@InCollection{morrison2004b.f,
+  foreword = {Morrison, Toni},
+  crossref = {morrison2004b}
+}
+@Book{morrison2004b,% see also 14.34
+  author = {Morrison, Toni},
+  title = {Song of Solomon},
+  address = {New York},
+  publisher = {Vintage International},
+  year = {2004}
+}
+@InCollection{mansfield2000,
+  options = {swaptrans},
+  introduction = {Mansfield, Harvey, and Delba Winthrop},
+  pages = {xvii–lxxxvi},
+  crossref = {tocqueville2000}
+}
+@Book{tocqueville2000,
+  options = {swaptrans},
+  sortname = {Mansfield, Harvey},
+  author = {Tocqueville, Alexis de},
+  title = {Democracy in America},
+  editor = {Mansfield, Harvey, and Delba Winthrop},
+  translator = {Mansfield, Harvey, and Delba Winthrop},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2000}
+}
+
+% 14.111 Letters in published collections
+
+@Letter{adams1867,
+  title = {Adams to Charles Milnes Gaskell, Baden, September 22, 1867},
+  crossref = {adams1930}
+}
+@Collection{adams1930,
+  author = {Adams, Henry},
+  editor = {Ford, Worthington Chauncey},
+  title = {Letters of Henry Adams, 1858–1891},
+  address = {Boston},
+  publisher = {Houghton Mifflin},
+  year = {1930}
+}
+@Letter{jackson1676,
+  author = {Jackson, Paulina},
+  title = {Paulina Jackson to John Pepys Junior, October 3, 1676},
+  number = {42},
+  crossref = {pepys1955}
+}
+@Collection{pepys1955,
+  editor = {Heath, Helen Truesdell},
+  title = {The Letters of Samuel Pepys and His Family Circle},
+  address = {Oxford},
+  publisher = {Clarendon Press},
+  year = {1955}
+}
+
+% 14.113 Editions other than the first
+
+@Book{einsohn2011,
+  author = {Einsohn, Amy},
+  title = {The Copyeditor's Handbook},
+  subtitle = {A Guide for Book Publishing and Corporate Communications, with Exercises and Answer Keys},
+  edition = {3},
+  address = {Berkeley},
+  publisher = {University of California Press},
+  year = {2011}
+}
+@Book{boudett2013,
+  editor = {Boudett, Kathryn Parker and City, Elizabeth A. and Murnane, Richard J.},
+  title = {Data Wise},
+  subtitle = {A Step-by-Step Guide to Using Assessment Results to Improve Teaching and Learning},
+%  edition = {rev. ed.},% alternative to below:
+  edition = {revised},
+  address = {Cambridge, MA},
+  publisher = {Harvard Education Press},
+  year = {2013}
+}
+@Book{strunk2000,
+  author = {Strunk, Jr., William and White, E. B.},
+  title = {The Elements of Style},
+  edition = {4},
+  address = {New York},
+  publisher = {Allyn {and} Bacon},
+  year = {2000}
+}
+
+% 14.114 Reprint editions and modern editions
+
+@Book{barzun1994,
+  author = {Barzun, Jacques},
+  title = {Simple and Direct},
+  subtitle = {A Rhetoric for Writers},
+%  edition = {rev. ed.},% alternative to below:
+  edition = {revised},
+  address = {Chicago},
+  publisher = ucp,
+  origdate = {1985},
+  year = {1994}
+}
+@Book{bahadur2014,
+  author = {Bahadur, Gaiutra},
+  title = {Coolie Woman},
+  subtitle = {The Odyssey of Indenture},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2014},
+  addendum = {first published 2013 by C. Hurst (London)}
+}
+@Book{emerson1985,
+  author = {Emerson, Ralph Waldo},
+  title = {Nature},
+  address = {Boston},
+  publisher = {Beacon},
+  note = {facsimile of the first edition, with an introduction by Jar\-o\-slav Pelikan},
+  origdate = {1836},
+  year = {1985}
+}
+@Book{schweitzer1966,
+  author = {Schweitzer, Albert},
+  title = {J. S. Bach},
+  translator = {Newman, Ernest},
+  volumes = {2},
+  address = {New York},
+  publisher = {Dover},
+  origdate = {1911},
+  year = {1966}
+}
+
+% 14.115 Microform editions
+
+@Book{farwell1997,
+  author = {Farwell, Beatrice},
+  title = {Lithography in Art and Commerce},
+  volume = {12},
+  maintitle = {French Popular Lithographic Imagery, 1815–1870},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1997},
+  howpublished = {microfiche}
+}
+@Thesis{tauber1958,
+  author = {Tauber, Abraham},
+  title = {Spelling Reform in the United States},
+  type = {phdthesis},
+  institution = {Co\-lum\-bia University},
+  year = {1958},
+  howpublished = {microfilm}
+}
+
+% 14.117 Citing a multivolume work as a whole
+
+@Book{aristotle1983,% see also 14.251
+  author = {Aristotle},
+  title = {Complete Works of Aristotle},
+  subtitle = {The Revised Oxford Translation},
+  editor = {Barnes, J.},
+  volumes = {2},
+  series = {Bollingen Series},
+  address = {Princeton, NJ},
+  publisher = {Princeton University Press},
+  year = {1983}
+}
+@Collection{byrne1981,
+  editor = {Byrne, Muriel St. Clare},
+  title = {The Lisle Letters},
+  shorttitle = {Lisle Letters},
+  volumes = {6},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1981}
+}
+@Collection{james1962,
+  author = {James, Henry},
+  title = {The Complete Tales of Henry James},
+  shorttitle = {Complete Tales of Henry James},
+  sorttitle = {Complete Tales of Henry James},
+  editor = {Edel, Leon},
+  volumes = {12},
+  address = {London},
+  publisher = {Rupert Hart-Davis},
+  year = {1962–64},
+  sortyear = {1962}
+}
+
+% 14.118 Citing a particular volume in a note
+
+@Collection{james1963.5,
+  options = {swapvol},
+  author = {James, Henry},
+  title = {1883–1884},
+  volume = {5},
+  maintitle = {The Complete Tales of Henry James},
+  shortmaintitle = {Complete Tales of Henry James},
+  sorttitle = {Complete Tales of Henry James},
+  editor = {Edel, Leon},
+  editortype = {maintitle},
+  volumes = {12},
+  address = {London},
+  publisher = {Rupert Hart-Davis},
+  year = {1963}
+}
+
+% 14.119 Citing a particular volume in a bibliography
+
+@Collection{carson2014,
+  editor = {Armstrong, Tenisha},
+  title = {To Save the Soul of America, January 1961–August 1962},
+  volume = {7},
+  maintitle = {The Papers of Martin Luther King, Jr.},
+  editora = {Carson, Clayborne},
+  editoratype = {maintitle},
+  volumes = {14},
+  address = {Berkeley},
+  publisher = {University of California Press},
+  year = {2014}
+}
+@InBook{armstrong2014,
+  editor = {Armstrong, Tenisha},
+  title = {To Save the Soul of America, January 1961–August 1962},
+  shorttitle = {To Save the Soul of America},
+  volume = {7},
+  year = {2014},
+  crossref = {carson1992}
+}
+@Collection{carson1992,
+  editor = {Carson, Clayborne},
+  title = {The Papers of Martin Luther King, Jr.},
+  volumes = {14},
+  address = {Berkeley},
+  publisher = {University of California Press},
+  year = {1992–}
+}
+
+% 14.120 Chapters and other parts of individual volumes
+
+@InCollection{chen2010.3,
+  author = {Chen Jian},
+  title = {China and the Cold War after Mao},
+  pages = {181–200},
+  crossref = {leffler2010}
+}
+@Collection{leffler2010,
+  editor = {Leffler, Melvyn P. and Westad, Odd Arne},
+  title = {Endings},
+  volume = {3},
+  maintitle = {The Cambridge History of the Cold War},
+  address = {Cambridge},
+  publisher = {Cambridge University Press},
+  year = {2010}
+}
+@Letter{king2014,
+  author = {King, Jr., Martin Luther},
+  title = {Unpublished letter to the editor of the \emph{Afro-American} (Washington, DC)},
+  shorttitle = {Letter to the \emph{Afro-American}},
+%  crossref = {carson2014}
+  crossref = {armstrong2014}
+}
+
+% 14.121 One volume in two or more books
+
+@Book{lach1977,
+  author = {Lach, Donald},
+  title = {The Scholarly Disciplines},
+  volume = {2},
+  part = {bk. 3},
+  maintitle = {Asia in the Making of Europe},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1977}
+}
+@InBook{harley1994,
+  title = {Cartography in the Traditional East and Southeast Asian Societies},
+  volume = {2},
+  part = {bk. 2},
+  year = {1994},
+  crossref = {cartography1987}
+}
+@Collection{cartography1987,
+  editor = {Harley, J. B. and Woodward, David},
+  title = {The History of Cartography},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1987–}
+}
+
+% 14.122 Authors and editors of multivolume works
+
+@InBook{barrows1959,
+  author = {Barrows, Herbert},
+  title = {Reading the Short Story},
+  volume = {1},
+  crossref = {gordon1959}
+}
+@Collection{gordon1959,
+  editor = {Ray, Gordon N.},
+  title = {An Introduction to Literature},
+  address = {Boston},
+  publisher = {Houghton Mifflin},
+  year = {1959}
+}
+@InBook{donne1995,
+  title = {The \mkbibquote{Anniversaries} and the \mkbibquote{Epicedes and Obsequies}},
+  editor = {Stringer, Gary A. and Pebworth, Ted-Larry},
+  volume = {6},
+  crossref = {stringer1995}
+}
+@Collection{stringer1995,
+  author = {Donne, John},
+  editor = {Stringer, Gary A.},
+  title = {The Variorum Edition of the Poetry of John Donne},
+  address = {Bloomington},
+  publisher = {Indiana University Press},
+  year = {1995}
+}
+
+% 14.123 Series titles, numbers, and editors
+
+@Book{lei2014,
+  author = {Lei, Sean Hsiang-lin},
+  title = {Neither Donkey nor Horse},
+  subtitle = {Medicine in the Struggle over China's Modernity},
+  series = {Studies of the Weatherhead East Asian Institute},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2014}
+}
+@Book{mazrim2011,
+  author = {Mazrim, Robert F.},
+  title = {At Home in the Illinois Country},
+  subtitle = {French Colonial Domestic Site Archaeology in the Midwest, 1730–1800},
+  series = {Studies in Illinois Archaeology},
+  number = {9},
+  address = {Urbana},
+  publisher = {Illinois State Archaeological Survey},
+  year = {2011}
+}
+@Book{wauchope1950,
+  author = {Wauchope, Robert},
+  title = {A Tentative Sequence of Pre-Classic Ceramics in Middle America},
+  series = {Middle American Research Records},
+  volume = {1},
+  number = {14},
+  address = {New Orleans},
+  publisher = {Tulane University},
+  year = {1950}
+}
+@Book{allen2009,
+  author = {Allen, Judith A.},
+  title = {The Feminism of Charlotte Perkins Gilman},
+  subtitle = {Sexualities, Histories, Progressivism},
+  series = {Women in Culture and Society},
+  editor = {Stimpson, Catharine R.},
+  editortype = {series},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2009}
+}
+
+% 14.124 Series or multivolume work?
+
+@Book{boyer1986,
+  editor = {Boyer, John W. and Kirshner, Julius},
+  title = {Readings in Western Civilization},
+  volumes = {9},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1986–87}
+}
+@Book{cochrane1987,
+  author = {Cochrane, Eric W. and Gray, Charles K. and Kishlansky, Mark},
+  title = {Early Modern Europe},
+  subtitle = {Crisis of Authority},
+  series = {Readings in Western Civilization},
+  number = {vol. 6},
+  editor = {Boyer, John W. and Kirshner, Julius},
+  editortype = {series},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1987}
+}
+
+% 14.126 “Old series” and “new series”
+
+@Book{boxer1953,
+  editor = {Boxer, Charles R.},
+  title = {South China in the Sixteenth Century},
+  series = {Hakluyt Society Publications},
+  seriesaddon = {2nd ser.},
+  number = {vol. 106},
+  address = {London},
+  publisher = {Hakluyt},
+  year = {1953}
+}
+@Book{palmatary1950,
+  author = {Palmatary, Helen C.},
+  title = {The Pottery of Maraj\'o Island, Brazil},
+  series = {Transactions of the American Philosophical Society},
+  seriesaddon = {n.s.},
+  number = {39},
+  part = {3},
+  address = {Philadelphia},
+  publisher = {American Philosophical Society},
+  year = {1950}
+}
+
+% 14.127 Place, publisher, and date
+
+@Book{woolf1927,
+  author = {Woolf, Virginia},
+  title = {To the Lighthouse},
+  address = {London},
+  publisher = {Hogarth Press},
+  year = {1927}
+}
+
+% 14.128 Place and date only, for books published before 1900
+
+@Book{goldsmith1766,
+  author = {Goldsmith, Oliver},
+  title = {The Vicar of Wakefield},
+  address = {Salisbury},
+  year = {1766}
+}
+@Book{cervantes1605,
+  author = {Cervantes Saavedra, Miguel de},
+  title = {El ingenioso hidalgo Don Quixote de la Mancha},
+  volumes = {2},
+  address = {Madrid},
+  year = {1605–15}
+}
+
+% 14.132 No place of publication
+
+@Book{windsor1910,
+  options = {noplace,skipbib},
+  publisher = {Windsor},
+  year = {1910}
+}
+@Book{vliet1890,
+  options = {skipbib},
+  address = {[Lake Bluff, IL?]},
+  publisher = {Vliet \& Edwards},
+  year = {1890}
+}
+
+% 14.137 Self-published or privately published books
+
+@Book{karavaev2015,
+  author = {Karavaev, Vasiliy},
+  title = {GOA},
+  subtitle = {Confession of the Psychedelic Oyster},
+  publisher = {\bibstring{selfpub}},
+  year = {2015},
+  howpublished = {\lowercase{i}\-Books}
+}
+@Book{shumaker2014,
+  author = {Shumaker, O. W.},
+  title = {Anna's Bear},
+  subtitle = {5 Days of Moral Conflict and Pursuit, Nazi Germany, 1939},
+  publisher = {\bibstring{selfpub}, Amazon Digital Services},
+  year = {2014},
+  howpublished = {Kindle}
+}
+
+% 14.140 Copublication
+
+@Book{strauss1962,
+  author = {Lévi-Strauss, Claude},
+  title = {The Savage Mind},
+  address = {Chicago and London},
+  publisher = {University of Chicago Press and Weidenfeld {and} Nicolson},
+  year = {1962}
+}
+
+% 14.141 Distributed books
+
+@Book{willke2007,
+  author = {Willke, Helmut},
+  title = {Smart Governance},
+  subtitle = {Governing the Global Knowledge Society},
+  address = {Frankfurt am Main},
+  publisher = {Campus Verlag},
+  year = {2007},
+  addendum = {Distributed by University of Chicago Press}
+}
+
+% 14.142 Publication Date — General
+
+@Book{chicago2010,
+  author = {{University of Chicago Press}},
+  title = {The Chicago Manual of Style},
+  edition = {16},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2010}
+}
+@Book{turabian2013,
+  author = {Turabian, Kate L.},
+  title = {A Manual for Writers of Term Papers, Theses, and Dissertations},
+  edition = {8},
+  editor = {Booth, Wayne C. and Colomb, Gregory G. and Williams, Joseph M. and {the University of Chicago Press Staff}},
+  editortype = {reviser},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2013}
+}
+
+% 14.144 Multivolume works published over more than one year
+% 15.41 Multivolume works published over more than one year
+
+@InBook{hayek2011,
+  title = {The Constitution of Liberty},
+  subtitle = {The Definitive Edition},
+  editor = {Ham\-o\-wy, Ronald},
+  volume = {17},
+  year = {2011},
+  crossref = {hayek1988}
+}
+@Collection{hayek1988,
+  author = {Hayek, F. A.},
+  editor = {Bruce Caldwell},
+  title = {The Collected Works of F. A. Hayek},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1988–}
+}
+@Book{tillich1951,
+  author = {Tillich, Paul},
+  title = {Systematic Theology},
+  volumes = {3},
+  address = {Chicago},
+  publisher = ucp,
+  year = {1951–63}
+}
+
+% 14.145 No date of publication
+
+@Book{boston,
+  keywords = {notinbib,notinref},
+  address = {Boston}
+}
+@Book{edinburgh1750,
+  keywords = {notinbib,notinref},
+  address = {Edinburgh},
+  year = {[1750?]}
+}
+@Book{edinburgh,
+  keywords = {notinbib,notinref},
+  address = {Edinburgh},
+  year = {n.d., ca. 1750}
+}
+
+% 14.146 Forthcoming publications
+
+@Book{author,
+  keywords = {notinbib,notinref},
+  author = {Author, Jane Q.},
+  title = {Book Title},
+  address = {Place},
+  publisher = {Publisher},
+%  year = {forthcoming}% alternative to below:
+  pubstate = {forthcoming}
+}
+@Book{writer,
+  keywords = {notinbib,notinref},
+  author = {Writer, John J.},
+  title = {Another Book Title},
+  address = {Place},
+  publisher = {Publisher},
+%  year = {forthcoming}% alternative to below:
+  pubstate = {forthcoming}
+}
+@InCollection{contributor,
+  keywords = {notinbib,notinref},
+  author = {Contributor, Anna},
+  title = {Contribution},
+  crossref = {editor}
+}
+@Collection{editor,
+  keywords = {notinbib,notinref},
+  title = {Edited Volume},
+  editor = {Editor, Ellen},
+  address = {Place},
+  publisher = {Publisher},
+%  year = {forthcoming}% alternative to below:
+  pubstate = {forthcoming}
+}
+
+% 14.159 Books requiring a specific application or device (e-books)
+
+@Book{borel2015,
+  author = {Borel, Brooke},
+  title = {Infested},
+  subtitle = {How the Bed Bug Infiltrated Our Bedrooms and Took Over the World},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2015},
+  howpublished = {Adobe Digital Editions EPUB}
+}
+
+% 14.161 Books consulted online
+
+@Book{bonds2014,
+  author = {Bonds, Mark Evan},
+  title = {Absolute Music},
+  subtitle = {The History of an Idea},
+  address = {New York},
+  publisher = {Oxford University Press},
+  year = {2014},
+  doi = {https://doi.org/10.1093/acprof:oso/9780199343638.001.0001}
+}
+@Book{lystra2004,
+  author = {Lystra, Karen},
+  title = {Dangerous Intimacy},
+  subtitle = {The Untold Story of Mark Twain's Final Years},
+  address = {Berkeley},
+  publisher = {University of California Press},
+  year = {2004},
+  url = {http://ark.cdlib.org/ark:/13030/kt8779q6kr/}
+}
+
+% 14.162 Freely available electronic editions of older works
+
+@Book{james2008,
+  author = {James, Henry},
+  title = {The Ambassadors},
+  sorttitle = {Ambassadors},
+  publisher = {Project Gutenberg},
+  year = {2008},
+  origlocation = {New York},
+  origyear = {1909},
+  sortyear = {1910},% sort after james1909
+  url = {http://www.gutenberg.org/ebooks/432}
+}
+@Book{james1909,
+  options = {listvols},
+  author = {James, Henry},
+  title = {The Ambassadors},
+  sorttitle = {Ambassadors},
+  volumes = {2},
+  address = {New York},
+  publisher = {Charles Scribner's Sons},
+  year = {1909},
+  url = {https://books.google.com/books?id=WYlUAAAAYAAJ}
+}
+
+% 14.163 Books on CD-ROM and other fixed media
+
+@Book{chicago2003,
+  author = {{University of Chicago Press}},
+  title = {The Chicago Manual of Style},
+  edition = {15},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2003},
+  howpublished = {CD-ROM}
+}
+
+% 14.171 Journal volume, issue, and date
+
+@Article{lock2015,
+  author = {Lock, Margaret},
+  title = {Comprehending the Body in the Era of the Epigenome},
+  journal = {Current Anthropology},
+  volume = {56},
+  number = {2},
+  date = {2015-04},
+  pages = {151–77},
+  doi = {https://doi.org/10.1086/680350}
+}
+@Article{wesoky2015,
+  author = {Wesoky, Sharon R.},
+  title = {Bringing the \emph{Jia} Back into \emph{Guojia}},
+  subtitle = {Engendering Chinese Intellectual Politics},
+  journal = {Signs},
+  volume = {40},
+  number = {3},
+  date = {2015-21},
+  pages = {647–66},
+  doi = {https://doi.org/10.1086/679524}
+}
+@Article{harper2014,
+  author = {Harper, David G.},
+  title = {Bringing Accommodation into Focus},
+  subtitle = {The Several Discoveries of the Ciliary Muscle},
+  journal = {JAMA Ophthalmology},
+  volume = {132},
+  number = {5},
+  date = {2014-05},
+  pages = {645–48},
+  url = {https://doi.org/10.1001/jamaophthalmol.2013.5525}
+}
+@Article{wilder2013,
+  author = {Wilder, Lina Perkins},
+  title = {`My Exion Is Entered'},
+  subtitle = {Anatomy, Costume, and Theatrical Knowledge in 2 Henry IV},
+  journal = {Renaissance Drama},
+  volume = {41},
+  number = {1/2},
+  issue = {Fall},% '2013-23' in date prints 'Autumn 2013'
+  year = {2013},
+  pages = {60},
+  url = {https://doi.org/10.1086/673907}
+}
+@Article{beattie1974,
+  author = {Beattie, J. M.},
+  title = {The Pattern of Crime in England, 1660–1800},
+  shorttitle = {The Pattern of Crime},
+  journal = {Past and Present},
+  number = {62},
+  date = {1974-02},
+  pages = {47–95},
+  url = {http://www.jstor.org/stable/650463}
+}
+
+% 14.172 Forthcoming journal articles
+
+@Article{authora,
+  author = {Author, Margaret M.},
+  title = {Article Title},
+  journal = {Journal Name},
+  volume = {98},
+%  year = {forthcoming}% alternative to below:
+  pubstate = {forthcoming}
+}
+@Article{jubb2015,
+  author = {Jubb, Robert},
+  title = {The Real Value of Equality},
+  journal = {Journal of Politics},
+  volume = {77},
+  number = {3},
+  pubstate = {prepub},
+  date = {2015-04-14},
+  url = {https://doi.org/10.1086/681262}
+}
+
+% 14.173 Journal article preprints
+
+@Unpublished{huang2015,
+  author = {Huang, Zhiqi},
+  title = {Revisiting the Cosmological Bias Due to Local Gravitational Redshifts},
+  pubstate = {preprint},
+  date = {2015-04-24},
+  url = {http://arxiv.org/abs/1504.06600v1}
+}
+
+% 14.174 Journal page references
+
+@Article{gold2015,
+  author = {Gold, Ann Grodzins},
+  title = {Grains of Truth},
+  subtitle = {Shifting Hierarchies of Food and Grace in Three Rajasthani Tales},
+  journal = {History of Religions},
+  volume = {38},
+  number = {2},
+  date = {1998},
+  pages = {150–71}
+}
+@Article{paudyal2015,
+  author = {Paudyal, Priyamvada and Llewellyn, Carrie and Lau, Jason and Mahmud, Mohammad and Smith, Helen},
+  title = {Obtaining Self-Samples to Diagnose Curable Sexually Transmitted Infections},
+  subtitle = {A Systematic Review of Patients' Experiences},
+  journal = {PLoS ONE},
+  volume = {10},
+  number = {4},
+  date = {2015},
+  eid = {e0124310},
+  doi = {https://doi.org/10.1371/journal.pone.0124310}
+}
+
+% 14.175 Journal articles consulted online
+
+@Article{whitney1929,
+  author = {Whitney, Frank P.},
+  title = {The Six-Year High School in Cleveland},
+  journal = {School Review},
+  volume = {37},
+  number = {4},
+  date = {1929-04},
+  pages = {267–71},
+  url = {http://www.jstor.org/stable/1078814}
+}
+@Article{schoenfield2016,
+  author = {Schoenfield, Miriam},
+  title = {Moral Vagueness Is Ontic Vagueness},
+  journal = {Ethics},
+  volume = {126},
+  number = {2},
+  year = {2016},
+  pages = {260–61},
+  doi = {https://doi.org/10.1086/683541}
+}
+
+% 14.176 Access dates for journal articles
+
+@Article{narr2015,
+  author = {Narr, Charlotte F. and Krist, Amy C.},
+  title = {Host Diet Alters Trematode Replication and Elemental Composition},
+  shorttitle = {Host Diet},
+  journal = {Freshwater Science},
+  volume = {34},
+  number = {1},
+  date = {2015-03},
+  pages = {81–91},
+  urldate = {2017-08-01},
+  url = {https://doi.org/10.1086/679411}
+}
+
+% 14.178 Journal special issues
+
+@Article{tezuka2013,
+  author = {Tezuka, Miwako},
+  title = {Jikken Kōbō and Takiguchi Shūzō},
+  subtitle = {The New Deal Collectivism of 1950s Japan},
+  issuetitle = {\mkbibquote{Collectivism in Twentieth-Century Japanese Art}},
+  editor = {Tomii, Reiko, and Yoshimoto, Midori},
+  editortype = {issuetitle},
+  journal = {Positions: Asia Critique},
+  volume = {21},
+  number = {2},
+  date = {2013-21},
+  pages = {351–81},
+  url = {https://doi.org/10.1215/10679847-2018283}
+}
+
+% 14.180 Articles published in installments
+
+@Article{brown1978,
+  editor = {Brown, George C.},
+  title = {A Swedish Traveler in Early Wisconsin},
+  subtitle = {The Observations of Fredrika Bremer},
+  part = {1},
+  journal = {Wisconsin Magazine of History},
+  volume = {61},
+  date = {1978-22},
+  pages = {300–318}
+}
+
+% 14.182 Place where journal is published
+
+@Article{luu1999,
+  author = {Luu, Diane-Dinh Kim},
+  title = {Diethylstilbestrol and Media Coverage of the `Morning After' Pill},
+  journal = {Lost in Thought: Undergraduate Research Journal},
+  address = {Indiana University South Bend},
+  volume = {2},
+  year = {1999},
+  pages = {65–70}
+}
+@Article{garrett1975,
+  author = {Garrett, Marvin P.},
+  title = {Language and Design in \emph{Pippa Passes}},
+  journal = {Victorian Poetry},
+  address = {West Virginia University},
+  volume = {13},
+  number = {1},
+  year = {1975},
+  pages = {47–60}
+}
+
+% 14.183 Translated or edited article
+
+@Article{authorb,
+  keywords = {notinbib,notinref},
+  author = {Author, Arthur Q.},
+  title = {Article Title},
+  translator = {Translator, Tim Z.},
+  journal = {Journal Title...}
+}
+@Article{authorc,
+  keywords = {notinbib,notinref},
+  author = {Author, Arthur Q.},
+  title = {Article Title},
+  editor = {Editor, Edward A.},
+  journal = {Journal Title...}
+}
+
+% 14.184 New series for journal volumes
+
+@Article{sewall1896,
+  title = {Letter of Jonathan Sewall},
+  journal = {Proceedings of the Massachusetts Historical Society},
+  series = {2nd ser.},
+  volume = {10},
+  date = {1896-01},
+  pages = {413–15}
+}
+@Article{moraes1950,
+  author = {Moraes, G. M.},
+  title = {St. Francis Xavier, Apostolic Nuncio, 1542–52},
+  journal = {Journal of the Bombay Branch of the Royal Asiatic Society},
+  series = {n.s.},
+  volume = {26},
+  year = {1950},
+  pages = {279–313}
+}
+
+% 14.185 Short titles for articles
+
+@Article{rosenblum2015,
+  author = {Rosenblum, Daniel},
+  title = {Unintended Consequences of Women's Inheritance Rights on Female Mortality in India},
+  shorttitle = {Female Mortality in India},
+  journal = {Economic Development and Cultural Change},
+  volume = {63},
+  number = {2},
+  date = {2015-01},
+  pages = {223-48},
+  doi = {https://doi.org/10.1086/679059}
+}
+
+% 14.186 Abstracts
+
+@Article{matute2015,
+  author = {Matute, Daniel R.},
+  title = {Noisy Neighbors Can Hamper the Evolution of Reproductive Isolation by Reinforcing Selection},
+  note = {abstract},
+  journal = {American Naturalist},
+  volume = {185},
+  number = {2},
+  date = {2015-02},
+  pages = {253–69},
+  doi = {https://doi.org/10.1086/679504}
+}
+
+% 14.188 Basic citation format for magazine articles
+
+@Article{saulnier2008,
+  author = {Saulnier, Beth},
+  title = {From Vine to Wine},
+  journal = {Cornell Alumni Magazine},
+  date = {2008-09/2008-10}
+}
+@Article{lepore2015,
+  author = {Lepore, Jill},
+  title = {The Man Who Broke the Music Business},
+  journal = {New Yorker},
+  date = {2015-04-27}
+}
+
+% 14.189 Magazine articles consulted online
+
+@Article{vick2015,
+  author = {Vick, Karl},
+  title = {Cuba on the Cusp},
+  journal = {Time},
+  date = {2015-03-26},
+  url = {http://time.com/3759629/cuba-us-policy/}
+}
+@Article{hanemann1926,
+  author = {Hanemann, Henry William},
+  title = {French as She Is Now Spoken},
+  journal = {Life},
+  date = {1926-08-26},
+  howpublished = {ProQuest}
+}
+
+% 14.190 Magazine departments
+
+@Article{marx2015,
+  author = {Marx, Patricia},
+  title = {Big Skyline},
+  note = {Talk of the Town},
+  journal = {New Yorker},
+  date = {2015-04-27},
+  url = {http://www.newyorker.com/magazine/2015/04/27/big-skyline}
+}
+@Article{wallraff2008,
+  author = {Wallraff, Barbara},
+  note = {Word Fugitives},
+  journal = {Atlantic Monthly},
+  date = {2008-07/2008-08}
+}
+@Article{gourmet2000,
+  journal = {Gourmet},
+  note = {Kitchen Notebook},
+  date = {2000-05}
+}
+
+% 14.191 Basic citation format for newspaper articles
+
+@Article{editorial1990,
+  journal = {Philadelphia Inquirer},
+  note = {Editorial},
+  date = {1990-07-30}
+}
+@Article{royko1992,
+  author = {Royko, Mike},
+  title = {Next Time, Dan, Take Aim at Arnold},
+  journal = {Chicago Tribune},
+  date = {1992-09-23}
+}
+@Article{forester2000,
+  title = {Pushcarts Evolve to Trendy Kiosks},
+  journal = {Lake Forester},
+  address = {Lake Forest, IL},
+  date = {2000-03-23}
+}
+@Article{samenow2016,
+  author = {Samenow, Jason},
+  title = {Blizzard Warning},
+  subtitle = {High Winds, About Two Feet of Snow Forecast for D.C. Area},
+  journal = {Washington Post},
+  date = {2016-01-21T15:55:00},
+  timezone = {EST},% 'EST' won't go in 'date' because it uses UTC
+  url = {https://www.washingtonpost.com/news/capital-weather-gang/wp/2016/01/21/blizzard-warning-high-winds-around-two-feet-of-snow-forecast-for-d-c-area/}
+}
+
+% 14.195 Regular columns or features
+
+@Article{jaffe2015,
+  author = {Jaffe, Marc},
+  title = {Finding Love in Seesawing Libidos},
+  note = {Modern Love},
+  journal = {New York Times},
+  date = {2015-03-06},
+  url = {http://www.nytimes.com/2015/03/08/style/finding-equilibrium-in-seesawing-libidos.html}
+}
+@Article{editorial2015,
+  title = {Junk Science at the F.B.I.},
+  journal = {New York Times},
+  note = {editorial},
+  date = {2015-04-27},
+  url = {http://www.nytimes.com/2015/04/27/opinion/junk-science-at-the-fbi.html}
+}
+
+% 14.197 Weekend supplements, magazines, and the like
+
+@Article{ghansah2015,
+  author = {Ghansah, Rachel Kaadzi},
+  title = {What Toni Morrison Saw},
+  journal = {New York Times Magazine},
+  date = {2015-04-12},
+  pages = {48}
+}
+
+% 14.199 Unsigned newspaper articles
+% 15.49 Newspapers and magazines in reference lists
+
+@Article{nytimes2002,
+  title = {In Texas, Ad Heats Up Race for Governor},
+  journal = {New York Times},
+  date = {2002-07-30}
+}
+
+% 14.200 News services and news releases
+
+@Article{ap2015,
+  author = {{Associated Press}},
+  title = {Texas A\&M Galveston Professor Fails Entire Class, Quits Course},
+  journal = {Dallas Morning News},
+  date = {2015-04-28},
+  url = {http://www.dallasnews.com/news/education/headlines/20150428-texas-am-galveston-professor-fails-entire-class-quits-course.ece}
+}
+
+% 14.202 Book reviews
+
+@Review{ratliff1999,
+  author = {Ratliff, Ben},
+  journal = {Lingua Franca},
+  volume = {9},
+  date = {1999-04},
+  pages = {B13–B14},
+  crossref = {vianna1999}
+}
+@Book{vianna1999,
+  author = {Vianna, Hermano},
+  title = {The Mystery of Samba},
+  subtitle = {Popular Music and National Identity in Brazil},
+  editor = {Chasteen, John Charles},
+  translator = {Chasteen, John Charles},
+  address = {Chapel Hill},
+  publisher = {University of North Carolina Press},
+  year = {1999}
+}
+@Review{kamp2006,
+  author = {Kamp, David},
+  title = {Deconstructing Dinner},
+  journal = {New York Times},
+  date = {2006-04-23},
+  edition = {Sunday Book Review},
+  url = {http://www.nytimes.com/2006/04/23/books/review/23kamp.html},
+  crossref = {pollan2006}
+}
+@Book{pollan2006,
+  title = {The Omnivore's Dilemma},
+  subtitle = {A Natural History of Four Meals},
+  author = {Pollan, Michael},
+  address = {New York},
+  publisher = {Penguin Press},
+  year = {2006}
+}
+@Review{brehm2015,
+  author = {Brehm, William C},
+  journal = {Comparative Education Review},
+  volume = {59},
+  number = {1},
+  date = {2015-02},
+  pages = {177–79},
+  url = {https://doi.org/10.1086/679296},
+  crossref = {uetricht2014}
+}
+@Book{uetricht2014,
+  author = {Uetricht, Micah},
+  title = {Strike for America},
+  subtitle = {Chicago Teachers against Austerity},
+  address = {London},
+  publisher = {Verso},
+  year = {2014}
+}
+
+% 14.204 Unsigned reviews
+
+@Review{zeitung1828,
+  type = {newsmag},
+  journal = {Ergänzungsblätter zur Allgemeinen Literatur-Zeitung},
+  date = {1828-02},
+  number = {23–24},
+  crossref = {ranke}
+}
+@Book{ranke,
+  author = {Ranke, Le\-o\-pold von},
+  title = {Ge\-schich\-ten der romanischen und germanischen Völker},
+  shorttitle = {Geschichten}
+}
+
+% 14.208 Citing blog posts and blogs
+% 15.51 Citing blogs in author-date format
+
+@Online{germano2017,
+  author = {Germano, William},
+  title = {Futurist Shock},
+  blogtitle = {Lingua Franca},
+  blogtitleaddon = {blog},
+  journal = {Chronicle of Higher Education},
+  date = {2017-02-15},
+  url = {http://www.chronicle.com/blogs/linguafranca/2017/02/15/futurist-shock/}
+}
+@Online{amlen2015,
+  author = {Amlen, Deb},
+  title = {One Who Gives a Hoot},
+  blogtitle = {Wordplay},
+  blogtitleaddon = {blog},
+  journal = {New York Times},
+  date = {2015-01-26},
+  url = {http://wordplay.blogs.nytimes.com/2015/01/26/one-who-gives-a-hoot/}
+}
+@Online{amlen,
+  keywords = {notinref},% not for reference lists (see 15.51)
+  editor = {Amlen, Deb},
+  blogtitle = {Wordplay},
+  blogtitleaddon = {blog},
+  journal = {New York Times},
+  url = {http://wordplay.blogs.nytimes.com/}
+}
+@Online{linguafranca,
+  keywords = {notinref},% not for reference lists (see 15.51)
+  blogtitle = {Lingua Franca},
+  blogtitleaddon = {blog},
+  journal = {Chronicle of Higher Education},
+  url = {http://www.chronicle.com/blogs/linguafranca/}
+}
+@Online{jim2017,
+  keywords = {notinref},% not for reference lists (see 15.52)
+  author = {Jim},
+  date = {2017-02-16},
+  howpublished = {comment on Germano, \mkbibquote{Futurist Shock}},
+  url = {http://www.chronicle.com/blogs/linguafranca/2017/02/15/futurist-shock/#comment-3158909472}
+}
+
+% 14.209 Citing social media content
+% 15.52 Citing social media content in author-date format
+
+@Online{diaz2016,
+  author = {Díaz, Junot},
+  title = {Always surprises my students when I tell them that the `real' medieval was more diverse than the fake ones most of us consume},
+  organization = {Facebook},
+  date = {2016-02-24},
+  url = {https://www.facebook.com/junotdiaz.writer/posts/972495572815454}
+}
+@Online{obrien2015,
+  author = {O’Brien, Conan},
+  handle = {@ConanOBrien},
+  title = {In honor of Earth Day, I’m recycling my tweets},
+  organization = {Twitter},
+  date = {2015-04-22T11:10:00},
+  url = {https://twitter.com/ConanOBrien/status/590940792967016448}
+}
+@Online{chicago2015,
+  author = {{Chicago Manual of Style}},
+  title = {Is the world ready for singular they? We thought so back in 1993},
+  organization = {Facebook},
+  date = {2015-04-17},
+  url = {https://www.facebook.com/ChicagoManual/posts/10152906193679151}
+}
+@Online{licis2016,
+  keywords = {notinref},% not for reference lists (see 15.52)
+  author = {Licis, Kristaps},
+  title = {But what is the surprise here?},
+  date = {2016-02-24},
+  howpublished = {comment on Díaz, \mkbibquote{Always surprises}},
+  url = {https://www.facebook.com/junotdiaz.writer/posts/972495572815454?comment_id=972558569475821}
+}
+
+% 14.210 Electronic mailing lists and forums
+
+@Online{powell1998,
+  author = {Powell, John},
+  title = {Pattern matching},
+  note = {Grapevine digest mailing list archives},
+  organization = {Electric Editors},
+  date = {1998-04-23},
+  url = {http://www.electriceditors.net/grapevine/archives.php}
+}
+@Online{braun2016,
+  keywords = {notinref},% not for reference lists (see 15.52)
+  options = {noformat,ifcapital},
+  author = {Braun, Caroline},
+  title = {reply to \mkbibquote{How did the `cool kids' from high school turn out?}},
+  organization = {Quora},
+  date = {2016-08-09},
+  url = {https://www.quora.com/How-did-the-cool-kids-from-high-school-turn-out/}
+}
+
+% 14.215 Theses and dissertations
+
+@Thesis{vedrashko2006,
+  author = {Vedrashko, Ilya},
+  title = {Advertising in Computer Games},
+  type = {mathesis},
+  institution = {MIT},
+  year = {2006},
+  url = {http://hdl.handle.net/1721.1/39144}
+}
+@Thesis{subacus2015,
+  author = {Subacus, Melanie},
+  title = {\textit{Duae Patriae}},
+  subtitle = {Cicero and Political Cosmopolitanism in Rome},
+  note = {abstract},
+  type = {phdthesis},
+  institution = {New York University},
+  year = {2015},
+  url = {http://pqdtopen.proquest.com/pubnum/2685917.html}
+}
+@Thesis{choi2008,
+  author = {Choi, Mihwa},
+  title = {Contesting \emph{Imaginaires} in Death Rituals during the Northern Song Dynasty},
+  type = {phdthesis},
+  institution = {University of Chicago},
+  year = {2008},
+  howpublished = {ProQuest (AAT 3300426)}
+}
+
+% 14.216 Unpublished manuscripts
+
+@Unpublished{balderdash2017,
+  author = {Balderdash, Pat},
+  title = {Presbyopia and Screen Size},
+  subtitle = {A Relational Analysis},
+  type = {unpublished manuscript},
+  typeaddon = {, last modified},
+  date = {2017-05-05},
+  howpublished = {Microsoft Word file}
+}
+
+% 14.217 Lectures and papers or posters presented at meetings
+
+@Unpublished{hong2015,
+  author = {Hong, Viviana},
+  title = {Censorship in Children's Literature during Argentina's Dirty War (1976–1983)},
+  type = {lecture},
+  typeaddon = {presented at the},
+  institution = {University of Chicago},
+  address = {Chicago, IL},
+  date = {2015-04-30}
+}
+@Unpublished{hong2015.alt,
+  keywords = {notinbib,notinref},
+  author = {Hong, Viviana},
+  title = {Censorship in Children's Literature during Argentina's Dirty War (1976–1983)},
+  type = {lecture},
+  institution = {University of Chicago},
+  address = {Chicago, IL},
+  date = {2015-04-30}
+}
+@Unpublished{teplin2005,
+  author = {Teplin, Linda A. and McClelland, Gary M. and Abram, Karen M. and Washburn, Jason J.},
+  title = {Early Violent Death in Delinquent Youth},
+  subtitle = {A Prospective Longitudinal Study},
+  type = {paper},
+  typeaddon = {presented at the},
+  institution = {Annual Meeting of the American Psychology-Law Society},
+  address = {La Jolla, CA},
+  date = {2005-03}
+}
+@Unpublished{teplin2005.alt,
+  keywords = {notinbib,notinref},
+  author = {Teplin, Linda A. and McClelland, Gary M. and Abram, Karen M. and Washburn, Jason J.},
+  title = {Early Violent Death in Delinquent Youth},
+  subtitle = {A Prospective Longitudinal Study},
+  type = {paper},
+  institution = {Annual Meeting of the American Psychology-Law Society},
+  address = {La Jolla, CA},
+  date = {2005-03}
+}
+
+% 14.218 Working papers and the like
+
+@Unpublished{lucki1980,
+  author = {Lucki, Deborah D. and Pollay, Richard W.},
+  title = {Content Analyses of Advertising},
+  subtitle = {A Review of the Literature},
+%  type = {working},% alternative to below:
+  pubstate = {working},
+  institution = {History of Advertising Archives, Faculty of Commerce, University of British Columbia},
+  address = {Vancouver},
+  year = {1980}
+}
+@Unpublished{bronfenbrenner2011,
+  author = {Bronfenbrenner, Kate and Warren, Dorian},
+  title = {The Empirical Case for Streamlining the NLRB Certification Process},
+  subtitle = {The Role of Date of Unfair Labor Practice Occurrence},
+  series = {ISERP Working Papers Series 2011.01},
+  institution = {Columbia University},
+  address = {New York, NY},
+  date = {2011-06},
+  url = {http://hdl.handle.net/10022/AC:P:10603}
+}
+@Unpublished{alarcon1771,
+  options = {skipdate},
+  author = {Alarcón, Salvador Florencio de},
+  title = {Compendio de las noticias correspondientes a el real y minas San Francisco de Aziz de Río Chico\ldots de 20 de octobre \mkbibbrackets{1771}},
+  type = {photocopy},
+  institution = {Department of Geography, University of California},
+  address = {Berkeley}
+}
+
+% 14.220 Pamphlets, reports, and the like
+
+@Report{lifestyles1996,
+  title = {Lifestyles in Retirement},
+  series = {Library Series},
+  address = {New York},
+  publisher = {TIAA-CREF},
+  year = {1996}
+}
+@Report{mcdonalds2014,
+  author = {{McDonald's Corporation}},
+  title = {2014 Annual Report},
+  date = {2015-03},
+  url = {http://www.aboutmcdonalds.com/mcd/investors/annual_reports.html}
+}
+@Report{standardtax1996,
+  title = {Standard Federal Tax Reporter},
+  edition = {\thefield{year} ed.},
+  volume = {4},
+  address = {Chicago},
+  publisher = {Commerce Clearing House},
+  year = {1996}
+}
+
+% 14.222 Note forms versus bibliography entries
+
+@Unpublished{kallen,
+  author = {Kallen, Horace},
+  type = {papers},
+  collection = {Horace Kallen Papers},
+  shortcollection = {Kallen Papers},
+  institution = {YIVO Institute for Jewish Research},
+  address = {New York}
+}
+@Unpublished{revere,
+  collection = {Revere Family Papers},
+  institution = {Massachusetts Historical Society},
+  address = {Boston}
+}
+
+% 14.229 Examples of note forms for manuscript collections
+
+@Unpublished{merriam,
+  author = {Merriam, Charles E.},
+  type = {papers},
+  collection = {Charles E. Merriam Papers},
+  institution = {Special Collections Research Center, University of Chicago Library}
+}
+@Unpublished{pasociety,
+  author = {{Pennsylvania Society for the Abolition of Slavery}},
+%  shorthand = {Minutes, Pennsylvania Society},
+  shorthand = {Pennsylvania Society},
+  shorthandintro = {(hereafter cited as Minutes, \printfield{shorthand})},
+  type = {papers},
+  collection = {Papers of the Pennsylvania Society for the Abolition of Slavery},
+  institution = {Historical Society of Pennsylvania},
+  address = {Philadelphia}
+}
+@Unpublished{overseers,
+  collection = {Overseers Reports},
+  series = {Professional Series},
+  volume = {2},
+  institution = {Harvard University Archives}
+}
+@Unpublished{morris,
+  author = {Morris, Alexander},
+  type = {papers},
+  collection = {Alexander Morris Papers},
+  institution = {Provincial Archives of Manitoba, Winnipeg}
+}
+@Unpublished{washington,
+  author = {Washington, George},
+  type = {papers},
+  collection = {George Washington Papers},
+  series = {Series 5: Financial Papers, 1750–96},
+  institution = {Library of Congress},
+  address = {Washington, DC},
+  url = {http://memory.loc.gov/ammem/gwhtml/gwseries5.html}
+}
+
+% 14.230 Examples of bibliography entries for manuscript collections
+
+@Unpublished{wonpr,
+  author = {{Women's Organization for National Prohibition Reform}},
+  type = {papers},
+  collection = {Papers of the Women's Organization for National Prohibition Reform},
+  note = {Alice Belin du Pont files, Pierre S. du Pont Papers},
+  institution = {Eleutherian Mills Historical Library},
+  address = {Wilmington, DE}
+}
+@Unpublished{dinkel,
+  author = {Dinkel, Joseph},
+  title = {Description of Louis Agassiz written at the request of Elizabeth Cary Agassiz},
+  collection = {Agassiz Papers},
+  institution = {Houghton Library, Harvard University}
+}
+
+% 14.232 Reference works consulted in physical formats
+
+@InReference{salvation1980,
+  title = {salvation},
+  crossref = {britannica1980}
+}
+@Reference{britannica1980,
+  organization = {\emph{Encyclopaedia Britannica}},
+  edition = {15},
+  year = {1980}
+}
+@InReference{hootananny2009,
+  title = {hoot(e)\-nan\-ny, hoot\-a\-nan\-ny},
+  crossref = {oxford2009}
+}
+@Reference{oxford2009,
+  organization = {\emph{Oxford English Dictionary}},
+  edition = {2},
+  howpublished = {CD-ROM},
+  version = {4.0},
+  year = {2009}
+}
+@Reference{dab1937,
+  organization = {\emph{Dictionary of American Biography}},
+  title = {Wadsworth, Jeremiah},
+  year = {1937}
+}
+@Book{timestyle2003,
+  options = {noauth},
+  sortname = {{Times Style}},
+  title = {The Times Style and Usage Guide},
+  editor =  {Austin, Tim},
+  editortype = {compiler},
+  address = {London},
+  publisher = {Times Books},
+  year = {2003}
+}
+@Book{mla2008,
+  title = {MLA Style Manual and Guide to Scholarly Publishing},
+  edition = {3},
+  address = {New York},
+  publisher = {Modern Language Association of America},
+  year = {2008}
+}
+
+% 14.233: Reference works consulted online
+
+@InReference{toscanini2016,
+  title = {Arturo Toscanini},
+  urldate = {2016-04-06},
+  url = {http://academic.eb.com/EBchecked/topic/600338/Arturo-Toscanini},
+  crossref = {britannica2016}
+}
+@Reference{britannica2016,
+  organization = {\emph{Encyclopaedia Britannica Online}},
+  edition = {Academic ed\adddot},
+}
+@Reference{cairns2016,
+  organization = {{Grove Music Online}},
+  title = {Toscanini, Arturo},
+  author = {Cairns, David},
+  urldate = {2016-04-06},
+  url = {http://www.oxfordmusiconline.com/subscriber/article/grove/music/28197}
+}
+@Reference{wikipedia2016,
+  organization = {Wikipedia},
+  title = {Stevie Nicks},
+  version = {last modified April 2, 2016, 18:30},
+  url = {http://en.wikipedia.org/wiki/Stevie_Nicks}
+}
+@Reference{merriam2016,
+  organization = {\emph{Merriam-Webster}},
+  title = {app (n.)},
+  urldate = {2016-04-06},
+  url = {http://www.merriam-webster.com/dictionary/app}
+}
+
+% 14.234 Citing individual reference entries by author
+
+@InCollection{isaacson2005,
+  author = {Isaacson, Melissa},
+  title = {Bulls},
+  crossref = {reiff2005}
+}
+@Collection{reiff2005,
+  editor = {Reiff, Janice L. and Keating, Ann Durkin and Grossman, James R.},
+  title = {Encyclopedia of Chicago},
+  publisher = {Chicago Historical Society},
+  year = {2005},
+  url = {http://www.encyclopedia.chicagohistory.org/pages/184.html},
+}
+
+% 14.235 Citing paintings, photographs, and sculpture
+
+@Artwork{dali1931,
+  author = {Dalí, Salvador},
+  title = {The Persistence of Memory},
+  year = {1931},
+  type = {oil on canvas},
+  typeaddon = {, 9½\addthinspace ×\addthinspace 13$^{\prime\prime}$ (24.1\addthinspace ×\addthinspace 33\,cm)},
+  institution = {Museum of Modern Art},
+  address = {New York},
+  url = {http://www.moma.org/collection/works/79018}
+}
+@Artwork{mccurry1984,
+  author = {McCurry, Steve},
+  title = {Afghan Girl},
+  date = {1984-12},
+  type = {photograph},
+  note = {\emph{National Geographic}, cover, June 1985}
+}
+@Artwork{picasso1942,
+  author = {Picasso, Pablo},
+  title = {Bull's Head},
+  date = {1942-21},
+  type = {bicycle saddle and handlebars},
+  typeaddon = {, 33.5\addthinspace ×\addthinspace 43.5\addthinspace ×\addthinspace 19\,cm},
+  institution = {Musée Picasso Paris}
+}
+
+% 14.246 Citing specific editions of classical references
+
+@Book{epictetus1916,
+  author = {Epictetus},
+  title = {Dissertationes},
+  editor = {Schenkl, Heinrich},
+  address = {Stuttgart},
+  publisher = {Teubner},
+  year = {1916}
+}
+
+% 14.251 Modern editions of the classics
+
+@Book{maimonides1965,
+  author = {Maimonides},
+  title = {The Code of Maimonides, Book 5},
+  subtitle = {The Book of Holiness},
+  editor = {Nemoy, Leon},
+  translator = {Rabinowitz, Louis I. and Grossman, Philip},
+  address = {New Haven, CT},
+  publisher = {Yale University Press},
+  year = {1965}
+}
+
+% 14.258 Patents
+% 15.55 Patents or other documents cited by more than one date
+
+@Patent{iizuka1986,
+  author = {Iizuka, Masanori and Tanaka, Hideki},
+  title = {Cement admixture},
+  number = {US Patent 4,586,\hspace{0pt plus 1pt}960, filed June 26, 1984, and issued May 6, 1986},
+  year = {1986}
+}
+
+% 14.259 Standards
+
+@Standard{niso2010,
+  author = {{National Information Standards Organization}},
+  shortauthor = {NISO},
+  title = {Bibliographic References},
+  note = {ANSI/NISO \liningnums{Z39.29-2005}},
+  address = {Bethesda, MD},
+  publisher = {NISO},
+  pubstate = {approved June 9, 2005; reaffirmed May 13, 2010},
+  year = {2010}
+}
+@Standard{w3c2008,
+  options = {noetal},
+  author = {{Worldwide Web Consortium (W3C)}},
+  shortauthor = {W3C},
+  title = {Extensible Markup Language (XML) 1.0},
+  edition = {5},
+  editor = {Bray, Tim and Paoli, Jean and Sperberg-McQueen, C.M. and Maler, Eve and Yergeau, François},
+  publisher = {W3C},
+  date = {2008-11-26},
+  url = {http://www.w3.org/TR/2008/REC-xml-20081126/}
+}
+
+% 14.260 Citations taken from secondary sources
+
+@Article{zukofsky1931,
+  author = {Zukofsky, Louis},
+  title = {Sincerity and Objectification},
+  journal = {Poetry},
+  volume = {37},
+  date = {1931-02},
+  pages = {272–285}
+}
+@Book{costello1981,
+  author = {Costello, Bonnie},
+  title = {Marianne Moore},
+  subtitle = {Imaginary Possessions},
+  address = {Cambridge, MA},
+  publisher = {Harvard University Press},
+  year = {1981}
+}
+
+% 14.264 Recorded readings, lectures, audiobooks, and the like
+
+@Misc{roosevelt1959,
+  author = {Roosevelt, Eleanor},
+  title = {\mkbibquote{Is America Facing World Leadership?}},
+  usera = {convocation speech, Ball State Teacher's College, May 6, \thefield{year}, radio broadcast, reel-to-reel tape, MPEG copy, 1:12:49},
+  userb = {Convocation Speech. Ball State Teacher's College. May 6, \thefield{year}. Radio broadcast. Reel-to-reel tape. MPEG copy. 1:12:49},
+  url = {http://libx.bsu.edu/cdm4/singleitem/collection/ElRoos/id/1},
+  year = {1959}
+}
+
+% 15.14 Placement of dates in reference list entries
+
+@Article{pager2015,
+  author = {Pager, Devah and Pedulla, David S.},
+  title = {Race, Self-Selection, and the Job Search Process},
+  journal = {American Journal of Sociology},
+  volume = {120},
+  number = {4},
+  date = {2015-01},
+  pages = {1005–54},
+  url = {https://doi.org/10.1086/681072}
+}
+@Book{unger2014,
+  author = {Unger, Roberto Mangabeira and Smolin, Lee},
+  title = {The Singular Universe and the Reality of Time},
+  subtitle = {A Proposal in Natural Philosophy},
+  address = {Cambridge},
+  publisher = {Cambridge University Press},
+  year = {2014}
+}
+
+% 15.20 Reference list entries with same author(s), same year
+
+@Book{fogel2004a,
+  author = {Fogel, Robert William},
+  title = {The Escape from Hunger and Premature Death, 1700–2100},
+  subtitle = {Europe, America, and the Third World},
+  sorttitle = {Escape from Hunger and Premature Death},
+  address = {New York},
+  publisher = {Cambridge University Press},
+  year = {2004}
+}
+@Article{fogel2004b,
+  author = {Fogel, Robert William},
+  title = {Technophysio Evolution and the Measurement of Economic Growth},
+  journal = {Journal of Evolutionary Economics},
+  volume = {14},
+  number = {2},
+  pages = {217–21},
+  date = {2004-06},
+  doi = {https://doi.org/10.1007/s00191-004-0188-x}
+}
+
+% 15.22 Text citations — basic form
+
+@Book{hetherington2015,
+  author = {Hetherington, Marc J. and Rudolph, Thomas J.},
+  title = {Why Washington Won't Work},
+  subtitle = {Polarization, Political Trust, and the Governing Crisis},
+  address = {Chicago},
+  publisher = ucp,
+  year = {2015}
+}
+@Article{grove2015,
+  author = {Grove, John},
+  title = {Calhoun and Conservative Reform},
+  journal = {American Political Thought},
+  volume = {4},
+  number = {2},
+  date = {2015-03},
+  pages = {203–27},
+  doi = {https://doi.org/10.1086/680389}
+}
+@Thesis{doershuk2017,
+  keywords = {notinbib,notinref},
+  author = {Doershuk, Carl},
+  year = {2017},
+  howpublished = {. . .}
+}
+@Thesis{doershuk2016,
+  keywords = {notinbib,notinref},
+  author = {Doershuk, John},
+  year = {2016},
+  howpublished = {. . .}
+}
+
+% 15.24 Additional material in text citations
+
+@Book{mandolan2017,
+  options = {skipbib},
+  author = {Mandolan, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {2017}
+}
+
+% 15.25 Text citations in relation to surrounding text and punctuation
+
+@Book{fiorina2005,
+  options = {skipbib},
+  author = {Fiorina, Someone},
+  title = {Blah Title},
+  year = {2005}
+}
+@Book{fischer2006,
+  options = {skipbib},
+  author = {Fischer, Someone and Hout, Someone},
+  title = {Blah Title},
+  year = {2006}
+}
+@Book{abramowitz2005,
+  options = {skipbib},
+  author = {Abramowitz, Someone and Saunders, Someone},
+  title = {Blah Title},
+  year = {2005}
+}
+
+% 15.27 Several references to the same source
+
+@Book{chaston2000,
+  options = {skipbib},
+  author = {Chaston, Someone},
+  year = {2000}
+}
+
+% 15.29 Text citations of works with more than three authors
+
+@Article{schonen2017a,
+  options = {skipbib},
+  author = {Schonen, John and Baker, Bob and Else, Someone A. and Else, Someone B.},
+  title = {Tilting at Windmills},
+  year = {2017}
+}
+@Article{schonen2017b,
+  options = {skipbib},
+  author = {Schonen, John and Brooks, Bob and Else, Someone A. and Else, Someone B.},
+  title = {Gasoline Farmers},
+  year = {2017}
+}
+
+15.30 Multiple text references
+
+@Book{armstrong1989,
+  options = {skipbib},
+  author = {Armstrong, Somebody and Malacinski, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1989}
+}
+@Book{beigl1989,
+  options = {skipbib},
+  author = {Beigl, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1989}
+}
+@Book{pickett1985,
+  options = {skipbib},
+  author = {Pickett, Somebody and White, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1985}
+}
+@Book{whittaker1967,
+  options = {skipbib},
+  author = {Whittaker, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1967}
+}
+@Book{whittaker1975,
+  options = {skipbib},
+  author = {Whittaker, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1975}
+}
+@Book{wiens1989a,
+  options = {skipbib},
+  author = {Wiens, Somebody},
+  title = {First Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1989}
+}
+@Book{wiens1989b,
+  options = {skipbib},
+  author = {Wiens, Somebody},
+  title = {Second Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1989}
+}
+@Book{wong1999,
+  options = {skipbib},
+  author = {Wong, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1999}
+}
+@Book{wong2000,
+  options = {skipbib},
+  author = {Wong, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {2000}
+}
+@Book{garcia1998,
+  options = {skipbib},
+  author = {Garcia, Somebody},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {1989}
+}
+@Book{guest2006,
+  options = {skipbib},
+  author = {Guest, Somebody and Doe1, John and Smith1, Jane and Jones1, Mary},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {2006}
+}
+@Book{stalle2008,
+  options = {skipbib},
+  author = {Stolle, Somebody and Doe2, John and Smith2, Jane and Jones2, Mary},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {2008}
+}
+@Book{rahn2009,
+  options = {skipbib},
+  author = {Rahn, Somebody and Doe3, John and Smith3, Jane and Jones3, Mary},
+  title = {Some Book},
+  address = {Somewhere},
+  publisher = {Some Publisher},
+  year = {2009}
+}
+
+% 15.36 Editor in place of author in text citations
+
+@Book{soltes1999,
+  editor = {Soltes, Ori Z.},
+  title = {Georgia},
+  subtitle = {Art and Civilization through the Ages},
+  address = {London},
+  publisher = {Philip Wilson},
+  year = {1999}
+}
+
+% 15.37 Organization as author in author-date references
+
+@Book{iso1997.ref,% same as iso1997 but with different 'author' field
+  keywords = {notinbib},
+  author = {{ISO (International Organization for Standardization)}},
+  shortauthor = {ISO},
+  title = {Information and Documentation\,—\,Rules for the Abbreviation of Title Words and Titles of Publications},
+  shorttitle = {Information and Documentation},
+  series = {ISO},
+  number = {4},
+  address = {Paris},
+  publisher = {ISO},
+  year = {1997}
+}
+
+% 15.40 Reprint editions and modern editions — more than one date
+
+@Book{austen2003,
+  author = {Austen, Jane},
+  title = {Pride and Prejudice},
+  address = {New York},
+  publisher = {Penguin Classics},
+  year = {2003},
+  origdate = {1813},
+  origlocation = {London},
+  origpublisher = {T. Egerton},
+  addendum = {citations refer to the Penguin edition}
+}
+@Book{darwin1964,
+  options = {noreprint},
+  author = {Darwin, Charles},
+  title = {On the Origin of Species},
+  edition = {facsimile of the first edition, with an introduction by Ernest Mayr},
+  address = {Cambridge, MA},
+  publisher = {Harvard University Press},
+  origdate = {1859},
+  year = {1964}
+}
+@Book{maitland1998,
+  author = {Maitland, Frederic W.},
+  title = {Roman Canon Law in the Church of England},
+  address = {Union, NJ},
+  publisher = {Lawbook Exchange},
+  origdate = {1898},
+  year = {1998}
+}
+
+% 15.44 No date of publication in author-date references
+
+@Book{nano1750,
+  keywords = {notinbib,notinref},
+  author = {Nano, Jasmine L.},
+  title = {Title of Work\ldots},
+  year = {[1750?]},
+  sortyear = {1750}
+}
+@Book{nano,
+  keywords = {notinbib,notinref},
+  author = {Nano, Jasmine L.},
+  title = {Title of Another Work\ldots},
+  sortkey = {nodate}
+}
+
+% 15.45 “Forthcoming” in author-date references
+
+@InCollection{faraday,
+  author = {Faraday, Carry},
+  title = {Protean Photography},
+  crossref = {oring}
+}
+@Collection{oring,
+  title = {Seven Trips beyond the Asteroid Belt},
+  editor = {Oring, James},
+  address = {Cape Canaveral, FL},
+  publisher = {Launch Press},
+%  year = {forthcoming}% alternative to below:
+  pubstate = {forthcoming}
+}
+
+% 15.47 Parentheses or comma with issue number
+
+@Article{glass2014,
+  author = {Glass, Jennifer and Levchak, Philip},
+  title = {Red States, Blue States, and Divorce},
+  subtitle = {Understanding the Impact of Conservative Protestantism on Regional Variation in Divorce Rates},
+  journal = {American Journal of Sociology},
+  volume = {119},
+  number = {4},
+  date = {2014},
+  pages = {1002–46},
+  url = {https://doi.org/10.1086/674703}
+}
+@Article{meyerovitch1959,
+  author = {Meyerovitch, Eva},
+  title = {The Gnostic Manuscripts of Upper Egypt},
+  journal = {Diogenes},
+  number = {25},
+  year = {1959},
+  pages = {84–117}
+}
+
+% 15.48 Colon with volume number
+
+@Article{gunderson2015,
+  author = {Gunderson, Alex R. and Leal, Manuel},
+  title = {Patterns of Thermal Constraint on Ectotherm Activity},
+  journal = {American Naturalist},
+  volume = {185},
+%  date = {2015-05},
+  date = {2015},
+  pages = {653–64},
+  doi = {https://doi.org/10.1086/680849}
+}
+
+% CMOS Bibliography 1.2
+
+@Book{fowler1965,
+  author = {Fowler, H. W.},
+  title = {A Dictionary of Modern English Usage},
+  edition = {2},
+  editor = {Gowers, Sir Ernest},
+  editortype = {reved},
+  address = {Oxford},
+  publisher = {Oxford University Press},
+  year = {1965}
+}
+@Book{gowers2015,
+  author = {Gowers, Ernest},
+  title = {Plain Words},
+  subtitle = {A Guide to the Use of English},
+  editor = {Gowers, Rebecca},
+  editortype = {revup},
+  address = {London},
+  publisher = {Penguin Books},
+  year = {2015}
+}
+
+% CMOS Bibliography 2.4
+
+@Book{swanson1999,
+  author = {Swanson, Ellen},
+  title = {Mathematics into Type},
+  edition = {updated edition by Arlene O'Sean and Antoinette Schleyer},
+  address = {Providence, RI},
+  publisher = {American Mathematical Society},
+  year = {1999}
+}

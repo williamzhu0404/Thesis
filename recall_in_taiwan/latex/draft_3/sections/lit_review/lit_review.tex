@@ -1,15 +1,161 @@
 % !TeX root = lit_review.tex
 
+\documentclass[hyphens, crop=false]{standalone}
+\usepackage{import}
+\usepackage[subpreambles=true]{standalone}
 
-\documentclass[crop=false]{standalone}
-\usepackage{graphicx}
-\graphicspath{{images/}}
-\usepackage{blindtext}
+\usepackage[
+reflist=true,
+%noreprint, 
+natbib=true,
+autocite=inline,
+style=windycity]
+{biblatex}
 
 
+\usepackage[american]{babel}
+\usepackage{csquotes}
+
+\usepackage{url}
+
+
+\usepackage[multiple]{footmisc}
+
+\usepackage{setspace}
+\doublespacing
+
+
+
+\addbibresource{lit_review.bib}
 
 
 \begin{document}
-	Placeholder for Lit Review
+	
+	
+	
+	
+	
+	\subsection*{Roadmap}
+	\begin{enumerate}
+		\item 
+		General Theory
+		
+		Recall is just another election
+		
+		Voting theory in elections
+		\begin{enumerate}
+			\item 
+			Theory of voting behavior
+			\item 
+			Theory of personal vote and party vote
+			\item 
+			Theory of recall
+		\end{enumerate}
+		\item 
+		Scope Condition
+		\begin{enumerate}
+			\item 
+			Prediction of individual politician behavior theoretically more straightforward
+			\item 
+			Observation of incentive effect on individual behavior more likely to be significant
+			\item 
+			Focus on recall of individuals instead of collectivities
+			\item 
+			Recall of individuals compatible only with candidate-based electoral system
+		\end{enumerate}
+		\item 
+		Stylized instittutional arrangement of recall
+		\begin{enumerate}
+			\item 
+			Similar to institutional arrangement of recall in Taiwan
+			\item 
+			No extraneous elements
+			\item 
+			Separate component
+			\item 
+			Similar to institutional arrangement of recall elsewehere
+		\end{enumerate}
+		\item 
+		Main Theory
+		\begin{enumerate}
+			\item 
+			Recall causes parties and individuals to agree that personal vote is needed
+			\item 
+			Parties need policies and seats, individuals need reelection
+			\item 
+			Recall makes policy more difficult to implement
+			as recall could reduce the size of legislative party.
+			\item 
+			Without recall, parties could maintain their size through buying off voters with policy closer to the election
+			\item 
+			With recall, members of legislative parties are subject to swift retribution through recall.
+		\end{enumerate}
+		\item 
+		Alternative Theory
+		\begin{enumerate}
+			\item 
+			Recall leads to conflict between parties and individual politicians, relative strengths of parties and individuals would matter
+			\item 
+			Fear of resource depletion
+			\item 
+			Fear of credible signal of unpopularity
+			\item 
+			Fear of losing election
+			\item 
+			We unfortunately cannot determine which mechanism at work, we may only exclude certain mechanisms if our statistical asssessment may ascertain whether recall has incentive effect
+		\end{enumerate}
+	\end{enumerate}
+	\newpage
+	
+	\subsection*{Setting the Scope Condition}
+		
+		\subsubsection*{Personal Vote and Party Vote}
+			\import{./modules/scope}{personal_vote_definition}
+		
+		\subsubsection*{Relationship between Personal and Party Votes}
+%			\import{./modules/scope}{personal_vs_party}
+		
+		\subsubsection*{Personal Vote in Recall Elections}
+			
+%			\import{./modules/scope}{personal_recall}
+		
+		\subsubsection*{Personal Vote across Electoral System}
+			
+%			\import{./modules/scope}{personal_electoral_system}
+		
+		\subsubsection*{Scope Condition of this Study}
+		
+%			\import{./modules/scope}{scope_condition}
+	
+	\subsection*{Stylized institution of Recall}
+		
+		\subsection*{Description of Stylized Institution}
+%			\import{./modules/scope}{personal_vote_definition}
+		
+	\subsection*{Main Theory: Agreement Model}
+	
+		\subsection*{A Game of Policy Sequencing}
+%			\import{./modules/agree}{personal_vote_definition}
+		
+		\subsection*{Policy Sequencing without Recall}
+%			\import{./modules/agree}{personal_vote_definition}
+		
+		\subsection*{Policy Sequencing with Recall}
+%			\import{./modules/agree}{personal_vote_definition}
+	
+	\subsection*{Alternative Theory: Conflict Model}
+	
+		\subsection*{Signal of Unpopularity}
+%			\import{./modules/agree}{personal_vote_definition}
+	
+		\subsection*{Depleteion of Resources}
+%			\import{./modules/agree}{personal_vote_definition}
+
+	
+		
+	\newpage
+	\printbibliography
+	
+	
 \end{document}
 

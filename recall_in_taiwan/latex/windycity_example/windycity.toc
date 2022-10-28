@@ -1,0 +1,173 @@
+\babel@toc {american}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Overview}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Getting Started}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Standard Citations}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Short Citations}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Preamble Options}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Entry Options}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Citation Commands}{15}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {\normalfont 6.1}Standard Citation Commands}{15}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {\normalfont 6.2}Custom Commands: \emph {\textbackslash \emph {idemcite}}}{17}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {\normalfont 6.3}Custom Commands: \emph {\textbackslash \emph {parenauth}}}{19}{subsubsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.7}Entry Types}{19}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Data Fields}{22}{subsection.2.8}%
+\contentsline {subsubsection}{\numberline {\normalfont 8.1}Standard Data Fields}{22}{subsubsection.2.8.1}%
+\contentsline {subsubsection}{\numberline {\normalfont 8.2}Nonstandard Data Fields}{25}{subsubsection.2.8.2}%
+\contentsline {section}{\numberline {3}Editors and Translators}{26}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Types of Editors and Translators}{26}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {\normalfont 1.1}The Basics}{27}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {\normalfont 1.2}Other Options and Titles}{32}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Switching Places and Roles}{35}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Collections}{39}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Structuring Citations}{39}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Collections as Single Works}{45}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Works \textit {in} Volumes or \textit {as} Volumes}{48}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Examples from \emph {CMOS} Chap. 14, ``Notes and Bibliography''}{49}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Basic Format, with Examples and Variations}{49}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.23}Notes and bibliography—examples and variations}{49}{subsubsection.5.14.23}%
+\contentsline {subsection}{\numberline {5.2}Notes}{50}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.30}Basic structure of the short form}{50}{subsubsection.5.14.30}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.34}Shortened citations versus ``ibid''}{51}{subsubsection.5.14.34}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.54}Source notes for previously published material}{51}{subsubsection.5.14.54}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.57}Several citations in one note}{52}{subsubsection.5.14.57}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.59}Abbreviations for frequently cited works}{52}{subsubsection.5.14.59}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.68}The 3-em dash for one repeated name}{52}{subsubsection.5.14.68}%
+\contentsline {subsection}{\numberline {5.3}Author's Name}{53}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.75}One author}{53}{subsubsection.5.14.75}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.76}Two or more authors (or editors)}{53}{subsubsection.5.14.76}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.77}Two or more authors (or editors) with same family name}{54}{subsubsection.5.14.77}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.78}Author's name in title}{54}{subsubsection.5.14.78}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.79}No listed author (anonymous works)}{54}{subsubsection.5.14.79}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.80}Pseudonyms}{55}{subsubsection.5.14.80}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.81}Cross-references for pseudonyms}{55}{subsubsection.5.14.81}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.82}Alternative real names}{55}{subsubsection.5.14.82}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.83}Authors known by a given name}{56}{subsubsection.5.14.83}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.84}Organization as author}{56}{subsubsection.5.14.84}%
+\contentsline {subsection}{\numberline {5.4}Title of Work}{56}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.89}Subtitles in cited works and the use of the colon}{56}{subsubsection.5.14.89}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.90}Two subtitles in a cited work}{56}{subsubsection.5.14.90}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.92}``And other stories'' and such}{57}{subsubsection.5.14.92}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.93}Dates in titles of cited works}{57}{subsubsection.5.14.93}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.94}Quoted titles and other terms within cited titles of works}{57}{subsubsection.5.14.94}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.95}Italicized titles and other terms within cited titles of works}{57}{subsubsection.5.14.95}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.96}Question marks or exclamation points in titles of cited works}{57}{subsubsection.5.14.96}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.99}Translated titles of cited works}{58}{subsubsection.5.14.99}%
+\contentsline {subsection}{\numberline {5.5}Books}{59}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.101}Form of author's name and title of book in source citations}{59}{subsubsection.5.14.101}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.103}Editor in place of author}{59}{subsubsection.5.14.103}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.104}Editor or translator in addition to author}{59}{subsubsection.5.14.104}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.105}Other contributors listed on the title page}{60}{subsubsection.5.14.105}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.106}Chapter in a single-author book}{60}{subsubsection.5.14.106}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.107}Contribution to a multiauthor book}{61}{subsubsection.5.14.107}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.108}Several contributions to the same multiauthor book}{61}{subsubsection.5.14.108}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.109}Book-length work within a book}{61}{subsubsection.5.14.109}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.110}Introductions, prefaces, afterwords, and the like}{62}{subsubsection.5.14.110}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.111}Letters in published collections}{62}{subsubsection.5.14.111}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.113}Editions other than the first}{62}{subsubsection.5.14.113}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.114}Reprint editions and modern editions}{63}{subsubsection.5.14.114}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.115}Microform editions}{63}{subsubsection.5.14.115}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.117}Citing a multivolume work as a whole}{64}{subsubsection.5.14.117}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.118}Citing a particular volume in a note}{64}{subsubsection.5.14.118}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.119}Citing a particular volume in a bibliography}{64}{subsubsection.5.14.119}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.120}Chapters and other parts of individual volumes}{65}{subsubsection.5.14.120}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.121}One volume in two or more books}{66}{subsubsection.5.14.121}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.122}Authors and editors of multivolume works}{66}{subsubsection.5.14.122}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.123}Series titles, numbers, and editors}{67}{subsubsection.5.14.123}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.124}Series or multivolume work?}{68}{subsubsection.5.14.124}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.126}``Old series'' and ``new series''}{68}{subsubsection.5.14.126}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.127}Place, publisher, and date}{68}{subsubsection.5.14.127}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.128}Place and date only, for books published before 1900}{69}{subsubsection.5.14.128}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.132}No place of publication}{69}{subsubsection.5.14.132}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.137}Self-published or privately published books}{69}{subsubsection.5.14.137}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.140}Copublication}{69}{subsubsection.5.14.140}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.141}Distributed books}{69}{subsubsection.5.14.141}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.142}Publication Date---General}{70}{subsubsection.5.14.142}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.144}Multivolume works published over more than one year}{70}{subsubsection.5.14.144}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.145}No date of publication}{70}{subsubsection.5.14.145}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.146}Forthcoming publications}{71}{subsubsection.5.14.146}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.159}Books requiring a specific application or device (e-books)}{71}{subsubsection.5.14.159}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.161}Books consulted online}{71}{subsubsection.5.14.161}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.162}Freely available electronic editions of older works}{72}{subsubsection.5.14.162}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.163}Books on CD-ROM and other fixed media}{72}{subsubsection.5.14.163}%
+\contentsline {subsection}{\numberline {5.6}Periodicals}{72}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.171}Journal volume, issue, and date}{72}{subsubsection.5.14.171}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.172}Forthcoming journal articles}{73}{subsubsection.5.14.172}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.173}Journal article preprints}{73}{subsubsection.5.14.173}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.174}Journal page references}{74}{subsubsection.5.14.174}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.175}Journal articles consulted online}{74}{subsubsection.5.14.175}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.176}Access dates for journal articles}{74}{subsubsection.5.14.176}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.178}Journal special issues}{74}{subsubsection.5.14.178}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.180}Articles published in installments}{75}{subsubsection.5.14.180}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.182}Place where journal is published}{75}{subsubsection.5.14.182}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.183}Translated or edited article}{75}{subsubsection.5.14.183}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.184}New series for journal volumes}{75}{subsubsection.5.14.184}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.185}Short titles for articles}{76}{subsubsection.5.14.185}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.186}Abstracts}{76}{subsubsection.5.14.186}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.188}Basic citation format for magazine articles}{76}{subsubsection.5.14.188}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.189}Magazine articles consulted online}{76}{subsubsection.5.14.189}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.190}Magazine departments}{77}{subsubsection.5.14.190}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.191}Basic citation format for newspaper articles}{77}{subsubsection.5.14.191}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.195}Regular columns or features}{77}{subsubsection.5.14.195}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.197}Weekend supplements, magazines, and the like}{78}{subsubsection.5.14.197}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.199}Unsigned newspaper articles}{78}{subsubsection.5.14.199}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.200}News services and news releases}{78}{subsubsection.5.14.200}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.202}Book reviews}{78}{subsubsection.5.14.202}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.204}Unsigned reviews}{79}{subsubsection.5.14.204}%
+\contentsline {subsection}{\numberline {5.7}Websites, Blogs, and Social Media}{79}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.208}Citing blog posts and blogs}{79}{subsubsection.5.14.208}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.209}Citing social media content}{80}{subsubsection.5.14.209}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.210}Electronic mailing lists and forums}{81}{subsubsection.5.14.210}%
+\contentsline {subsection}{\numberline {5.8}Papers, Contracts, and Reports}{81}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.215}Theses and dissertations}{81}{subsubsection.5.14.215}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.216}Unpublished manuscripts}{81}{subsubsection.5.14.216}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.217}Lectures and papers or posters presented at meetings}{81}{subsubsection.5.14.217}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.218}Working papers and the like}{82}{subsubsection.5.14.218}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.220}Pamphlets, reports, and the like}{82}{subsubsection.5.14.220}%
+\contentsline {subsection}{\numberline {5.9}Manuscript Collections}{83}{subsection.5.9}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.222}Note forms versus bibliography entries}{83}{subsubsection.5.14.222}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.229}Examples of note forms for manuscript collections}{83}{subsubsection.5.14.229}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.230}Examples of bibliography entries for manuscript collections}{83}{subsubsection.5.14.230}%
+\contentsline {subsection}{\numberline {5.10}Special Types of References}{84}{subsection.5.10}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.232}Reference works consulted in physical formats}{84}{subsubsection.5.14.232}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.233}Reference works consulted online}{84}{subsubsection.5.14.233}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.234}Citing individual reference entries by author}{85}{subsubsection.5.14.234}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.235}Citing paintings, photographs, and sculpture}{85}{subsubsection.5.14.235}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.246}Citing specific editions of classical references}{85}{subsubsection.5.14.246}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.251}Modern editions of the classics}{86}{subsubsection.5.14.251}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.258}Patents}{86}{subsubsection.5.14.258}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.259}Standards}{86}{subsubsection.5.14.259}%
+\contentsline {subsubsection}{\numberline {\normalfont 14.260}Citations taken from secondary sources}{86}{subsubsection.5.14.260}%
+\contentsline {section}{\numberline {6}Examples from \emph {CMOS} Chap. 15, ``Author-Date References''}{87}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Basic Format, with Examples and Variations}{87}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.9}Author-date references—examples and variations}{87}{subsubsection.6.15.9}%
+\contentsline {subsection}{\numberline {6.2}Reference Lists and Text Citations}{87}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.14}Placement of dates in reference list entries}{87}{subsubsection.6.15.14}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.20}Reference list entries with same author(s), same year}{88}{subsubsection.6.15.20}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.22}Text citations---basic form}{88}{subsubsection.6.15.22}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.24}Additional material in text citations}{88}{subsubsection.6.15.24}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.25}Text citations in relation to surrounding text and punctuation}{88}{subsubsection.6.15.25}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.27}Several references to the same source}{88}{subsubsection.6.15.27}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.29}Text citations of works with more than three authors}{89}{subsubsection.6.15.29}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.30}Multiple text references}{89}{subsubsection.6.15.30}%
+\contentsline {subsection}{\numberline {6.3}Author-Date References: Special Cases}{89}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.34}Author-date format for anonymous works (no listed author)}{89}{subsubsection.6.15.34}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.35}Pseudonyms in author-date references}{89}{subsubsection.6.15.35}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.36}Editor in place of author in text citations}{89}{subsubsection.6.15.36}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.37}Organization as author in author-date references}{90}{subsubsection.6.15.37}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.40}Reprint editions and modern editions—more than one date}{90}{subsubsection.6.15.40}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.41}Multivolume works published over more than one year}{90}{subsubsection.6.15.41}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.42}Cross-references to multiauthor books in reference lists}{90}{subsubsection.6.15.42}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.44}No date of publication in author-date references}{91}{subsubsection.6.15.44}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.45}``Forthcoming'' in author-date references}{91}{subsubsection.6.15.45}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.47}Parentheses or comma with issue number}{91}{subsubsection.6.15.47}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.48}Colon with volume number}{91}{subsubsection.6.15.48}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.49}Newspapers and magazines in reference lists}{91}{subsubsection.6.15.49}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.51}Citing blogs in author-date format}{92}{subsubsection.6.15.51}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.52}Citing social media content in author-date format}{92}{subsubsection.6.15.52}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.54}Manuscript collections in author-date format}{92}{subsubsection.6.15.54}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.55}Patents or other documents cited by more than one date}{92}{subsubsection.6.15.55}%
+\contentsline {subsubsection}{\numberline {\normalfont 15.56}``Quoted in'' in author-date references}{93}{subsubsection.6.15.56}%
+\contentsline {section}{Abbreviations}{94}{Item.465}%
+\contentsline {section}{Bibliography (Standard Format)}{95}{sh.1}%
+\contentsline {section}{References (Author-Date Format)}{113}{bib.1}%

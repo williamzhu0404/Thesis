@@ -1,23 +1,8 @@
 \standalonepreambles
 \subpreamble{../sections/introduction/introduction.tex}
-
+\usepackage [reflist=true,natbib=true,autocite=inline,style=windycity]{biblatex}\usepackage [american]{babel}\usepackage {csquotes}\usepackage {url}\usepackage [multiple]{footmisc}\addbibresource {introduction.bib}
 \endsubpreamble
 \subpreamble{../sections/lit_review/lit_review.tex}
-\usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
-\endsubpreamble
-\subpreamble{../sections/context/context.tex}
-\usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
-\endsubpreamble
-\subpreamble{../sections/method/method.tex}
-\usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
-\endsubpreamble
-\subpreamble{../sections/analysis/analysis.tex}
-\usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
-\endsubpreamble
-\subpreamble{../sections/discussion/discussion.tex}
-\usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
-\endsubpreamble
-\subpreamble{../sections/conclusion/conclusion.tex}
-\usepackage {graphicx}\graphicspath {{images/}}\usepackage {blindtext}
+\usepackage [reflist=true,natbib=true,autocite=inline,style=windycity]{biblatex}\usepackage [american]{babel}\usepackage {csquotes}\usepackage {url}\usepackage [multiple]{footmisc}\addbibresource {lit_review.bib}
 \endsubpreamble
 \endstandalonepreambles

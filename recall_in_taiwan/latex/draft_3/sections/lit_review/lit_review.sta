@@ -1,0 +1,5 @@
+\standalonepreambles
+\subpreamble{./modules/scope/personal_vote_definition.tex}
+\usepackage [reflist=true,natbib=true,autocite=inline,style=windycity]{biblatex}\usepackage [american]{babel}\usepackage {csquotes}\usepackage {url}\usepackage [multiple]{footmisc}\usepackage {setspace}\doublespacing \addbibresource {lit_review.bib}
+\endsubpreamble
+\endstandalonepreambles
