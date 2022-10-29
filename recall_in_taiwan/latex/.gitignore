@@ -15,7 +15,9 @@
 *.xml
 *.out
 
+# Files created by Standalone package?
 
+*.sta
 
 # *.aux
 
