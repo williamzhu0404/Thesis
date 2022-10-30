@@ -2,4 +2,10 @@
 \subpreamble{./modules/scope/personal_vote_definition.tex}
 \usepackage [reflist=true,natbib=true,autocite=inline,style=windycity]{biblatex}\usepackage [american]{babel}\usepackage {csquotes}\usepackage {url}\usepackage [multiple]{footmisc}\usepackage {setspace}\doublespacing \addbibresource {lit_review.bib}
 \endsubpreamble
+\subpreamble{./modules/scope/personal_recall.tex}
+\usepackage [reflist=true,natbib=true,autocite=inline,style=windycity]{biblatex}\usepackage [american]{babel}\usepackage {csquotes}\usepackage {url}\usepackage [multiple]{footmisc}\usepackage {setspace}\doublespacing \addbibresource {lit_review.bib}
+\endsubpreamble
+\subpreamble{./modules/scope/personal_electoral_system.tex}
+\usepackage [reflist=true,natbib=true,autocite=inline,style=windycity]{biblatex}\usepackage [american]{babel}\usepackage {csquotes}\usepackage {url}\usepackage [multiple]{footmisc}\usepackage {setspace}\doublespacing \addbibresource {lit_review.bib}
+\endsubpreamble
 \endstandalonepreambles
