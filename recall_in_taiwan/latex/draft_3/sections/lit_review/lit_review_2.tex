@@ -1,0 +1,94 @@
+% !TeX root = lit_review_2.tex
+
+\documentclass[hyphens, crop=false]{standalone}
+\usepackage{import}
+\usepackage[subpreambles=true]{standalone}
+
+\usepackage[
+reflist=true,
+%noreprint, 
+natbib=true,
+autocite=inline,
+style=windycity]
+{biblatex}
+
+
+\usepackage[american]{babel}
+\usepackage{csquotes}
+
+\usepackage{url}
+
+
+\usepackage[multiple]{footmisc}
+
+\usepackage{setspace}
+\doublespacing
+
+
+
+\addbibresource{lit_review.bib}
+
+
+\begin{document}
+%	\section*{Introudction}
+	
+	\section*{Some Definitions and Stylized Facts}
+		I would like to begin this inquiry by making a simple observation that
+		recall can be treated as just another election
+		an incumbent needs to survive.
+		This allows for appropriation of a number of findings and techniques
+		that have been long established in electoral behavior literature,
+		the first one of which being a simple stylized fact that
+		each candidate with a realistic chance of winning an election belongs to a party.
+		Then when constituents cast a vote for a candidate,
+		one part of the decision is based on the candidate's personal tratis,
+		and the other part depends on the performance of the candidate's party. 
+		One may thus say that there is both
+		a \textit{personal vote}
+		and a \textit{party vote} for the candidate.
+	
+		\subsection*{Personal Vote and Party Vote}
+			\import{./modules/stylized}{personal_vote_definition}
+			
+			\import{./modules/stylized}{stylized_fact}
+				
+	\section*{Setting the Baseline}
+		
+		\import{./modules/baseline}{baseline_intro}
+		
+		
+		\subsection*{Recall in Taiwan as a Baseline}
+		
+			\import{./modules/baseline}{tw_electoral_reform}
+			
+			
+	
+	\section*{Main Theory}
+	
+	
+	\import{./modules/recency}{recency_vs_alternative}
+	
+		\subsection*{Recency Bias}
+			\import{./modules/recency}{recency_bias}
+		
+		
+		\subsection*{A Game of Policy Sequencing}
+			\import{./modules/recency}{policy_sequencing_informal}
+		
+		\subsection*{Predictions}
+			
+	\section*{Alternative Theories}
+		
+		\import{./modules/alternative}{lacking_credible_threat.tex}
+		
+		\import{./modules/alternative}{resource_depletion.tex}
+		
+%		
+%	\section*{Dicussion of Empirical Strategy}
+%		\subsection*{Research Design}
+%		\subsection*{Measurements of Legislative Behavior}
+%		
+%	\section*{Tentative Conclusion}
+			
+\end{document}
+
