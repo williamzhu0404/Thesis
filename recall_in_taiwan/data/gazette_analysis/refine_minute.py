@@ -28,22 +28,15 @@ def convert_to_pd_int(df):
 rcv_08 = pd.read_pickle("./rcv_08.pkl")
 rcv_09 = pd.read_pickle("./rcv_09.pkl")
 rcv_10 = pd.read_pickle(  "./rcv_10_updated.pkl") 
-"""
-convert_to_pd_int(rcv_08)
-convert_to_pd_int(rcv_09)
-convert_to_pd_int(rcv_10)
-"""
 
 combined = pd.read_pickle("combined_1.pkl")
 dpp_2termers = pd.read_pickle("dpp_2termers.pkl")
 dpp_two = dpp_2termers.name_id.drop_duplicates()
-#print(dpp_2termers.name_id.drop_duplicates() )
 
 dpp_10 = combined[(combined.term == 10) & (combined.party == "民主進步黨" )].drop_duplicates().name_id
 dpp_09 = combined[(combined.term == 9) & (combined.party == "民主進步黨" )].drop_duplicates().name_id
 
 
-#green_910 = [dpp_two] *2
 green_910 = [dpp_09, dpp_10]
 rcv_910 = [rcv_09, rcv_10]
 defections = [[None]*3, [None]*3]
@@ -52,18 +45,6 @@ rcvs = [rcv_08, rcv_09, rcv_10]
 
 
 
-"""
-green_10 = rcv_10.loc[:,dpp_10]
-green_10["yea"] = (green_10 == 1).sum(1)
-green_10["nay"] = (green_10 == 2).sum(1)
-green_10["abstain"] = (green_10 == 3).sum(1)
-green_10["absence"] = (green_10 == 4).sum(1)
-
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-	print(green_10[["yea", "nay", "abstain", "absence"]])
-"""
-
-input("pause")
 
 def draw_consensus(df):
 	df["yea"] = (df == 1).sum(1)
@@ -108,13 +89,11 @@ def green_rcvs(df, greens):
 def meeting_defect_rate(df, greens):
 	total =  df.groupby(["time"]).apply(lambda x: x[x != 'stranger'].count()  )[greens]
 	disloyal = df.groupby(["time"]).apply(lambda x: x[x == 'disloyal'].count()  )[greens]
-	print(disloyal/total)
 	return disloyal/total
 
 def session_defect_rate(df, greens):
 	total =  df.groupby(["session"]).apply(lambda x: x[x != 'stranger'].count()  )[greens]
 	disloyal = df.groupby(["session"]).apply(lambda x: x[x == 'disloyal'].count()  )[greens]
-	print(disloyal/total)
 	return disloyal/total
 
 def term_defect_rate(df, greens):
@@ -230,92 +209,6 @@ best_green_10 = best_green_10[  ["term", "tier", "name_id"]  ]
 
 stationary_green = pd.merge(best_green_09, best_green_10,
 					how="inner",on=["tier","name_id"])
-print(best_green)
-print(stationary_green.name_id)
-
-
-
-"""
-input("well, damn")
-for i,df in enumerate(rcv_910):
-	slimmed_greens = green_rcvs(rcv_910[i], green_910[i])
-	slimmed_greens = slimmed_greens.reset_index(drop=True)	
-	green_910[i] = all_session_greens(slimmed_greens, green_910[i])
-	for j, option in  enumerate(["nay", "abstain", "absent"]):
-		rebels = defect(slimmed_greens, green_910[i], option, "term" ).T
-		#rebels = defect(slimmed_greens, green_910[i], option).T
-		rebels = rebels.reset_index().rename(columns={"index": "name_id", 0:"defect_rate"})
-		rebels = rebels.rename_axis(None, axis=1)
-		print(rebels)
-		defections[i][j] = rebels
-	#print(slimmed_greens)
-
-
-leg_09 = combined[combined.term == 9]
-leg_10 = combined[combined.term == 10]
-for j in range( len( defections[0]  )   ): 
-	defection_09 = defections[0][j]
-	defection_10 = defections[1][j]
-	defection_09 = defection_09.merge(leg_09, how = "left", on="name_id")
-	defection_10 = defection_10.merge(leg_10, how = "left", on="name_id")
-	defection_910 = pd.concat([defection_09, defection_10])
-	defection_910.to_csv("defection_by_term_type_{}.csv".format(j+1) )
-"""
-
-
-
-
-"""
-test_09 = defections[0][0]
-
-test_10 = defections[1][0]
-leg_09 = combined[combined.term == 9]
-leg_10 = combined[combined.term == 10]
-test_09 = test_09.merge(leg_09, how = "left", on="name_id")
-test_10 = test_10.merge(leg_10, how = "left", on="name_id")
-test_910 = pd.concat([test_09, test_10])
-print(test_910)
-test_910.to_csv("test_910_2.csv")
-"""
-#test = test.merge(leg_10, how="left", on="name_id")
-#print(test)
-#print(test.columns)
-#test.to_csv("test.csv")
-
-#	-----******----- Below are examples of how you handle sessions
-#test = defections[1][2]
-#test = test.drop_duplicates()
-#test = test[test.iloc[1:6].notnull() ]
-#test = test[test.iloc[:,1:7].notnull().all(1)]
-#test.columns = test.columns.astype(str)
-#test = test.melt(id_vars=['name_id'], value_vars=['1', '2', '3', '4', '5', '6'],
-#        var_name='session', value_name='defect_rate')
-#test.session = test.session.astype(int)
-#print(test)
-#input("examine melt result")
-
-
-#leg_10 = combined[combined.term == 10]
-
-
-#test = test.merge(leg_10, how="left", on="name_id")
-#print(test)
-#print(test.columns)
-#test.to_csv("test.csv")
-
-"""
-for i in range(len(rcvs) ):
-	rcvs[i]["session"] = rcvs[i]["meeting_name"].str.extract( "({})".format(session_pat) )  
-	rcvs[i]["session"] = rcvs[i]["session"].astype(  dtype=pd.Int64Dtype()  )
-
-#rcv_10.reset_index()
-
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-	print(rcv_10)
-	print(rcv_08[["time", "session"]].sort_values("time"))
-	print(rcv_09[["time", "session"]].sort_values("time"))
-	print(rcv_10[["time", "session"]].sort_values("time"))
-"""
 
 
 for i,df in enumerate(rcv_910):
@@ -323,20 +216,14 @@ for i,df in enumerate(rcv_910):
 	slimmed_greens = slimmed_greens.reset_index(drop=True)	
 	green_910[i] = all_session_greens(slimmed_greens, green_910[i])
 	for j, option in  enumerate(["nay", "abstain", "absent"]):
-		#rebels = defect(slimmed_greens, green_910[i], option, "term" ).T
 		rebels = defect(slimmed_greens, green_910[i], option).T
 		rebels = rebels.reset_index().rename(columns={"index": "name_id", 0:"defect_rate"})
 		rebels = rebels.rename_axis(None, axis=1)
 		rebels.columns = rebels.columns.astype(str)
-		print(rebels.columns[1:])
 		test = rebels.melt(id_vars=['name_id'], value_vars= rebels.columns[1:],
     	    var_name='session', value_name='defect_rate')
 		test["session"] = test["session"].astype(  dtype=pd.Int64Dtype()  )
-		print(test.dtypes)
-		#input("oh my")
-		#defections[i][j] = rebels
 		defections[i][j] = test
-	#print(slimmed_greens)
 
 
 leg_09 = combined[combined.term == 9]
@@ -347,45 +234,5 @@ for j in range( len( defections[0]  )   ):
 	defection_09 = defection_09.merge(leg_09, how = "left", on="name_id")
 	defection_10 = defection_10.merge(leg_10, how = "left", on="name_id")
 	defection_910 = pd.concat([defection_09, defection_10])
-	with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-		print(defection_910)
-		input("uh oh")
 	defection_910.to_csv("defection_by_session_type_{}.csv".format(j+1) )
 
-"""
-
-
-
-for i,df in enumerate(rcv_910):
-	slimmed_greens = green_rcvs(rcv_910[i], green_910[i])
-	slimmed_greens = slimmed_greens.reset_index(drop=True)	
-	green_910[i] = all_session_greens(slimmed_greens, green_910[i])
-	for j, option in  enumerate(["nay", "abstain", "absent"]):
-		rebels = defect(slimmed_greens, green_910[i], option, "meeting" ).T
-		#rebels = defect(slimmed_greens, green_910[i], option).T
-		rebels = rebels.reset_index().rename(columns={"index": "name_id", 0:"defect_rate"})
-		rebels = rebels.rename_axis(None, axis=1)
-		#rebels.columns = rebels.columns.astype(str)
-		print(rebels.columns[1:])
-		test = rebels.melt(id_vars=['name_id'], value_vars= rebels.columns[1:],
-    	    var_name='time', value_name='defect_rate')
-		#test["session"] = test["session"].astype(  dtype=pd.Int64Dtype()  )
-		print(test.dtypes)
-		#input("oh my")
-		#defections[i][j] = rebels
-		defections[i][j] = test
-	#print(slimmed_greens)
-
-
-leg_09 = combined[combined.term == 9]
-leg_10 = combined[combined.term == 10]
-for j in range( len( defections[0]  )   ): 
-	defection_09 = defections[0][j]
-	defection_10 = defections[1][j]
-	defection_09 = defection_09.merge(leg_09, how = "left", on="name_id")
-	defection_10 = defection_10.merge(leg_10, how = "left", on="name_id")
-	defection_910 = pd.concat([defection_09, defection_10])
-	defection_910.to_csv("defection_by_time_type_{}.csv".format(j+1) )
-
-
-"""

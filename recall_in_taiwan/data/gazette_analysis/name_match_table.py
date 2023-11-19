@@ -31,13 +31,6 @@ camp = "[贊反棄].者：[0-9]+"
 combined = "{0}|{1}|".format(title, camp)
 
 ext_search = chn_name_ind_ext_template.format(CHN_CHAR_1, combined)
-print(ext_search) 
-
-
-"""
-42               廖國棟Sufin‧Siluko        廖國棟        Sufin‧Siluko   
-43               廖國棟Sufin．Siluko        廖國棟        Sufin．Siluko  
-"""
 
 
 # Table wrangling
@@ -60,7 +53,6 @@ leg_name_master = pd.concat(
 
 leg_name_master.columns = ["name", "name_chn", "name_indig","name_regex"]
 
-#leg_name_master.at[43, "name_regex"] = "(廖國棟|Sufin[．‧]Siluko)"
 
 
 chn_name_rep = leg_name_master.duplicated(subset = "name_chn", keep = "last")
@@ -91,8 +83,6 @@ leg_name_master.reset_index(drop=True, inplace=True)
 
 
 
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-    print(leg_name_master )
 
 leg_name_master.to_pickle("name_match.pkl")
 

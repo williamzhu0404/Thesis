@@ -25,19 +25,6 @@ leg_7_10 = Legislator_Infos[Legislator_Infos.term > 6]
 
 
 
-"""
-Index(['name_id', 'term', 'name_x', 'ename', 'sex_x', 'party', 'partyGroup',
-       'areaName', 'onboardDate', 'leaveFlag', 'leaveDate', 'leaveReason',
-       'prov_metro', 'county', 'district', 'subcounty', 'village',
-       'ballot_num_x', 'name_y', 'party_id', 'sex_y', 'birth_date', 'age',
-       'place_of_birth', 'degree', 'incumbent', 'elected_x', 'valid_votes',
-       'invalid_votes', 'total_votes', 'electorate', 'pop',
-       'electorate_over_pop_pct', 'total_votes_over_electorate_pct',
-       'elected_over_cands_pct', 'ballot_num_y', 'vote',
-       'vote_over_total_votes_pct', 'elected_y', 'vote_margin',
-       'vote_over_total_votes_pct_margin'],
-      dtype='object')
-"""
 
 #	CUSTOM-DESIGNED, MODIFY WITH CARE
 def merge_regex(df1, df2):
@@ -47,10 +34,6 @@ def merge_regex(df1, df2):
 	t = df1.iloc[list(df1_idx),-1].reset_index(drop=True)
 	t1 = df2.iloc[list(df2_idx),:].reset_index(drop=True)
 	output = pd.concat([t,t1],axis=1)
-	#if output.shape[0] != df2_nrow:
-		#print(output.shape[0], df2_nrow)
-	#else:
-		#print("IT'S A FULL MATCH!")
 	return output
 
 def convert_to_pd_int(df):
@@ -70,8 +53,6 @@ def read_elected_info(file, colnames, elected=True, remove="'"):
 	if converted_row != raw_row:
 		print("HELP, something is WRONG!")
 		raise Exception("Conversion is problematic.")
-	#else:
-		#print("ALL CLEAR!")
 	return df[df.elected == "*"] if elected else df
 
 
@@ -86,7 +67,6 @@ investigate = pd.read_pickle("flag.pkl")
 Legislator_Infos = pd.read_csv("16_CSV_16_CSV.csv", parse_dates=[8, 13])
 
 convert_to_pd_int(Legislator_Infos)
-#print(Legislator_Infos.dtypes)
 
 
 
@@ -94,13 +74,9 @@ convert_to_pd_int(Legislator_Infos)
 
 
 
-#print(Legislator_Infos.dtypes)
-#input("check what datatype I have")
 
 leg_name_master["name_id"] = leg_name_master.index.astype(  dtype=pd.Int64Dtype()  )
 
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-	print(leg_name_master)
 
 leg_name_master.to_pickle("leg_name_remastered.pkl")
 
@@ -121,39 +97,7 @@ Legislator_Infos = Legislator_Infos.drop(columns=["degree"])
 
 #	------*****------	Change the string to Int64!!!!!
 sex_dict = {"男": 1, "女": 2}
-"""
-Legislator_Infos = Legislator_Infos.replace({"sex": sex_dict})
-Legislator_Infos.sex = Legislator_Infos.sex.astype(  dtype=pd.Int64Dtype()  )
-"""
 Legislator_Infos = replace_with_dict(Legislator_Infos, "sex", sex_dict)
-
-#input("Pause to read sex")
-print(Legislator_Infos.sex)
-print(Legislator_Infos.dtypes)
-#input("Pause to read sex")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -170,33 +114,6 @@ leg_7_10 = merge_regex(leg_name_master.iloc[:, -2:], leg_7_10)
 indexed_leg_infos = merge_regex(leg_name_master.iloc[:, -2:], Legislator_Infos)
 indexed_leg_infos.to_pickle("indexed_leg_info.pkl")
 
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-	print(indexed_leg_infos)
-	print(indexed_leg_infos.columns)
-	print(indexed_leg_infos.dtypes)
-input("Pause to check output")
-
-
-
-"""
-a = input("Pause to decide whether to exit.")
-if len(a) > 2:
-	exit()
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -211,28 +128,6 @@ colnames_pr = [ "party_id", "ballot_num", "name", "sex",
 			"birth_date", "age", "place_of_birth",
 			"degree", "incumbent", "elected"]
 	
-"""
-省市別
-縣市別
-選區別
-鄉鎮市區
-村里別
-號次
-名字
-政黨代號
-性別
-出生日期
-年齡
-出生地
-學歷
-現任
-當選註記
-副手
-"""
-
-
-
-
 
 
 
@@ -273,7 +168,6 @@ for ind_1, level_1 in enumerate(first_level):
 	pr_files = Path(pr_path).glob('elrepm*')
 	party_files = Path(pr_path).glob('elpaty*')
 	for file in party_files:
-		print(file)
 		df = read_elected_info(file,["party_num", "party"], False)
 		leg_records[ind_1] = leg_records[ind_1].merge(df, how="left", on="party")
 		leg_records[ind_1][ ["party_num"] ] = leg_records[ind_1][ ["party_num"] ].fillna(NO_PARTY)
@@ -283,9 +177,6 @@ for ind_1, level_1 in enumerate(first_level):
 													left_on="partyGroup",
 													right_on="party")
 		leg_records[ind_1][ ["party_group_num"] ] = leg_records[ind_1][ ["party_group_num"] ].fillna(NO_PARTY)
-		#input("Well, ready to party?")
-		with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-			print(leg_records[ind_1][["name", "party_num"]])
 	for file in pr_files:
 		df = read_elected_info(file, colnames_pr, False, "'")
 		commission_record[ind_1][-1] = merge_regex(leg_name_master.iloc[:, -2:], df)
@@ -293,16 +184,8 @@ for ind_1, level_1 in enumerate(first_level):
 		non_pr_path = Path(level_1, level_2)
 		files = Path(non_pr_path).glob('elcand*')
 		for file in files:
-			print(file)
 			df = read_elected_info(file, colnames, True, "'")
 			commission_record[ind_1][ind_2] = merge_regex(leg_name_master.iloc[:, -2:], df)
-			#input("Let us see")
-"""
-			print(commission_record[ind_1][ind_2])
-			a = input("Pause to decide whether to exit.")
-			if len(a) > 2:
-				exit()
-"""
 
 
 degree_dict = {"博士": 6,
@@ -314,48 +197,22 @@ degree_dict = {"博士": 6,
 				"高中(職)": 2,
 				"其他": 1,
 				}
-"""
-碩士       66
-博士       23
-大學       22
-高中(職)     4
-其他        1
-專科        1
-"""
 
 incumbent_dict = {"Y": 1,
 			"N": 2}
 
 
 
-"""
-name_id                    Int64
-prov_metro                 Int64
-county                     Int64
-district                   Int64
-ballot_num                 Int64
-name                      object
-party_id                   Int64
-sex                        Int64
-birth_date        datetime64[ns]
-age                        Int64
-place_of_birth            object
-degree                     Int64
-incumbent                  Int64
-elected                   object
-"""
 #	Let's change the values of electoral returns here
 for ind, infos in enumerate(commission_record):
 	election = pd.concat(infos)
 	election = election.drop(columns=["subcounty", "village"])
 	election = replace_with_dict(election, "degree", degree_dict)
 	election = replace_with_dict(election, "incumbent", incumbent_dict)
-	print(election.birth_date)
 	if ind == 0:
 		election.birth_date = election.birth_date.astype(  dtype=pd.Int64Dtype()  )
 	election.birth_date = election.birth_date + ROC_YEAR_ZERO * 10000
 	election.birth_date = pd.to_datetime(election.birth_date, format='%Y%m%d')
-	#input("Check the datatypes")
 	leg_info = pd.merge(leg_records[ind], election, on="name_id", how="left")
 	pr_cols = commission_record[ind][-1].columns
 	leg_records[ind] = leg_info
@@ -363,14 +220,6 @@ for ind, infos in enumerate(commission_record):
 
 
 
-
-
-
-
-
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-	print(leg_records[0])
-	#input("I'm exhausted.")
 
 
 
@@ -399,12 +248,8 @@ for ind_1, level_1 in enumerate(first_level):
 	pr_path = Path(  level_1, second_level[0]  )
 	pr_files = Path(pr_path).glob('elprof*')
 	for file in pr_files:
-		print(df)
-		#input("pause to rest")
 		df = read_elected_info(file, None, False, "'")
 		with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-			print(df)
-			#input("elprof check")
 			district_level = df[  (df.iloc[:,3] == 0) & (df.iloc[:, 2] != 0) ] 
 			district_level = district_level[prof_cols]
 			district_level.columns = prof_colnames
@@ -418,9 +263,6 @@ for ind_1, level_1 in enumerate(first_level):
 		elu_cands = read_elected_info(file, ctks_colnames, True, "'")#, False)
 		all_cands = read_elected_info(file, ctks_colnames, False, "'")
 		with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-			print(elu_cands)
-			print(elu_cands.dtypes)
-			#input("elctks read check")
 			elu_district_level = elu_cands[  (elu_cands.iloc[:,3] == 0) & (elu_cands.iloc[:, 2] != 0) ] 
 			district_summary = elu_district_level[ctks_summary_colnames]
 			all_elu_district_level = all_cands[  (all_cands.iloc[:,3] == 0) & (all_cands.iloc[:, 2] != 0) ] 
@@ -433,26 +275,11 @@ for ind_1, level_1 in enumerate(first_level):
 				winner = all_elu_district_level[ colnames ].sort_values(colnames[-1], ascending=False).groupby(district_id_cols, sort=False, as_index=False).nth(0)
 				combined = pd.merge(runner_up, winner, how="inner", on=district_id_cols)
 				margin = combined[  "{}_y".format(colnames[-1])  ] - combined[  "{}_x".format(colnames[-1])  ]
-				print(margin)
-				#input("check margin calculation")
 				new_col = "{}_margin".format( colnames[-1] )
 				combined[new_col ] = margin
 				margin_id = combined[ district_id_cols + [new_col]  ]
 				district_summary = pd.merge(  district_summary, margin_id, how="inner", on=district_id_cols  )
-				#print(district_summary.shape[0] == margin_id.shape[0], )
-				#input("Pause to breathe.")
 			ctks_dfs[ind_1] = district_summary
-"""
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-	for i in range(2):
-		print(leg_records[i])
-		input("Pause to breathe.")
-		print(prof_dfs[i])
-		input("Pause to breathe.")
-		print(ctks_dfs[i])
-		input("Pause to breathe.")
-"""
-
 
 
 
@@ -463,15 +290,8 @@ combined_electoral_return = [ pd.merge(prof_dfs[i], ctks_dfs[i], how="inner", on
 combined_electoral_return = [ pd.merge(  leg_records[i], combined_electoral_return[i], how="left", on=district_id_cols  ) for i in range(3) ]
 with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
 	for i in range(3):
-		print(combined_electoral_return[i].columns)
-		print(combined_electoral_return[i].dtypes)
-		#input("where's the margin?")
-		print(combined_electoral_return[i][combined_electoral_return[i].ballot_num_x.isnull()  ])
 		combined_electoral_return[i].to_pickle("combined_electoral_return_{}.pkl".format(2012 + i*4))
 
-"""
-
-"""
 
 
 

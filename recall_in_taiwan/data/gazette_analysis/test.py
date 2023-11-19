@@ -45,7 +45,6 @@ chn_name = "[一-鿆].+?(?= |\n)"
 chn_name_ind_ext_template = "({0}.+?(?= {0}|\n|$| [A-Z][a-z]* [A-Z][a-z]*)|[A-Z][a-z]* [A-Z][a-z]*)"
 
 leg_name = chn_name_ind_ext_template.format(chn_char_1)
-print(leg_name)
 
 
 motion_pattern = ""
@@ -80,7 +79,6 @@ indigenous_name_pattern = ""
 
 
 match = re.search(rcv_pattern, sample , re.DOTALL)
-print(  sample[match.start(): match.end() ]    )
 
 narrow_match = re.findall(rcv_pattern, sample_txts, re.DOTALL)
 
@@ -88,30 +86,11 @@ narrow_match = re.findall(rcv_pattern, sample_txts, re.DOTALL)
 broad_match = re.findall(rcv_pattern_1, sample_txts, re.DOTALL)
 adjusted_match = re.findall(rcv_pattern_3, sample_txts, re.DOTALL)
 
-print(len(adjusted_match) )
 
 
 first, last = 55, 63
 
 txts = [ read_gazette( pdf.pages[i].extract_text()     ) for i in range(first - 1, last +1) ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,6 +1,3 @@
-
-
-
 from pathlib import Path
 
 import datetime
@@ -51,13 +48,6 @@ def handle_outcome(winner, runner_up, valid):
 	part_2 = [margin, percentage(margin, valid)]
 	return part_1 + part_2
 
-"""
-missing_林靜儀 = [datetime.datetime(1974, 2, 12), 47,"臺灣省",
-				6, 2, 171251, 172446, 295985,
-				365586, round(295985/365586, 4 )*100, round(172446/295985, 4 )*100,
-				round(20.00, 2), 88752, round(88752/171251, 4)*100,
-				88752-80912, round( (88752-80912)/171251, 4)*100 ]
-"""
 # Import the beautifulsoup
 # and request libraries of python.
 
@@ -76,10 +66,8 @@ to_remove = ["prov_metro", "county", "district", "ballot_num_x",
 			"ballot_num_y", "elected_y"]	
 to_remove_1 = ["ename", "party_y", "invalid_votes"]
 for ind, electoral_return in enumerate(combined_electoral_return):
-	print(combined_electoral_return[ind].shape)
 	combined_electoral_return[ind] = electoral_return.drop(columns=to_remove)
 	combined_electoral_return[ind] = combined_electoral_return[ind].drop(columns=to_remove_1)
-	print(combined_electoral_return[ind].shape)
 
 constituency_dict = {"全國不分區及僑居國外國民": 2,
 					"平地原住民": 3,
@@ -102,8 +90,6 @@ with pd.option_context('display.max_rows', None, 'display.max_columns', None):# 
 
 
 
-for vote_return in combined_electoral_return:
-	print(vote_return[  (  vote_return.vote.isnull()  ) & (vote_return.tier == 1)  ].name_x)
 
 
 
@@ -123,8 +109,6 @@ row_dict_2020 = { "林靜儀": missing_林靜儀,
 				"王鴻薇": missing_王鴻薇}
 
 
-"""
-"""
 missing_何志偉 = [datetime.datetime(1982, 5, 14), 36,"臺北市", 5, 2] +\
 				handle_turnout(80798, 81107, 266907, 342977) +\
 				[round(20.00, 2)] +\
@@ -202,14 +186,8 @@ fill_df_dict(combined_electoral_return[0], 8, row_dict_2012)
 fill_df_dict(combined_electoral_return[1], 9, row_dict_2016)
 fill_df_dict(combined_electoral_return[-1], 10, row_dict_2020)
 
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):#   more options can be specified also
-	print(combined_electoral_return[0][ (combined_electoral_return[0].tier == 2)])# & (combined_electoral_return[0].vote.isnull()  ) ]   )
-	print(combined_electoral_return[1][ (combined_electoral_return[1].tier == 2)])# & (combined_electoral_return[1].vote.isnull()  ) ]   )
-	print(combined_electoral_return[-1][ (combined_electoral_return[-1].tier == 2)])# & (combined_electoral_return[-1].vote.isnull()  ) ]   )
 for i in range( len(combined_electoral_return) ):
 	combined_electoral_return[i].columns = combined_electoral_return[i].columns.str.removesuffix("_x")
-	print(combined_electoral_return[i].columns)
-	input("Pause to examine.")
 	combined_electoral_return[i].to_pickle("cleaned_bio_{}.pkl".format(2012 + i*4)  )
 
 
