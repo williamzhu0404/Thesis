@@ -35,6 +35,9 @@ template/
 **/*.doc
 **/*.docx
 
+# Ignore .tex files
+.tex
+
 # Ignore .pdf files
 .pdf
 **/*.pdf
