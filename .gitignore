@@ -1,3 +1,15 @@
+# IGNORE THE FOLLOWING FOLDERS:
+Archived_Rmarkdown/
+admin_stuff/
+general_model_electoral_reform/
+literature/
+polarization/
+covid_election_timing/
+mandate_divide/
+
+#template/
+
+
 # Ignore files ending in tilde:
 
 *~
