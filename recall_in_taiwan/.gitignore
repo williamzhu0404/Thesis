@@ -1,0 +1,25 @@
+# Ignore files ending in tilde:
+
+*~
+
+# macOS Files
+
+.DS_Store
+
+# R History
+
+.Rhistory
+
+# .RData
+
+.RData
+
+# Ignore .obsdian files
+.obsidian
+
+# Ignore .doc(x) files
+.doc
+.docx
+
+# Ignore .pdf files
+.pdf
