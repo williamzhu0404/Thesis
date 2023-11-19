@@ -21,6 +21,7 @@
 .doc
 .docx
 **/*.doc
+**/*.docx
 
 # Ignore .pdf files
 .pdf
