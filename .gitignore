@@ -16,3 +16,7 @@
 
 # Ignore .obsdian files
 .obsidian
+
+# Ignore .doc(x) files
+.doc
+.docx
