@@ -2,9 +2,13 @@
 
 liao_2022_data/ 
 pop_density/
+electoral_data/
 
 # Bulky Data
 *.csv
 *.json
 *.xlsx
 *.xls
+
+# Scratchpaper files
+Untitled.R
