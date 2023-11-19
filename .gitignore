@@ -20,3 +20,6 @@
 # Ignore .doc(x) files
 .doc
 .docx
+
+# Ignore .pdf files
+.pdf
