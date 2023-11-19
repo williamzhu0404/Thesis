@@ -1,3 +1,5 @@
 # Bulky Data
 *.csv
 *.json
+*.xlsx
+*.xls
